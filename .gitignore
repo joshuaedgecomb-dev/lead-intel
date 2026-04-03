@@ -1,0 +1,4 @@
+node_modules
+dist
+src/data/zip5.json
+.env

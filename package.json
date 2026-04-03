@@ -1,0 +1,22 @@
+{
+  "name": "lead-intel",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.5.2",
+    "adm-zip": "^0.5.17",
+    "geo-tz": "^8.1.6",
+    "vite": "^6.3.5",
+    "vite-plugin-singlefile": "^2.3.2"
+  }
+}
