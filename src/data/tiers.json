@@ -1,0 +1,5 @@
+{
+  "1": { "label": "LEAD WITH SAVINGS", "color": "#22c55e", "bg": "#052e16", "rec": "Unlimited @ $40/line", "hook": "$0 first line for 12 months. Emphasize monthly savings vs current carrier." },
+  "2": { "label": "BALANCED PITCH", "color": "#3b82f6", "bg": "#172554", "rec": "Unlimited, mention Premium", "hook": "Same network, better price. Weave in StreamSaver bundle value." },
+  "3": { "label": "LEAD WITH PREMIUM", "color": "#a855f7", "bg": "#3b0764", "rec": "Premium Unlimited @ $50", "hook": "4K streaming, 100GB data, Global Travel Pass. Push device upgrades." }
+}

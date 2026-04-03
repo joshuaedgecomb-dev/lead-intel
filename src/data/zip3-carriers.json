@@ -1,0 +1,4172 @@
+{
+  "100": {
+    "city": "New York",
+    "state": "NY",
+    "carrier": "VZ",
+    "metro": "NYC"
+  },
+  "101": {
+    "city": "New York",
+    "state": "NY",
+    "carrier": "VZ",
+    "metro": "NYC"
+  },
+  "102": {
+    "city": "New York",
+    "state": "NY",
+    "carrier": "VZ",
+    "metro": "NYC"
+  },
+  "103": {
+    "city": "Staten Island",
+    "state": "NY",
+    "carrier": "VZ",
+    "metro": "NYC"
+  },
+  "104": {
+    "city": "Bronx",
+    "state": "NY",
+    "carrier": "VZ",
+    "metro": "NYC"
+  },
+  "105": {
+    "city": "White Plains",
+    "state": "NY",
+    "carrier": "VZ",
+    "metro": "Westchester"
+  },
+  "106": {
+    "city": "White Plains",
+    "state": "NY",
+    "carrier": "VZ",
+    "metro": "Westchester"
+  },
+  "107": {
+    "city": "Yonkers",
+    "state": "NY",
+    "carrier": "VZ",
+    "metro": "Westchester"
+  },
+  "108": {
+    "city": "New Rochelle",
+    "state": "NY",
+    "carrier": "VZ",
+    "metro": "Westchester"
+  },
+  "109": {
+    "city": "Suffern",
+    "state": "NY",
+    "carrier": "VZ",
+    "metro": "Rockland"
+  },
+  "110": {
+    "city": "Floral Park",
+    "state": "NY",
+    "carrier": "VZ",
+    "metro": "Long Island"
+  },
+  "111": {
+    "city": "Long Island City",
+    "state": "NY",
+    "carrier": "VZ",
+    "metro": "Queens"
+  },
+  "112": {
+    "city": "Brooklyn",
+    "state": "NY",
+    "carrier": "VZ",
+    "metro": "Brooklyn"
+  },
+  "113": {
+    "city": "Flushing",
+    "state": "NY",
+    "carrier": "VZ",
+    "metro": "Queens"
+  },
+  "114": {
+    "city": "Jamaica",
+    "state": "NY",
+    "carrier": "VZ",
+    "metro": "Queens"
+  },
+  "115": {
+    "city": "Mineola",
+    "state": "NY",
+    "carrier": "VZ",
+    "metro": "Nassau County"
+  },
+  "116": {
+    "city": "Far Rockaway",
+    "state": "NY",
+    "carrier": "VZ",
+    "metro": "Queens"
+  },
+  "117": {
+    "city": "Hicksville",
+    "state": "NY",
+    "carrier": "VZ",
+    "metro": "Long Island"
+  },
+  "118": {
+    "city": "Huntington",
+    "state": "NY",
+    "carrier": "VZ",
+    "metro": "Long Island"
+  },
+  "119": {
+    "city": "Riverhead",
+    "state": "NY",
+    "carrier": "VZ",
+    "metro": "Long Island"
+  },
+  "120": {
+    "city": "Albany",
+    "state": "NY",
+    "carrier": "VZ",
+    "metro": "Capital District"
+  },
+  "121": {
+    "city": "Albany",
+    "state": "NY",
+    "carrier": "VZ",
+    "metro": "Capital District"
+  },
+  "122": {
+    "city": "Albany",
+    "state": "NY",
+    "carrier": "VZ",
+    "metro": "Capital District"
+  },
+  "125": {
+    "city": "Poughkeepsie",
+    "state": "NY",
+    "carrier": "VZ",
+    "metro": "Hudson Valley"
+  },
+  "130": {
+    "city": "Syracuse",
+    "state": "NY",
+    "carrier": "VZ",
+    "metro": "Syracuse"
+  },
+  "131": {
+    "city": "Syracuse",
+    "state": "NY",
+    "carrier": "VZ",
+    "metro": "Syracuse"
+  },
+  "132": {
+    "city": "Syracuse",
+    "state": "NY",
+    "carrier": "VZ",
+    "metro": "Syracuse"
+  },
+  "140": {
+    "city": "Buffalo",
+    "state": "NY",
+    "carrier": "VZ",
+    "metro": "Buffalo"
+  },
+  "141": {
+    "city": "Buffalo",
+    "state": "NY",
+    "carrier": "VZ",
+    "metro": "Buffalo"
+  },
+  "142": {
+    "city": "Buffalo",
+    "state": "NY",
+    "carrier": "VZ",
+    "metro": "Buffalo"
+  },
+  "143": {
+    "city": "Niagara Falls",
+    "state": "NY",
+    "carrier": "VZ",
+    "metro": "Niagara"
+  },
+  "144": {
+    "city": "Rochester",
+    "state": "NY",
+    "carrier": "VZ",
+    "metro": "Rochester"
+  },
+  "145": {
+    "city": "Rochester",
+    "state": "NY",
+    "carrier": "VZ",
+    "metro": "Rochester"
+  },
+  "146": {
+    "city": "Rochester",
+    "state": "NY",
+    "carrier": "VZ",
+    "metro": "Rochester"
+  },
+  "148": {
+    "city": "Elmira",
+    "state": "NY",
+    "carrier": "VZ",
+    "metro": "Southern Tier"
+  },
+  "150": {
+    "city": "Pittsburgh",
+    "state": "PA",
+    "carrier": "VZ",
+    "metro": "Pittsburgh"
+  },
+  "151": {
+    "city": "Pittsburgh",
+    "state": "PA",
+    "carrier": "VZ",
+    "metro": "Pittsburgh"
+  },
+  "152": {
+    "city": "Pittsburgh",
+    "state": "PA",
+    "carrier": "VZ",
+    "metro": "Pittsburgh"
+  },
+  "153": {
+    "city": "Washington",
+    "state": "PA",
+    "carrier": "VZ",
+    "metro": "SW Pennsylvania"
+  },
+  "155": {
+    "city": "Johnstown",
+    "state": "PA",
+    "carrier": "VZ",
+    "metro": "Johnstown"
+  },
+  "160": {
+    "city": "New Castle",
+    "state": "PA",
+    "carrier": "VZ",
+    "metro": "NW Pennsylvania"
+  },
+  "161": {
+    "city": "New Castle",
+    "state": "PA",
+    "carrier": "VZ",
+    "metro": "NW Pennsylvania"
+  },
+  "165": {
+    "city": "Erie",
+    "state": "PA",
+    "carrier": "VZ",
+    "metro": "Erie"
+  },
+  "166": {
+    "city": "Altoona",
+    "state": "PA",
+    "carrier": "VZ",
+    "metro": "Central PA"
+  },
+  "168": {
+    "city": "State College",
+    "state": "PA",
+    "carrier": "VZ",
+    "metro": "State College"
+  },
+  "170": {
+    "city": "Harrisburg",
+    "state": "PA",
+    "carrier": "VZ",
+    "metro": "Harrisburg"
+  },
+  "171": {
+    "city": "Harrisburg",
+    "state": "PA",
+    "carrier": "VZ",
+    "metro": "Harrisburg"
+  },
+  "172": {
+    "city": "Chambersburg",
+    "state": "PA",
+    "carrier": "VZ",
+    "metro": "S. Central PA"
+  },
+  "173": {
+    "city": "York",
+    "state": "PA",
+    "carrier": "VZ",
+    "metro": "York"
+  },
+  "174": {
+    "city": "York",
+    "state": "PA",
+    "carrier": "VZ",
+    "metro": "York"
+  },
+  "175": {
+    "city": "Lancaster",
+    "state": "PA",
+    "carrier": "VZ",
+    "metro": "Lancaster"
+  },
+  "176": {
+    "city": "Lancaster",
+    "state": "PA",
+    "carrier": "VZ",
+    "metro": "Lancaster"
+  },
+  "177": {
+    "city": "Williamsport",
+    "state": "PA",
+    "carrier": "VZ",
+    "metro": "N. Central PA"
+  },
+  "178": {
+    "city": "Sunbury",
+    "state": "PA",
+    "carrier": "VZ",
+    "metro": "Central PA"
+  },
+  "179": {
+    "city": "Reading",
+    "state": "PA",
+    "carrier": "VZ",
+    "metro": "Reading"
+  },
+  "180": {
+    "city": "Bethlehem",
+    "state": "PA",
+    "carrier": "VZ",
+    "metro": "Lehigh Valley"
+  },
+  "181": {
+    "city": "Allentown",
+    "state": "PA",
+    "carrier": "VZ",
+    "metro": "Lehigh Valley"
+  },
+  "182": {
+    "city": "Wilkes-Barre",
+    "state": "PA",
+    "carrier": "VZ",
+    "metro": "NEPA"
+  },
+  "183": {
+    "city": "East Stroudsburg",
+    "state": "PA",
+    "carrier": "VZ",
+    "metro": "Poconos"
+  },
+  "184": {
+    "city": "Scranton",
+    "state": "PA",
+    "carrier": "VZ",
+    "metro": "Scranton"
+  },
+  "185": {
+    "city": "Scranton",
+    "state": "PA",
+    "carrier": "VZ",
+    "metro": "Scranton"
+  },
+  "186": {
+    "city": "Scranton",
+    "state": "PA",
+    "carrier": "VZ",
+    "metro": "Scranton"
+  },
+  "189": {
+    "city": "Doylestown",
+    "state": "PA",
+    "carrier": "VZ",
+    "metro": "Bucks County"
+  },
+  "190": {
+    "city": "Philadelphia",
+    "state": "PA",
+    "carrier": "VZ",
+    "metro": "Philadelphia"
+  },
+  "191": {
+    "city": "Philadelphia",
+    "state": "PA",
+    "carrier": "VZ",
+    "metro": "Philadelphia"
+  },
+  "192": {
+    "city": "Philadelphia",
+    "state": "PA",
+    "carrier": "VZ",
+    "metro": "Philadelphia"
+  },
+  "193": {
+    "city": "Southeastern PA",
+    "state": "PA",
+    "carrier": "VZ",
+    "metro": "Main Line"
+  },
+  "194": {
+    "city": "Norristown",
+    "state": "PA",
+    "carrier": "VZ",
+    "metro": "Montgomery Co"
+  },
+  "195": {
+    "city": "Reading",
+    "state": "PA",
+    "carrier": "VZ",
+    "metro": "Reading"
+  },
+  "196": {
+    "city": "Reading",
+    "state": "PA",
+    "carrier": "VZ",
+    "metro": "Reading"
+  },
+  "197": {
+    "city": "Wilmington",
+    "state": "DE",
+    "carrier": "VZ",
+    "metro": "Wilmington"
+  },
+  "198": {
+    "city": "Wilmington",
+    "state": "DE",
+    "carrier": "VZ",
+    "metro": "Wilmington"
+  },
+  "199": {
+    "city": "Dover",
+    "state": "DE",
+    "carrier": "VZ",
+    "metro": "Dover"
+  },
+  "200": {
+    "city": "Washington",
+    "state": "DC",
+    "carrier": "VZ",
+    "metro": "DC Metro"
+  },
+  "201": {
+    "city": "Dulles",
+    "state": "VA",
+    "carrier": "VZ",
+    "metro": "NoVA"
+  },
+  "202": {
+    "city": "Washington",
+    "state": "DC",
+    "carrier": "VZ",
+    "metro": "DC Metro"
+  },
+  "203": {
+    "city": "Washington",
+    "state": "DC",
+    "carrier": "VZ",
+    "metro": "DC Metro"
+  },
+  "204": {
+    "city": "Washington",
+    "state": "DC",
+    "carrier": "VZ",
+    "metro": "DC Metro"
+  },
+  "206": {
+    "city": "Waldorf",
+    "state": "MD",
+    "carrier": "VZ",
+    "metro": "S. Maryland"
+  },
+  "207": {
+    "city": "College Park",
+    "state": "MD",
+    "carrier": "VZ",
+    "metro": "PG County"
+  },
+  "208": {
+    "city": "Silver Spring",
+    "state": "MD",
+    "carrier": "VZ",
+    "metro": "Montgomery Co"
+  },
+  "209": {
+    "city": "Silver Spring",
+    "state": "MD",
+    "carrier": "VZ",
+    "metro": "Montgomery Co"
+  },
+  "210": {
+    "city": "Baltimore",
+    "state": "MD",
+    "carrier": "VZ",
+    "metro": "Baltimore"
+  },
+  "211": {
+    "city": "Baltimore",
+    "state": "MD",
+    "carrier": "VZ",
+    "metro": "Baltimore"
+  },
+  "212": {
+    "city": "Baltimore",
+    "state": "MD",
+    "carrier": "VZ",
+    "metro": "Baltimore"
+  },
+  "214": {
+    "city": "Annapolis",
+    "state": "MD",
+    "carrier": "VZ",
+    "metro": "Anne Arundel"
+  },
+  "215": {
+    "city": "Cumberland",
+    "state": "MD",
+    "carrier": "VZ",
+    "metro": "W. Maryland"
+  },
+  "216": {
+    "city": "Easton",
+    "state": "MD",
+    "carrier": "VZ",
+    "metro": "Eastern Shore"
+  },
+  "217": {
+    "city": "Frederick",
+    "state": "MD",
+    "carrier": "VZ",
+    "metro": "Frederick"
+  },
+  "218": {
+    "city": "Salisbury",
+    "state": "MD",
+    "carrier": "VZ",
+    "metro": "Eastern Shore"
+  },
+  "219": {
+    "city": "Elkton",
+    "state": "MD",
+    "carrier": "VZ",
+    "metro": "Cecil County"
+  },
+  "220": {
+    "city": "Fairfax",
+    "state": "VA",
+    "carrier": "VZ",
+    "metro": "NoVA"
+  },
+  "221": {
+    "city": "Fairfax",
+    "state": "VA",
+    "carrier": "VZ",
+    "metro": "NoVA"
+  },
+  "222": {
+    "city": "Arlington",
+    "state": "VA",
+    "carrier": "VZ",
+    "metro": "NoVA"
+  },
+  "223": {
+    "city": "Alexandria",
+    "state": "VA",
+    "carrier": "VZ",
+    "metro": "NoVA"
+  },
+  "224": {
+    "city": "Fredericksburg",
+    "state": "VA",
+    "carrier": "VZ",
+    "metro": "Fredericksburg"
+  },
+  "225": {
+    "city": "Fredericksburg",
+    "state": "VA",
+    "carrier": "VZ",
+    "metro": "Fredericksburg"
+  },
+  "226": {
+    "city": "Winchester",
+    "state": "VA",
+    "carrier": "VZ",
+    "metro": "Shenandoah"
+  },
+  "228": {
+    "city": "Charlottesville",
+    "state": "VA",
+    "carrier": "VZ",
+    "metro": "Charlottesville"
+  },
+  "229": {
+    "city": "Charlottesville",
+    "state": "VA",
+    "carrier": "VZ",
+    "metro": "Charlottesville"
+  },
+  "230": {
+    "city": "Richmond",
+    "state": "VA",
+    "carrier": "VZ",
+    "metro": "Richmond"
+  },
+  "231": {
+    "city": "Richmond",
+    "state": "VA",
+    "carrier": "VZ",
+    "metro": "Richmond"
+  },
+  "232": {
+    "city": "Richmond",
+    "state": "VA",
+    "carrier": "VZ",
+    "metro": "Richmond"
+  },
+  "233": {
+    "city": "Norfolk",
+    "state": "VA",
+    "carrier": "VZ",
+    "metro": "Hampton Roads"
+  },
+  "234": {
+    "city": "Virginia Beach",
+    "state": "VA",
+    "carrier": "VZ",
+    "metro": "Hampton Roads"
+  },
+  "235": {
+    "city": "Norfolk",
+    "state": "VA",
+    "carrier": "VZ",
+    "metro": "Hampton Roads"
+  },
+  "236": {
+    "city": "Newport News",
+    "state": "VA",
+    "carrier": "VZ",
+    "metro": "Hampton Roads"
+  },
+  "237": {
+    "city": "Portsmouth",
+    "state": "VA",
+    "carrier": "VZ",
+    "metro": "Hampton Roads"
+  },
+  "238": {
+    "city": "Richmond",
+    "state": "VA",
+    "carrier": "VZ",
+    "metro": "Richmond"
+  },
+  "239": {
+    "city": "Lynchburg",
+    "state": "VA",
+    "carrier": "VZ",
+    "metro": "Lynchburg"
+  },
+  "240": {
+    "city": "Roanoke",
+    "state": "VA",
+    "carrier": "VZ",
+    "metro": "Roanoke"
+  },
+  "241": {
+    "city": "Roanoke",
+    "state": "VA",
+    "carrier": "VZ",
+    "metro": "Roanoke"
+  },
+  "244": {
+    "city": "Staunton",
+    "state": "VA",
+    "carrier": "VZ",
+    "metro": "Shenandoah"
+  },
+  "246": {
+    "city": "Bluefield",
+    "state": "VA",
+    "carrier": "VZ",
+    "metro": "SW Virginia"
+  },
+  "247": {
+    "city": "Bluefield",
+    "state": "WV",
+    "carrier": "VZ",
+    "metro": "S. West Virginia"
+  },
+  "248": {
+    "city": "Bluefield",
+    "state": "WV",
+    "carrier": "VZ",
+    "metro": "S. West Virginia"
+  },
+  "250": {
+    "city": "Charleston",
+    "state": "WV",
+    "carrier": "VZ",
+    "metro": "Charleston"
+  },
+  "251": {
+    "city": "Charleston",
+    "state": "WV",
+    "carrier": "VZ",
+    "metro": "Charleston"
+  },
+  "253": {
+    "city": "Charleston",
+    "state": "WV",
+    "carrier": "VZ",
+    "metro": "Charleston"
+  },
+  "260": {
+    "city": "Wheeling",
+    "state": "WV",
+    "carrier": "VZ",
+    "metro": "N. Panhandle"
+  },
+  "265": {
+    "city": "Clarksburg",
+    "state": "WV",
+    "carrier": "VZ",
+    "metro": "N. Central WV"
+  },
+  "267": {
+    "city": "Martinsburg",
+    "state": "WV",
+    "carrier": "VZ",
+    "metro": "Eastern Panhandle"
+  },
+  "270": {
+    "city": "Greensboro",
+    "state": "NC",
+    "carrier": "ATT",
+    "metro": "Piedmont Triad"
+  },
+  "271": {
+    "city": "Winston-Salem",
+    "state": "NC",
+    "carrier": "ATT",
+    "metro": "Piedmont Triad"
+  },
+  "272": {
+    "city": "Greensboro",
+    "state": "NC",
+    "carrier": "ATT",
+    "metro": "Piedmont Triad"
+  },
+  "273": {
+    "city": "Greensboro",
+    "state": "NC",
+    "carrier": "ATT",
+    "metro": "Piedmont Triad"
+  },
+  "274": {
+    "city": "Greensboro",
+    "state": "NC",
+    "carrier": "ATT",
+    "metro": "Piedmont Triad"
+  },
+  "275": {
+    "city": "Raleigh",
+    "state": "NC",
+    "carrier": "ATT",
+    "metro": "Research Triangle"
+  },
+  "276": {
+    "city": "Raleigh",
+    "state": "NC",
+    "carrier": "ATT",
+    "metro": "Research Triangle"
+  },
+  "277": {
+    "city": "Durham",
+    "state": "NC",
+    "carrier": "ATT",
+    "metro": "Research Triangle"
+  },
+  "278": {
+    "city": "Rocky Mount",
+    "state": "NC",
+    "carrier": "ATT",
+    "metro": "Eastern NC"
+  },
+  "279": {
+    "city": "Elizabeth City",
+    "state": "NC",
+    "carrier": "ATT",
+    "metro": "NE North Carolina"
+  },
+  "280": {
+    "city": "Charlotte",
+    "state": "NC",
+    "carrier": "ATT",
+    "metro": "Charlotte"
+  },
+  "281": {
+    "city": "Charlotte",
+    "state": "NC",
+    "carrier": "ATT",
+    "metro": "Charlotte"
+  },
+  "282": {
+    "city": "Charlotte",
+    "state": "NC",
+    "carrier": "ATT",
+    "metro": "Charlotte"
+  },
+  "283": {
+    "city": "Fayetteville",
+    "state": "NC",
+    "carrier": "ATT",
+    "metro": "Fayetteville"
+  },
+  "284": {
+    "city": "Wilmington",
+    "state": "NC",
+    "carrier": "ATT",
+    "metro": "Wilmington"
+  },
+  "285": {
+    "city": "Hickory",
+    "state": "NC",
+    "carrier": "ATT",
+    "metro": "Foothills"
+  },
+  "286": {
+    "city": "Hickory",
+    "state": "NC",
+    "carrier": "ATT",
+    "metro": "Foothills"
+  },
+  "287": {
+    "city": "Asheville",
+    "state": "NC",
+    "carrier": "ATT",
+    "metro": "Asheville"
+  },
+  "288": {
+    "city": "Asheville",
+    "state": "NC",
+    "carrier": "ATT",
+    "metro": "Asheville"
+  },
+  "289": {
+    "city": "Asheville",
+    "state": "NC",
+    "carrier": "ATT",
+    "metro": "Asheville"
+  },
+  "290": {
+    "city": "Columbia",
+    "state": "SC",
+    "carrier": "ATT",
+    "metro": "Columbia"
+  },
+  "291": {
+    "city": "Columbia",
+    "state": "SC",
+    "carrier": "ATT",
+    "metro": "Columbia"
+  },
+  "292": {
+    "city": "Columbia",
+    "state": "SC",
+    "carrier": "ATT",
+    "metro": "Columbia"
+  },
+  "293": {
+    "city": "Greenville",
+    "state": "SC",
+    "carrier": "ATT",
+    "metro": "Upstate SC"
+  },
+  "294": {
+    "city": "Charleston",
+    "state": "SC",
+    "carrier": "ATT",
+    "metro": "Charleston"
+  },
+  "295": {
+    "city": "Florence",
+    "state": "SC",
+    "carrier": "ATT",
+    "metro": "Pee Dee"
+  },
+  "296": {
+    "city": "Greenville",
+    "state": "SC",
+    "carrier": "ATT",
+    "metro": "Upstate SC"
+  },
+  "297": {
+    "city": "Charlotte",
+    "state": "NC",
+    "carrier": "ATT",
+    "metro": "Charlotte Metro"
+  },
+  "300": {
+    "city": "Atlanta",
+    "state": "GA",
+    "carrier": "ATT",
+    "metro": "Atlanta"
+  },
+  "301": {
+    "city": "Atlanta",
+    "state": "GA",
+    "carrier": "ATT",
+    "metro": "Atlanta"
+  },
+  "302": {
+    "city": "Atlanta",
+    "state": "GA",
+    "carrier": "ATT",
+    "metro": "Atlanta"
+  },
+  "303": {
+    "city": "Atlanta",
+    "state": "GA",
+    "carrier": "ATT",
+    "metro": "Atlanta"
+  },
+  "304": {
+    "city": "Swainsboro",
+    "state": "GA",
+    "carrier": "ATT",
+    "metro": "East Central GA"
+  },
+  "305": {
+    "city": "Gainesville",
+    "state": "GA",
+    "carrier": "ATT",
+    "metro": "NE Georgia"
+  },
+  "306": {
+    "city": "Athens",
+    "state": "GA",
+    "carrier": "ATT",
+    "metro": "Athens"
+  },
+  "307": {
+    "city": "Chattanooga",
+    "state": "TN",
+    "carrier": "ATT",
+    "metro": "Chattanooga"
+  },
+  "308": {
+    "city": "Augusta",
+    "state": "GA",
+    "carrier": "ATT",
+    "metro": "Augusta"
+  },
+  "309": {
+    "city": "Augusta",
+    "state": "GA",
+    "carrier": "ATT",
+    "metro": "Augusta"
+  },
+  "310": {
+    "city": "Macon",
+    "state": "GA",
+    "carrier": "ATT",
+    "metro": "Macon"
+  },
+  "311": {
+    "city": "Atlanta",
+    "state": "GA",
+    "carrier": "ATT",
+    "metro": "Atlanta"
+  },
+  "312": {
+    "city": "Macon",
+    "state": "GA",
+    "carrier": "ATT",
+    "metro": "Macon"
+  },
+  "313": {
+    "city": "Savannah",
+    "state": "GA",
+    "carrier": "ATT",
+    "metro": "Savannah"
+  },
+  "314": {
+    "city": "Savannah",
+    "state": "GA",
+    "carrier": "ATT",
+    "metro": "Savannah"
+  },
+  "315": {
+    "city": "Waycross",
+    "state": "GA",
+    "carrier": "ATT",
+    "metro": "SE Georgia"
+  },
+  "316": {
+    "city": "Valdosta",
+    "state": "GA",
+    "carrier": "ATT",
+    "metro": "S. Georgia"
+  },
+  "317": {
+    "city": "Albany",
+    "state": "GA",
+    "carrier": "ATT",
+    "metro": "SW Georgia"
+  },
+  "318": {
+    "city": "Columbus",
+    "state": "GA",
+    "carrier": "ATT",
+    "metro": "Columbus"
+  },
+  "319": {
+    "city": "Columbus",
+    "state": "GA",
+    "carrier": "ATT",
+    "metro": "Columbus"
+  },
+  "320": {
+    "city": "Jacksonville",
+    "state": "FL",
+    "carrier": "ATT",
+    "metro": "Jacksonville"
+  },
+  "321": {
+    "city": "Daytona Beach",
+    "state": "FL",
+    "carrier": "ATT",
+    "metro": "Daytona"
+  },
+  "322": {
+    "city": "Jacksonville",
+    "state": "FL",
+    "carrier": "ATT",
+    "metro": "Jacksonville"
+  },
+  "323": {
+    "city": "Tallahassee",
+    "state": "FL",
+    "carrier": "ATT",
+    "metro": "Tallahassee"
+  },
+  "324": {
+    "city": "Panama City",
+    "state": "FL",
+    "carrier": "ATT",
+    "metro": "Panhandle"
+  },
+  "325": {
+    "city": "Pensacola",
+    "state": "FL",
+    "carrier": "ATT",
+    "metro": "Pensacola"
+  },
+  "326": {
+    "city": "Gainesville",
+    "state": "FL",
+    "carrier": "ATT",
+    "metro": "Gainesville"
+  },
+  "327": {
+    "city": "Orlando",
+    "state": "FL",
+    "carrier": "ATT",
+    "metro": "Orlando"
+  },
+  "328": {
+    "city": "Orlando",
+    "state": "FL",
+    "carrier": "ATT",
+    "metro": "Orlando"
+  },
+  "329": {
+    "city": "Melbourne",
+    "state": "FL",
+    "carrier": "ATT",
+    "metro": "Space Coast"
+  },
+  "330": {
+    "city": "Miami",
+    "state": "FL",
+    "carrier": "TMO",
+    "metro": "Miami"
+  },
+  "331": {
+    "city": "Miami",
+    "state": "FL",
+    "carrier": "TMO",
+    "metro": "Miami"
+  },
+  "332": {
+    "city": "Miami",
+    "state": "FL",
+    "carrier": "TMO",
+    "metro": "Miami"
+  },
+  "333": {
+    "city": "Fort Lauderdale",
+    "state": "FL",
+    "carrier": "TMO",
+    "metro": "Broward"
+  },
+  "334": {
+    "city": "West Palm Beach",
+    "state": "FL",
+    "carrier": "ATT",
+    "metro": "Palm Beach"
+  },
+  "335": {
+    "city": "Tampa",
+    "state": "FL",
+    "carrier": "ATT",
+    "metro": "Tampa Bay"
+  },
+  "336": {
+    "city": "Tampa",
+    "state": "FL",
+    "carrier": "ATT",
+    "metro": "Tampa Bay"
+  },
+  "337": {
+    "city": "St. Petersburg",
+    "state": "FL",
+    "carrier": "ATT",
+    "metro": "Tampa Bay"
+  },
+  "338": {
+    "city": "Lakeland",
+    "state": "FL",
+    "carrier": "ATT",
+    "metro": "Polk County"
+  },
+  "339": {
+    "city": "Fort Myers",
+    "state": "FL",
+    "carrier": "ATT",
+    "metro": "SW Florida"
+  },
+  "340": {
+    "city": "St. Thomas",
+    "state": "VI",
+    "carrier": "ATT",
+    "metro": "USVI"
+  },
+  "341": {
+    "city": "Naples",
+    "state": "FL",
+    "carrier": "ATT",
+    "metro": "SW Florida"
+  },
+  "342": {
+    "city": "Sarasota",
+    "state": "FL",
+    "carrier": "ATT",
+    "metro": "Sarasota"
+  },
+  "346": {
+    "city": "Tampa",
+    "state": "FL",
+    "carrier": "ATT",
+    "metro": "Tampa Bay"
+  },
+  "347": {
+    "city": "Orlando",
+    "state": "FL",
+    "carrier": "ATT",
+    "metro": "Orlando"
+  },
+  "349": {
+    "city": "West Palm Beach",
+    "state": "FL",
+    "carrier": "ATT",
+    "metro": "Palm Beach"
+  },
+  "350": {
+    "city": "Birmingham",
+    "state": "AL",
+    "carrier": "ATT",
+    "metro": "Birmingham"
+  },
+  "351": {
+    "city": "Birmingham",
+    "state": "AL",
+    "carrier": "ATT",
+    "metro": "Birmingham"
+  },
+  "352": {
+    "city": "Birmingham",
+    "state": "AL",
+    "carrier": "ATT",
+    "metro": "Birmingham"
+  },
+  "354": {
+    "city": "Tuscaloosa",
+    "state": "AL",
+    "carrier": "ATT",
+    "metro": "Tuscaloosa"
+  },
+  "356": {
+    "city": "Huntsville",
+    "state": "AL",
+    "carrier": "ATT",
+    "metro": "Huntsville"
+  },
+  "357": {
+    "city": "Huntsville",
+    "state": "AL",
+    "carrier": "ATT",
+    "metro": "Huntsville"
+  },
+  "358": {
+    "city": "Huntsville",
+    "state": "AL",
+    "carrier": "ATT",
+    "metro": "Huntsville"
+  },
+  "360": {
+    "city": "Montgomery",
+    "state": "AL",
+    "carrier": "ATT",
+    "metro": "Montgomery"
+  },
+  "361": {
+    "city": "Montgomery",
+    "state": "AL",
+    "carrier": "ATT",
+    "metro": "Montgomery"
+  },
+  "362": {
+    "city": "Anniston",
+    "state": "AL",
+    "carrier": "ATT",
+    "metro": "Anniston"
+  },
+  "363": {
+    "city": "Dothan",
+    "state": "AL",
+    "carrier": "ATT",
+    "metro": "Wiregrass"
+  },
+  "365": {
+    "city": "Mobile",
+    "state": "AL",
+    "carrier": "ATT",
+    "metro": "Mobile"
+  },
+  "366": {
+    "city": "Mobile",
+    "state": "AL",
+    "carrier": "ATT",
+    "metro": "Mobile"
+  },
+  "370": {
+    "city": "Nashville",
+    "state": "TN",
+    "carrier": "ATT",
+    "metro": "Nashville"
+  },
+  "371": {
+    "city": "Nashville",
+    "state": "TN",
+    "carrier": "ATT",
+    "metro": "Nashville"
+  },
+  "372": {
+    "city": "Nashville",
+    "state": "TN",
+    "carrier": "ATT",
+    "metro": "Nashville"
+  },
+  "373": {
+    "city": "Chattanooga",
+    "state": "TN",
+    "carrier": "ATT",
+    "metro": "Chattanooga"
+  },
+  "374": {
+    "city": "Chattanooga",
+    "state": "TN",
+    "carrier": "ATT",
+    "metro": "Chattanooga"
+  },
+  "375": {
+    "city": "Memphis",
+    "state": "TN",
+    "carrier": "ATT",
+    "metro": "Memphis"
+  },
+  "376": {
+    "city": "Johnson City",
+    "state": "TN",
+    "carrier": "ATT",
+    "metro": "Tri-Cities"
+  },
+  "377": {
+    "city": "Knoxville",
+    "state": "TN",
+    "carrier": "ATT",
+    "metro": "Knoxville"
+  },
+  "378": {
+    "city": "Knoxville",
+    "state": "TN",
+    "carrier": "ATT",
+    "metro": "Knoxville"
+  },
+  "379": {
+    "city": "Knoxville",
+    "state": "TN",
+    "carrier": "ATT",
+    "metro": "Knoxville"
+  },
+  "380": {
+    "city": "Memphis",
+    "state": "TN",
+    "carrier": "ATT",
+    "metro": "Memphis"
+  },
+  "381": {
+    "city": "Memphis",
+    "state": "TN",
+    "carrier": "ATT",
+    "metro": "Memphis"
+  },
+  "382": {
+    "city": "Memphis",
+    "state": "TN",
+    "carrier": "ATT",
+    "metro": "Memphis"
+  },
+  "386": {
+    "city": "Jackson",
+    "state": "MS",
+    "carrier": "ATT",
+    "metro": "Jackson"
+  },
+  "390": {
+    "city": "Jackson",
+    "state": "MS",
+    "carrier": "ATT",
+    "metro": "Jackson"
+  },
+  "391": {
+    "city": "Jackson",
+    "state": "MS",
+    "carrier": "ATT",
+    "metro": "Jackson"
+  },
+  "394": {
+    "city": "Hattiesburg",
+    "state": "MS",
+    "carrier": "ATT",
+    "metro": "S. Mississippi"
+  },
+  "395": {
+    "city": "Gulfport",
+    "state": "MS",
+    "carrier": "ATT",
+    "metro": "Gulf Coast"
+  },
+  "400": {
+    "city": "Louisville",
+    "state": "KY",
+    "carrier": "ATT",
+    "metro": "Louisville"
+  },
+  "401": {
+    "city": "Louisville",
+    "state": "KY",
+    "carrier": "ATT",
+    "metro": "Louisville"
+  },
+  "402": {
+    "city": "Louisville",
+    "state": "KY",
+    "carrier": "ATT",
+    "metro": "Louisville"
+  },
+  "405": {
+    "city": "Lexington",
+    "state": "KY",
+    "carrier": "ATT",
+    "metro": "Lexington"
+  },
+  "406": {
+    "city": "Frankfort",
+    "state": "KY",
+    "carrier": "ATT",
+    "metro": "Central KY"
+  },
+  "410": {
+    "city": "Cincinnati",
+    "state": "OH",
+    "carrier": "VZ",
+    "metro": "Cincinnati"
+  },
+  "411": {
+    "city": "Ashland",
+    "state": "KY",
+    "carrier": "ATT",
+    "metro": "NE Kentucky"
+  },
+  "420": {
+    "city": "Paducah",
+    "state": "KY",
+    "carrier": "ATT",
+    "metro": "W. Kentucky"
+  },
+  "430": {
+    "city": "Columbus",
+    "state": "OH",
+    "carrier": "VZ",
+    "metro": "Columbus"
+  },
+  "431": {
+    "city": "Columbus",
+    "state": "OH",
+    "carrier": "VZ",
+    "metro": "Columbus"
+  },
+  "432": {
+    "city": "Columbus",
+    "state": "OH",
+    "carrier": "VZ",
+    "metro": "Columbus"
+  },
+  "433": {
+    "city": "Columbus",
+    "state": "OH",
+    "carrier": "VZ",
+    "metro": "Columbus"
+  },
+  "440": {
+    "city": "Cleveland",
+    "state": "OH",
+    "carrier": "VZ",
+    "metro": "Cleveland"
+  },
+  "441": {
+    "city": "Cleveland",
+    "state": "OH",
+    "carrier": "VZ",
+    "metro": "Cleveland"
+  },
+  "442": {
+    "city": "Akron",
+    "state": "OH",
+    "carrier": "VZ",
+    "metro": "Akron"
+  },
+  "443": {
+    "city": "Akron",
+    "state": "OH",
+    "carrier": "VZ",
+    "metro": "Akron"
+  },
+  "444": {
+    "city": "Youngstown",
+    "state": "OH",
+    "carrier": "VZ",
+    "metro": "Youngstown"
+  },
+  "445": {
+    "city": "Youngstown",
+    "state": "OH",
+    "carrier": "VZ",
+    "metro": "Youngstown"
+  },
+  "446": {
+    "city": "Canton",
+    "state": "OH",
+    "carrier": "VZ",
+    "metro": "Canton"
+  },
+  "447": {
+    "city": "Canton",
+    "state": "OH",
+    "carrier": "VZ",
+    "metro": "Canton"
+  },
+  "448": {
+    "city": "Mansfield",
+    "state": "OH",
+    "carrier": "VZ",
+    "metro": "N. Central OH"
+  },
+  "449": {
+    "city": "Mansfield",
+    "state": "OH",
+    "carrier": "VZ",
+    "metro": "N. Central OH"
+  },
+  "450": {
+    "city": "Cincinnati",
+    "state": "OH",
+    "carrier": "VZ",
+    "metro": "Cincinnati"
+  },
+  "451": {
+    "city": "Cincinnati",
+    "state": "OH",
+    "carrier": "VZ",
+    "metro": "Cincinnati"
+  },
+  "452": {
+    "city": "Cincinnati",
+    "state": "OH",
+    "carrier": "VZ",
+    "metro": "Cincinnati"
+  },
+  "453": {
+    "city": "Dayton",
+    "state": "OH",
+    "carrier": "VZ",
+    "metro": "Dayton"
+  },
+  "454": {
+    "city": "Dayton",
+    "state": "OH",
+    "carrier": "VZ",
+    "metro": "Dayton"
+  },
+  "455": {
+    "city": "Springfield",
+    "state": "OH",
+    "carrier": "VZ",
+    "metro": "Springfield"
+  },
+  "456": {
+    "city": "Chillicothe",
+    "state": "OH",
+    "carrier": "VZ",
+    "metro": "S. Ohio"
+  },
+  "457": {
+    "city": "Athens",
+    "state": "OH",
+    "carrier": "VZ",
+    "metro": "SE Ohio"
+  },
+  "458": {
+    "city": "Lima",
+    "state": "OH",
+    "carrier": "VZ",
+    "metro": "NW Ohio"
+  },
+  "460": {
+    "city": "Indianapolis",
+    "state": "IN",
+    "carrier": "VZ",
+    "metro": "Indianapolis"
+  },
+  "461": {
+    "city": "Indianapolis",
+    "state": "IN",
+    "carrier": "VZ",
+    "metro": "Indianapolis"
+  },
+  "462": {
+    "city": "Indianapolis",
+    "state": "IN",
+    "carrier": "VZ",
+    "metro": "Indianapolis"
+  },
+  "463": {
+    "city": "Gary",
+    "state": "IN",
+    "carrier": "VZ",
+    "metro": "NW Indiana"
+  },
+  "464": {
+    "city": "Gary",
+    "state": "IN",
+    "carrier": "VZ",
+    "metro": "NW Indiana"
+  },
+  "465": {
+    "city": "South Bend",
+    "state": "IN",
+    "carrier": "VZ",
+    "metro": "Michiana"
+  },
+  "466": {
+    "city": "South Bend",
+    "state": "IN",
+    "carrier": "VZ",
+    "metro": "Michiana"
+  },
+  "467": {
+    "city": "Fort Wayne",
+    "state": "IN",
+    "carrier": "VZ",
+    "metro": "Fort Wayne"
+  },
+  "468": {
+    "city": "Fort Wayne",
+    "state": "IN",
+    "carrier": "VZ",
+    "metro": "Fort Wayne"
+  },
+  "469": {
+    "city": "Kokomo",
+    "state": "IN",
+    "carrier": "VZ",
+    "metro": "Central IN"
+  },
+  "470": {
+    "city": "Cincinnati",
+    "state": "OH",
+    "carrier": "VZ",
+    "metro": "Cincinnati"
+  },
+  "471": {
+    "city": "Louisville",
+    "state": "KY",
+    "carrier": "ATT",
+    "metro": "S. Indiana"
+  },
+  "472": {
+    "city": "Columbus",
+    "state": "IN",
+    "carrier": "VZ",
+    "metro": "S. Central IN"
+  },
+  "473": {
+    "city": "Muncie",
+    "state": "IN",
+    "carrier": "VZ",
+    "metro": "E. Central IN"
+  },
+  "474": {
+    "city": "Bloomington",
+    "state": "IN",
+    "carrier": "VZ",
+    "metro": "Bloomington"
+  },
+  "475": {
+    "city": "Terre Haute",
+    "state": "IN",
+    "carrier": "VZ",
+    "metro": "W. Indiana"
+  },
+  "476": {
+    "city": "Evansville",
+    "state": "IN",
+    "carrier": "ATT",
+    "metro": "Evansville"
+  },
+  "477": {
+    "city": "Evansville",
+    "state": "IN",
+    "carrier": "ATT",
+    "metro": "Evansville"
+  },
+  "478": {
+    "city": "Terre Haute",
+    "state": "IN",
+    "carrier": "VZ",
+    "metro": "W. Indiana"
+  },
+  "479": {
+    "city": "Lafayette",
+    "state": "IN",
+    "carrier": "VZ",
+    "metro": "Lafayette"
+  },
+  "480": {
+    "city": "Detroit",
+    "state": "MI",
+    "carrier": "TMO",
+    "metro": "Detroit"
+  },
+  "481": {
+    "city": "Detroit",
+    "state": "MI",
+    "carrier": "TMO",
+    "metro": "Detroit"
+  },
+  "482": {
+    "city": "Detroit",
+    "state": "MI",
+    "carrier": "TMO",
+    "metro": "Detroit"
+  },
+  "483": {
+    "city": "Royal Oak",
+    "state": "MI",
+    "carrier": "TMO",
+    "metro": "Oakland County"
+  },
+  "484": {
+    "city": "Flint",
+    "state": "MI",
+    "carrier": "TMO",
+    "metro": "Flint"
+  },
+  "485": {
+    "city": "Flint",
+    "state": "MI",
+    "carrier": "TMO",
+    "metro": "Flint"
+  },
+  "486": {
+    "city": "Saginaw",
+    "state": "MI",
+    "carrier": "TMO",
+    "metro": "Saginaw"
+  },
+  "487": {
+    "city": "Saginaw",
+    "state": "MI",
+    "carrier": "TMO",
+    "metro": "Saginaw"
+  },
+  "488": {
+    "city": "Lansing",
+    "state": "MI",
+    "carrier": "TMO",
+    "metro": "Lansing"
+  },
+  "489": {
+    "city": "Lansing",
+    "state": "MI",
+    "carrier": "TMO",
+    "metro": "Lansing"
+  },
+  "490": {
+    "city": "Kalamazoo",
+    "state": "MI",
+    "carrier": "TMO",
+    "metro": "Kalamazoo"
+  },
+  "491": {
+    "city": "Kalamazoo",
+    "state": "MI",
+    "carrier": "TMO",
+    "metro": "Kalamazoo"
+  },
+  "492": {
+    "city": "Jackson",
+    "state": "MI",
+    "carrier": "TMO",
+    "metro": "Jackson"
+  },
+  "493": {
+    "city": "Grand Rapids",
+    "state": "MI",
+    "carrier": "TMO",
+    "metro": "Grand Rapids"
+  },
+  "494": {
+    "city": "Grand Rapids",
+    "state": "MI",
+    "carrier": "TMO",
+    "metro": "Grand Rapids"
+  },
+  "495": {
+    "city": "Grand Rapids",
+    "state": "MI",
+    "carrier": "TMO",
+    "metro": "Grand Rapids"
+  },
+  "496": {
+    "city": "Traverse City",
+    "state": "MI",
+    "carrier": "VZ",
+    "metro": "N. Michigan"
+  },
+  "497": {
+    "city": "Gaylord",
+    "state": "MI",
+    "carrier": "VZ",
+    "metro": "N. Michigan"
+  },
+  "498": {
+    "city": "Iron Mountain",
+    "state": "MI",
+    "carrier": "VZ",
+    "metro": "Upper Peninsula"
+  },
+  "499": {
+    "city": "Iron Mountain",
+    "state": "MI",
+    "carrier": "VZ",
+    "metro": "Upper Peninsula"
+  },
+  "500": {
+    "city": "Des Moines",
+    "state": "IA",
+    "carrier": "VZ",
+    "metro": "Des Moines"
+  },
+  "501": {
+    "city": "Des Moines",
+    "state": "IA",
+    "carrier": "VZ",
+    "metro": "Des Moines"
+  },
+  "502": {
+    "city": "Des Moines",
+    "state": "IA",
+    "carrier": "VZ",
+    "metro": "Des Moines"
+  },
+  "520": {
+    "city": "Dubuque",
+    "state": "IA",
+    "carrier": "VZ",
+    "metro": "Dubuque"
+  },
+  "530": {
+    "city": "Milwaukee",
+    "state": "WI",
+    "carrier": "TMO",
+    "metro": "Milwaukee"
+  },
+  "531": {
+    "city": "Milwaukee",
+    "state": "WI",
+    "carrier": "TMO",
+    "metro": "Milwaukee"
+  },
+  "532": {
+    "city": "Milwaukee",
+    "state": "WI",
+    "carrier": "TMO",
+    "metro": "Milwaukee"
+  },
+  "534": {
+    "city": "Racine",
+    "state": "WI",
+    "carrier": "TMO",
+    "metro": "SE Wisconsin"
+  },
+  "535": {
+    "city": "Madison",
+    "state": "WI",
+    "carrier": "TMO",
+    "metro": "Madison"
+  },
+  "537": {
+    "city": "Madison",
+    "state": "WI",
+    "carrier": "TMO",
+    "metro": "Madison"
+  },
+  "540": {
+    "city": "Green Bay",
+    "state": "WI",
+    "carrier": "VZ",
+    "metro": "Green Bay"
+  },
+  "541": {
+    "city": "Green Bay",
+    "state": "WI",
+    "carrier": "VZ",
+    "metro": "Green Bay"
+  },
+  "544": {
+    "city": "Wausau",
+    "state": "WI",
+    "carrier": "VZ",
+    "metro": "Central WI"
+  },
+  "546": {
+    "city": "La Crosse",
+    "state": "WI",
+    "carrier": "VZ",
+    "metro": "W. Wisconsin"
+  },
+  "548": {
+    "city": "Eau Claire",
+    "state": "WI",
+    "carrier": "VZ",
+    "metro": "W. Central WI"
+  },
+  "549": {
+    "city": "Oshkosh",
+    "state": "WI",
+    "carrier": "VZ",
+    "metro": "Fox Valley"
+  },
+  "550": {
+    "city": "St. Paul",
+    "state": "MN",
+    "carrier": "TMO",
+    "metro": "Twin Cities"
+  },
+  "551": {
+    "city": "St. Paul",
+    "state": "MN",
+    "carrier": "TMO",
+    "metro": "Twin Cities"
+  },
+  "553": {
+    "city": "Minneapolis",
+    "state": "MN",
+    "carrier": "TMO",
+    "metro": "Twin Cities"
+  },
+  "554": {
+    "city": "Minneapolis",
+    "state": "MN",
+    "carrier": "TMO",
+    "metro": "Twin Cities"
+  },
+  "555": {
+    "city": "Minneapolis",
+    "state": "MN",
+    "carrier": "TMO",
+    "metro": "Twin Cities"
+  },
+  "556": {
+    "city": "Duluth",
+    "state": "MN",
+    "carrier": "VZ",
+    "metro": "Duluth"
+  },
+  "557": {
+    "city": "Duluth",
+    "state": "MN",
+    "carrier": "VZ",
+    "metro": "Duluth"
+  },
+  "558": {
+    "city": "Duluth",
+    "state": "MN",
+    "carrier": "VZ",
+    "metro": "Duluth"
+  },
+  "559": {
+    "city": "Rochester",
+    "state": "MN",
+    "carrier": "VZ",
+    "metro": "SE Minnesota"
+  },
+  "560": {
+    "city": "Mankato",
+    "state": "MN",
+    "carrier": "VZ",
+    "metro": "S. Minnesota"
+  },
+  "562": {
+    "city": "St. Cloud",
+    "state": "MN",
+    "carrier": "VZ",
+    "metro": "Central MN"
+  },
+  "570": {
+    "city": "Sioux Falls",
+    "state": "SD",
+    "carrier": "VZ",
+    "metro": "Sioux Falls"
+  },
+  "580": {
+    "city": "Fargo",
+    "state": "ND",
+    "carrier": "VZ",
+    "metro": "Fargo"
+  },
+  "590": {
+    "city": "Billings",
+    "state": "MT",
+    "carrier": "VZ",
+    "metro": "Billings"
+  },
+  "591": {
+    "city": "Billings",
+    "state": "MT",
+    "carrier": "VZ",
+    "metro": "Billings"
+  },
+  "596": {
+    "city": "Helena",
+    "state": "MT",
+    "carrier": "VZ",
+    "metro": "Helena"
+  },
+  "598": {
+    "city": "Missoula",
+    "state": "MT",
+    "carrier": "VZ",
+    "metro": "Missoula"
+  },
+  "600": {
+    "city": "Chicago",
+    "state": "IL",
+    "carrier": "TMO",
+    "metro": "Chicago"
+  },
+  "601": {
+    "city": "Chicago",
+    "state": "IL",
+    "carrier": "TMO",
+    "metro": "Chicago"
+  },
+  "602": {
+    "city": "Evanston",
+    "state": "IL",
+    "carrier": "TMO",
+    "metro": "North Shore"
+  },
+  "603": {
+    "city": "Oak Park",
+    "state": "IL",
+    "carrier": "TMO",
+    "metro": "W. Suburbs"
+  },
+  "604": {
+    "city": "Joliet",
+    "state": "IL",
+    "carrier": "TMO",
+    "metro": "SW Suburbs"
+  },
+  "605": {
+    "city": "Fox Valley",
+    "state": "IL",
+    "carrier": "TMO",
+    "metro": "W. Suburbs"
+  },
+  "606": {
+    "city": "Chicago",
+    "state": "IL",
+    "carrier": "TMO",
+    "metro": "Chicago"
+  },
+  "607": {
+    "city": "Chicago",
+    "state": "IL",
+    "carrier": "TMO",
+    "metro": "Chicago"
+  },
+  "608": {
+    "city": "Kankakee",
+    "state": "IL",
+    "carrier": "TMO",
+    "metro": "Kankakee"
+  },
+  "609": {
+    "city": "Kankakee",
+    "state": "IL",
+    "carrier": "TMO",
+    "metro": "Kankakee"
+  },
+  "610": {
+    "city": "Rockford",
+    "state": "IL",
+    "carrier": "TMO",
+    "metro": "Rockford"
+  },
+  "611": {
+    "city": "Rockford",
+    "state": "IL",
+    "carrier": "TMO",
+    "metro": "Rockford"
+  },
+  "612": {
+    "city": "Rock Island",
+    "state": "IL",
+    "carrier": "TMO",
+    "metro": "Quad Cities"
+  },
+  "614": {
+    "city": "Galesburg",
+    "state": "IL",
+    "carrier": "TMO",
+    "metro": "W. Illinois"
+  },
+  "615": {
+    "city": "Peoria",
+    "state": "IL",
+    "carrier": "TMO",
+    "metro": "Peoria"
+  },
+  "616": {
+    "city": "Peoria",
+    "state": "IL",
+    "carrier": "TMO",
+    "metro": "Peoria"
+  },
+  "617": {
+    "city": "Bloomington",
+    "state": "IL",
+    "carrier": "TMO",
+    "metro": "Bloomington-Normal"
+  },
+  "618": {
+    "city": "Champaign",
+    "state": "IL",
+    "carrier": "TMO",
+    "metro": "Champaign-Urbana"
+  },
+  "619": {
+    "city": "Champaign",
+    "state": "IL",
+    "carrier": "TMO",
+    "metro": "Champaign-Urbana"
+  },
+  "620": {
+    "city": "Springfield",
+    "state": "IL",
+    "carrier": "TMO",
+    "metro": "Springfield"
+  },
+  "622": {
+    "city": "E. St. Louis",
+    "state": "IL",
+    "carrier": "TMO",
+    "metro": "Metro East"
+  },
+  "623": {
+    "city": "Quincy",
+    "state": "IL",
+    "carrier": "TMO",
+    "metro": "W. Illinois"
+  },
+  "625": {
+    "city": "Springfield",
+    "state": "IL",
+    "carrier": "TMO",
+    "metro": "Springfield"
+  },
+  "626": {
+    "city": "Springfield",
+    "state": "IL",
+    "carrier": "TMO",
+    "metro": "Springfield"
+  },
+  "627": {
+    "city": "Springfield",
+    "state": "IL",
+    "carrier": "TMO",
+    "metro": "Springfield"
+  },
+  "628": {
+    "city": "Centralia",
+    "state": "IL",
+    "carrier": "TMO",
+    "metro": "S. Illinois"
+  },
+  "629": {
+    "city": "Carbondale",
+    "state": "IL",
+    "carrier": "TMO",
+    "metro": "S. Illinois"
+  },
+  "630": {
+    "city": "St. Louis",
+    "state": "MO",
+    "carrier": "TMO",
+    "metro": "St. Louis"
+  },
+  "631": {
+    "city": "St. Louis",
+    "state": "MO",
+    "carrier": "TMO",
+    "metro": "St. Louis"
+  },
+  "633": {
+    "city": "St. Louis",
+    "state": "MO",
+    "carrier": "TMO",
+    "metro": "St. Louis"
+  },
+  "634": {
+    "city": "Quincy",
+    "state": "IL",
+    "carrier": "TMO",
+    "metro": "NE Missouri"
+  },
+  "640": {
+    "city": "Kansas City",
+    "state": "MO",
+    "carrier": "TMO",
+    "metro": "Kansas City"
+  },
+  "641": {
+    "city": "Kansas City",
+    "state": "MO",
+    "carrier": "TMO",
+    "metro": "Kansas City"
+  },
+  "644": {
+    "city": "St. Joseph",
+    "state": "MO",
+    "carrier": "TMO",
+    "metro": "NW Missouri"
+  },
+  "645": {
+    "city": "St. Joseph",
+    "state": "MO",
+    "carrier": "TMO",
+    "metro": "NW Missouri"
+  },
+  "648": {
+    "city": "Springfield",
+    "state": "MO",
+    "carrier": "TMO",
+    "metro": "Springfield"
+  },
+  "650": {
+    "city": "Jefferson City",
+    "state": "MO",
+    "carrier": "TMO",
+    "metro": "Central MO"
+  },
+  "651": {
+    "city": "Jefferson City",
+    "state": "MO",
+    "carrier": "TMO",
+    "metro": "Central MO"
+  },
+  "660": {
+    "city": "Kansas City",
+    "state": "KS",
+    "carrier": "TMO",
+    "metro": "Kansas City"
+  },
+  "661": {
+    "city": "Kansas City",
+    "state": "KS",
+    "carrier": "TMO",
+    "metro": "Kansas City"
+  },
+  "662": {
+    "city": "Shawnee Mission",
+    "state": "KS",
+    "carrier": "TMO",
+    "metro": "Kansas City"
+  },
+  "664": {
+    "city": "Topeka",
+    "state": "KS",
+    "carrier": "TMO",
+    "metro": "Topeka"
+  },
+  "665": {
+    "city": "Topeka",
+    "state": "KS",
+    "carrier": "TMO",
+    "metro": "Topeka"
+  },
+  "666": {
+    "city": "Topeka",
+    "state": "KS",
+    "carrier": "TMO",
+    "metro": "Topeka"
+  },
+  "670": {
+    "city": "Wichita",
+    "state": "KS",
+    "carrier": "TMO",
+    "metro": "Wichita"
+  },
+  "671": {
+    "city": "Wichita",
+    "state": "KS",
+    "carrier": "TMO",
+    "metro": "Wichita"
+  },
+  "672": {
+    "city": "Wichita",
+    "state": "KS",
+    "carrier": "TMO",
+    "metro": "Wichita"
+  },
+  "680": {
+    "city": "Omaha",
+    "state": "NE",
+    "carrier": "VZ",
+    "metro": "Omaha"
+  },
+  "681": {
+    "city": "Omaha",
+    "state": "NE",
+    "carrier": "VZ",
+    "metro": "Omaha"
+  },
+  "685": {
+    "city": "Lincoln",
+    "state": "NE",
+    "carrier": "VZ",
+    "metro": "Lincoln"
+  },
+  "700": {
+    "city": "New Orleans",
+    "state": "LA",
+    "carrier": "ATT",
+    "metro": "New Orleans"
+  },
+  "701": {
+    "city": "New Orleans",
+    "state": "LA",
+    "carrier": "ATT",
+    "metro": "New Orleans"
+  },
+  "703": {
+    "city": "Thibodaux",
+    "state": "LA",
+    "carrier": "ATT",
+    "metro": "Bayou"
+  },
+  "704": {
+    "city": "Hammond",
+    "state": "LA",
+    "carrier": "ATT",
+    "metro": "Northshore"
+  },
+  "705": {
+    "city": "Lafayette",
+    "state": "LA",
+    "carrier": "ATT",
+    "metro": "Acadiana"
+  },
+  "706": {
+    "city": "Lake Charles",
+    "state": "LA",
+    "carrier": "ATT",
+    "metro": "SW Louisiana"
+  },
+  "707": {
+    "city": "Baton Rouge",
+    "state": "LA",
+    "carrier": "ATT",
+    "metro": "Baton Rouge"
+  },
+  "708": {
+    "city": "Baton Rouge",
+    "state": "LA",
+    "carrier": "ATT",
+    "metro": "Baton Rouge"
+  },
+  "710": {
+    "city": "Shreveport",
+    "state": "LA",
+    "carrier": "ATT",
+    "metro": "Shreveport"
+  },
+  "711": {
+    "city": "Shreveport",
+    "state": "LA",
+    "carrier": "ATT",
+    "metro": "Shreveport"
+  },
+  "712": {
+    "city": "Monroe",
+    "state": "LA",
+    "carrier": "ATT",
+    "metro": "NE Louisiana"
+  },
+  "713": {
+    "city": "Alexandria",
+    "state": "LA",
+    "carrier": "ATT",
+    "metro": "Central LA"
+  },
+  "716": {
+    "city": "Pine Bluff",
+    "state": "AR",
+    "carrier": "ATT",
+    "metro": "SE Arkansas"
+  },
+  "717": {
+    "city": "Camden",
+    "state": "AR",
+    "carrier": "ATT",
+    "metro": "S. Arkansas"
+  },
+  "718": {
+    "city": "Texarkana",
+    "state": "AR",
+    "carrier": "ATT",
+    "metro": "Texarkana"
+  },
+  "719": {
+    "city": "Hot Springs",
+    "state": "AR",
+    "carrier": "ATT",
+    "metro": "Hot Springs"
+  },
+  "720": {
+    "city": "Little Rock",
+    "state": "AR",
+    "carrier": "ATT",
+    "metro": "Little Rock"
+  },
+  "721": {
+    "city": "Little Rock",
+    "state": "AR",
+    "carrier": "ATT",
+    "metro": "Little Rock"
+  },
+  "722": {
+    "city": "Little Rock",
+    "state": "AR",
+    "carrier": "ATT",
+    "metro": "Little Rock"
+  },
+  "723": {
+    "city": "Memphis",
+    "state": "TN",
+    "carrier": "ATT",
+    "metro": "W. Arkansas"
+  },
+  "724": {
+    "city": "Jonesboro",
+    "state": "AR",
+    "carrier": "ATT",
+    "metro": "NE Arkansas"
+  },
+  "725": {
+    "city": "Batesville",
+    "state": "AR",
+    "carrier": "ATT",
+    "metro": "N. Central AR"
+  },
+  "726": {
+    "city": "Harrison",
+    "state": "AR",
+    "carrier": "ATT",
+    "metro": "Ozarks"
+  },
+  "727": {
+    "city": "Fayetteville",
+    "state": "AR",
+    "carrier": "ATT",
+    "metro": "NW Arkansas"
+  },
+  "728": {
+    "city": "Russellville",
+    "state": "AR",
+    "carrier": "ATT",
+    "metro": "River Valley"
+  },
+  "729": {
+    "city": "Fort Smith",
+    "state": "AR",
+    "carrier": "ATT",
+    "metro": "Fort Smith"
+  },
+  "730": {
+    "city": "Oklahoma City",
+    "state": "OK",
+    "carrier": "ATT",
+    "metro": "OKC"
+  },
+  "731": {
+    "city": "Oklahoma City",
+    "state": "OK",
+    "carrier": "ATT",
+    "metro": "OKC"
+  },
+  "733": {
+    "city": "Austin",
+    "state": "TX",
+    "carrier": "TMO",
+    "metro": "Austin"
+  },
+  "734": {
+    "city": "Ardmore",
+    "state": "OK",
+    "carrier": "ATT",
+    "metro": "S. Oklahoma"
+  },
+  "735": {
+    "city": "Lawton",
+    "state": "OK",
+    "carrier": "ATT",
+    "metro": "SW Oklahoma"
+  },
+  "740": {
+    "city": "Tulsa",
+    "state": "OK",
+    "carrier": "ATT",
+    "metro": "Tulsa"
+  },
+  "741": {
+    "city": "Tulsa",
+    "state": "OK",
+    "carrier": "ATT",
+    "metro": "Tulsa"
+  },
+  "750": {
+    "city": "Dallas",
+    "state": "TX",
+    "carrier": "TMO",
+    "metro": "Dallas"
+  },
+  "751": {
+    "city": "Dallas",
+    "state": "TX",
+    "carrier": "TMO",
+    "metro": "Dallas"
+  },
+  "752": {
+    "city": "Dallas",
+    "state": "TX",
+    "carrier": "TMO",
+    "metro": "Dallas"
+  },
+  "753": {
+    "city": "Dallas",
+    "state": "TX",
+    "carrier": "TMO",
+    "metro": "Dallas"
+  },
+  "754": {
+    "city": "Greenville",
+    "state": "TX",
+    "carrier": "ATT",
+    "metro": "NE Texas"
+  },
+  "755": {
+    "city": "Texarkana",
+    "state": "TX",
+    "carrier": "ATT",
+    "metro": "Texarkana"
+  },
+  "756": {
+    "city": "Longview",
+    "state": "TX",
+    "carrier": "ATT",
+    "metro": "E. Texas"
+  },
+  "757": {
+    "city": "Tyler",
+    "state": "TX",
+    "carrier": "ATT",
+    "metro": "E. Texas"
+  },
+  "758": {
+    "city": "Palestine",
+    "state": "TX",
+    "carrier": "ATT",
+    "metro": "E. Texas"
+  },
+  "759": {
+    "city": "Lufkin",
+    "state": "TX",
+    "carrier": "ATT",
+    "metro": "Deep E. Texas"
+  },
+  "760": {
+    "city": "Fort Worth",
+    "state": "TX",
+    "carrier": "TMO",
+    "metro": "Fort Worth"
+  },
+  "761": {
+    "city": "Fort Worth",
+    "state": "TX",
+    "carrier": "TMO",
+    "metro": "Fort Worth"
+  },
+  "762": {
+    "city": "Denton",
+    "state": "TX",
+    "carrier": "TMO",
+    "metro": "DFW"
+  },
+  "763": {
+    "city": "Wichita Falls",
+    "state": "TX",
+    "carrier": "ATT",
+    "metro": "N. Texas"
+  },
+  "764": {
+    "city": "Stephenville",
+    "state": "TX",
+    "carrier": "ATT",
+    "metro": "Central TX"
+  },
+  "765": {
+    "city": "Waco",
+    "state": "TX",
+    "carrier": "ATT",
+    "metro": "Waco"
+  },
+  "766": {
+    "city": "Waco",
+    "state": "TX",
+    "carrier": "ATT",
+    "metro": "Waco"
+  },
+  "767": {
+    "city": "Waco",
+    "state": "TX",
+    "carrier": "ATT",
+    "metro": "Waco"
+  },
+  "768": {
+    "city": "Abilene",
+    "state": "TX",
+    "carrier": "ATT",
+    "metro": "W. Central TX"
+  },
+  "769": {
+    "city": "Midland",
+    "state": "TX",
+    "carrier": "ATT",
+    "metro": "Permian Basin"
+  },
+  "770": {
+    "city": "Houston",
+    "state": "TX",
+    "carrier": "TMO",
+    "metro": "Houston"
+  },
+  "771": {
+    "city": "Houston",
+    "state": "TX",
+    "carrier": "TMO",
+    "metro": "Houston"
+  },
+  "772": {
+    "city": "Houston",
+    "state": "TX",
+    "carrier": "TMO",
+    "metro": "Houston"
+  },
+  "773": {
+    "city": "Huntsville",
+    "state": "TX",
+    "carrier": "ATT",
+    "metro": "E. Texas"
+  },
+  "774": {
+    "city": "Houston",
+    "state": "TX",
+    "carrier": "TMO",
+    "metro": "Houston"
+  },
+  "775": {
+    "city": "Galveston",
+    "state": "TX",
+    "carrier": "TMO",
+    "metro": "Gulf Coast"
+  },
+  "776": {
+    "city": "Beaumont",
+    "state": "TX",
+    "carrier": "ATT",
+    "metro": "SE Texas"
+  },
+  "777": {
+    "city": "Beaumont",
+    "state": "TX",
+    "carrier": "ATT",
+    "metro": "SE Texas"
+  },
+  "778": {
+    "city": "Bryan",
+    "state": "TX",
+    "carrier": "ATT",
+    "metro": "Brazos Valley"
+  },
+  "779": {
+    "city": "Victoria",
+    "state": "TX",
+    "carrier": "ATT",
+    "metro": "Crossroads"
+  },
+  "780": {
+    "city": "San Antonio",
+    "state": "TX",
+    "carrier": "TMO",
+    "metro": "San Antonio"
+  },
+  "781": {
+    "city": "San Antonio",
+    "state": "TX",
+    "carrier": "TMO",
+    "metro": "San Antonio"
+  },
+  "782": {
+    "city": "San Antonio",
+    "state": "TX",
+    "carrier": "TMO",
+    "metro": "San Antonio"
+  },
+  "783": {
+    "city": "Corpus Christi",
+    "state": "TX",
+    "carrier": "ATT",
+    "metro": "Coastal Bend"
+  },
+  "784": {
+    "city": "Corpus Christi",
+    "state": "TX",
+    "carrier": "ATT",
+    "metro": "Coastal Bend"
+  },
+  "785": {
+    "city": "McAllen",
+    "state": "TX",
+    "carrier": "TMO",
+    "metro": "Rio Grande Valley"
+  },
+  "786": {
+    "city": "Austin",
+    "state": "TX",
+    "carrier": "TMO",
+    "metro": "Austin"
+  },
+  "787": {
+    "city": "Austin",
+    "state": "TX",
+    "carrier": "TMO",
+    "metro": "Austin"
+  },
+  "788": {
+    "city": "San Antonio",
+    "state": "TX",
+    "carrier": "TMO",
+    "metro": "San Antonio"
+  },
+  "789": {
+    "city": "Austin",
+    "state": "TX",
+    "carrier": "TMO",
+    "metro": "Austin"
+  },
+  "790": {
+    "city": "Amarillo",
+    "state": "TX",
+    "carrier": "ATT",
+    "metro": "Texas Panhandle"
+  },
+  "791": {
+    "city": "Amarillo",
+    "state": "TX",
+    "carrier": "ATT",
+    "metro": "Texas Panhandle"
+  },
+  "792": {
+    "city": "Lubbock",
+    "state": "TX",
+    "carrier": "ATT",
+    "metro": "Lubbock"
+  },
+  "793": {
+    "city": "Lubbock",
+    "state": "TX",
+    "carrier": "ATT",
+    "metro": "Lubbock"
+  },
+  "794": {
+    "city": "Lubbock",
+    "state": "TX",
+    "carrier": "ATT",
+    "metro": "Lubbock"
+  },
+  "795": {
+    "city": "Abilene",
+    "state": "TX",
+    "carrier": "ATT",
+    "metro": "W. Central TX"
+  },
+  "796": {
+    "city": "Abilene",
+    "state": "TX",
+    "carrier": "ATT",
+    "metro": "W. Central TX"
+  },
+  "797": {
+    "city": "Midland",
+    "state": "TX",
+    "carrier": "ATT",
+    "metro": "Permian Basin"
+  },
+  "798": {
+    "city": "El Paso",
+    "state": "TX",
+    "carrier": "TMO",
+    "metro": "El Paso"
+  },
+  "799": {
+    "city": "El Paso",
+    "state": "TX",
+    "carrier": "TMO",
+    "metro": "El Paso"
+  },
+  "800": {
+    "city": "Denver",
+    "state": "CO",
+    "carrier": "TMO",
+    "metro": "Denver"
+  },
+  "801": {
+    "city": "Denver",
+    "state": "CO",
+    "carrier": "TMO",
+    "metro": "Denver"
+  },
+  "802": {
+    "city": "Denver",
+    "state": "CO",
+    "carrier": "TMO",
+    "metro": "Denver"
+  },
+  "803": {
+    "city": "Boulder",
+    "state": "CO",
+    "carrier": "TMO",
+    "metro": "Boulder"
+  },
+  "804": {
+    "city": "Denver",
+    "state": "CO",
+    "carrier": "TMO",
+    "metro": "Denver"
+  },
+  "805": {
+    "city": "Longmont",
+    "state": "CO",
+    "carrier": "TMO",
+    "metro": "N. Front Range"
+  },
+  "806": {
+    "city": "Fort Collins",
+    "state": "CO",
+    "carrier": "TMO",
+    "metro": "Fort Collins"
+  },
+  "807": {
+    "city": "Fort Collins",
+    "state": "CO",
+    "carrier": "TMO",
+    "metro": "Fort Collins"
+  },
+  "808": {
+    "city": "Colorado Springs",
+    "state": "CO",
+    "carrier": "TMO",
+    "metro": "Colorado Springs"
+  },
+  "809": {
+    "city": "Colorado Springs",
+    "state": "CO",
+    "carrier": "TMO",
+    "metro": "Colorado Springs"
+  },
+  "810": {
+    "city": "Pueblo",
+    "state": "CO",
+    "carrier": "TMO",
+    "metro": "Pueblo"
+  },
+  "811": {
+    "city": "Alamosa",
+    "state": "CO",
+    "carrier": "VZ",
+    "metro": "San Luis Valley"
+  },
+  "812": {
+    "city": "Salida",
+    "state": "CO",
+    "carrier": "VZ",
+    "metro": "Central Mountains"
+  },
+  "813": {
+    "city": "Durango",
+    "state": "CO",
+    "carrier": "VZ",
+    "metro": "SW Colorado"
+  },
+  "814": {
+    "city": "Grand Junction",
+    "state": "CO",
+    "carrier": "VZ",
+    "metro": "Western Slope"
+  },
+  "815": {
+    "city": "Grand Junction",
+    "state": "CO",
+    "carrier": "VZ",
+    "metro": "Western Slope"
+  },
+  "816": {
+    "city": "Glenwood Springs",
+    "state": "CO",
+    "carrier": "VZ",
+    "metro": "Mountain"
+  },
+  "820": {
+    "city": "Cheyenne",
+    "state": "WY",
+    "carrier": "VZ",
+    "metro": "Cheyenne"
+  },
+  "821": {
+    "city": "Yellowstone",
+    "state": "WY",
+    "carrier": "VZ",
+    "metro": "NW Wyoming"
+  },
+  "822": {
+    "city": "Wheatland",
+    "state": "WY",
+    "carrier": "VZ",
+    "metro": "SE Wyoming"
+  },
+  "823": {
+    "city": "Rawlins",
+    "state": "WY",
+    "carrier": "VZ",
+    "metro": "Central WY"
+  },
+  "824": {
+    "city": "Worland",
+    "state": "WY",
+    "carrier": "VZ",
+    "metro": "N. Central WY"
+  },
+  "825": {
+    "city": "Riverton",
+    "state": "WY",
+    "carrier": "VZ",
+    "metro": "Central WY"
+  },
+  "826": {
+    "city": "Casper",
+    "state": "WY",
+    "carrier": "VZ",
+    "metro": "Casper"
+  },
+  "827": {
+    "city": "Gillette",
+    "state": "WY",
+    "carrier": "VZ",
+    "metro": "NE Wyoming"
+  },
+  "828": {
+    "city": "Sheridan",
+    "state": "WY",
+    "carrier": "VZ",
+    "metro": "N. Wyoming"
+  },
+  "829": {
+    "city": "Rock Springs",
+    "state": "WY",
+    "carrier": "VZ",
+    "metro": "SW Wyoming"
+  },
+  "830": {
+    "city": "Rock Springs",
+    "state": "WY",
+    "carrier": "VZ",
+    "metro": "SW Wyoming"
+  },
+  "831": {
+    "city": "Rock Springs",
+    "state": "WY",
+    "carrier": "VZ",
+    "metro": "SW Wyoming"
+  },
+  "832": {
+    "city": "Pocatello",
+    "state": "ID",
+    "carrier": "VZ",
+    "metro": "SE Idaho"
+  },
+  "833": {
+    "city": "Twin Falls",
+    "state": "ID",
+    "carrier": "VZ",
+    "metro": "S. Central ID"
+  },
+  "834": {
+    "city": "Pocatello",
+    "state": "ID",
+    "carrier": "VZ",
+    "metro": "SE Idaho"
+  },
+  "835": {
+    "city": "Lewiston",
+    "state": "ID",
+    "carrier": "VZ",
+    "metro": "N. Idaho"
+  },
+  "836": {
+    "city": "Boise",
+    "state": "ID",
+    "carrier": "TMO",
+    "metro": "Boise"
+  },
+  "837": {
+    "city": "Boise",
+    "state": "ID",
+    "carrier": "TMO",
+    "metro": "Boise"
+  },
+  "838": {
+    "city": "Spokane",
+    "state": "WA",
+    "carrier": "TMO",
+    "metro": "Spokane"
+  },
+  "840": {
+    "city": "Salt Lake City",
+    "state": "UT",
+    "carrier": "TMO",
+    "metro": "Salt Lake City"
+  },
+  "841": {
+    "city": "Salt Lake City",
+    "state": "UT",
+    "carrier": "TMO",
+    "metro": "Salt Lake City"
+  },
+  "842": {
+    "city": "Ogden",
+    "state": "UT",
+    "carrier": "TMO",
+    "metro": "Ogden"
+  },
+  "843": {
+    "city": "Logan",
+    "state": "UT",
+    "carrier": "TMO",
+    "metro": "Cache Valley"
+  },
+  "844": {
+    "city": "Ogden",
+    "state": "UT",
+    "carrier": "TMO",
+    "metro": "Ogden"
+  },
+  "845": {
+    "city": "Provo",
+    "state": "UT",
+    "carrier": "TMO",
+    "metro": "Utah County"
+  },
+  "846": {
+    "city": "Provo",
+    "state": "UT",
+    "carrier": "TMO",
+    "metro": "Utah County"
+  },
+  "847": {
+    "city": "Provo",
+    "state": "UT",
+    "carrier": "TMO",
+    "metro": "Utah County"
+  },
+  "850": {
+    "city": "Phoenix",
+    "state": "AZ",
+    "carrier": "TMO",
+    "metro": "Phoenix"
+  },
+  "851": {
+    "city": "Phoenix",
+    "state": "AZ",
+    "carrier": "TMO",
+    "metro": "Phoenix"
+  },
+  "852": {
+    "city": "Mesa",
+    "state": "AZ",
+    "carrier": "TMO",
+    "metro": "East Valley"
+  },
+  "853": {
+    "city": "Chandler",
+    "state": "AZ",
+    "carrier": "TMO",
+    "metro": "SE Valley"
+  },
+  "854": {
+    "city": "Cave Creek",
+    "state": "AZ",
+    "carrier": "TMO",
+    "metro": "N. Scottsdale"
+  },
+  "855": {
+    "city": "Globe",
+    "state": "AZ",
+    "carrier": "VZ",
+    "metro": "Gila County"
+  },
+  "856": {
+    "city": "Tucson",
+    "state": "AZ",
+    "carrier": "TMO",
+    "metro": "Tucson"
+  },
+  "857": {
+    "city": "Tucson",
+    "state": "AZ",
+    "carrier": "TMO",
+    "metro": "Tucson"
+  },
+  "859": {
+    "city": "Show Low",
+    "state": "AZ",
+    "carrier": "VZ",
+    "metro": "White Mountains"
+  },
+  "860": {
+    "city": "Flagstaff",
+    "state": "AZ",
+    "carrier": "VZ",
+    "metro": "N. Arizona"
+  },
+  "863": {
+    "city": "Prescott",
+    "state": "AZ",
+    "carrier": "VZ",
+    "metro": "Prescott"
+  },
+  "864": {
+    "city": "Kingman",
+    "state": "AZ",
+    "carrier": "VZ",
+    "metro": "NW Arizona"
+  },
+  "865": {
+    "city": "Yuma",
+    "state": "AZ",
+    "carrier": "VZ",
+    "metro": "SW Arizona"
+  },
+  "870": {
+    "city": "Albuquerque",
+    "state": "NM",
+    "carrier": "TMO",
+    "metro": "Albuquerque"
+  },
+  "871": {
+    "city": "Albuquerque",
+    "state": "NM",
+    "carrier": "TMO",
+    "metro": "Albuquerque"
+  },
+  "873": {
+    "city": "Gallup",
+    "state": "NM",
+    "carrier": "VZ",
+    "metro": "NW New Mexico"
+  },
+  "874": {
+    "city": "Farmington",
+    "state": "NM",
+    "carrier": "VZ",
+    "metro": "Four Corners"
+  },
+  "875": {
+    "city": "Santa Fe",
+    "state": "NM",
+    "carrier": "TMO",
+    "metro": "Santa Fe"
+  },
+  "877": {
+    "city": "Las Vegas",
+    "state": "NM",
+    "carrier": "VZ",
+    "metro": "NE New Mexico"
+  },
+  "878": {
+    "city": "Socorro",
+    "state": "NM",
+    "carrier": "VZ",
+    "metro": "Central NM"
+  },
+  "879": {
+    "city": "Las Cruces",
+    "state": "NM",
+    "carrier": "TMO",
+    "metro": "S. New Mexico"
+  },
+  "880": {
+    "city": "Las Cruces",
+    "state": "NM",
+    "carrier": "TMO",
+    "metro": "S. New Mexico"
+  },
+  "881": {
+    "city": "Clovis",
+    "state": "NM",
+    "carrier": "VZ",
+    "metro": "E. New Mexico"
+  },
+  "882": {
+    "city": "Roswell",
+    "state": "NM",
+    "carrier": "VZ",
+    "metro": "SE New Mexico"
+  },
+  "883": {
+    "city": "Alamogordo",
+    "state": "NM",
+    "carrier": "VZ",
+    "metro": "S. Central NM"
+  },
+  "889": {
+    "city": "Las Vegas",
+    "state": "NV",
+    "carrier": "TMO",
+    "metro": "Las Vegas"
+  },
+  "890": {
+    "city": "Las Vegas",
+    "state": "NV",
+    "carrier": "TMO",
+    "metro": "Las Vegas"
+  },
+  "891": {
+    "city": "Las Vegas",
+    "state": "NV",
+    "carrier": "TMO",
+    "metro": "Las Vegas"
+  },
+  "893": {
+    "city": "Ely",
+    "state": "NV",
+    "carrier": "VZ",
+    "metro": "E. Nevada"
+  },
+  "894": {
+    "city": "Reno",
+    "state": "NV",
+    "carrier": "TMO",
+    "metro": "Reno"
+  },
+  "895": {
+    "city": "Reno",
+    "state": "NV",
+    "carrier": "TMO",
+    "metro": "Reno"
+  },
+  "897": {
+    "city": "Carson City",
+    "state": "NV",
+    "carrier": "TMO",
+    "metro": "Carson City"
+  },
+  "898": {
+    "city": "Elko",
+    "state": "NV",
+    "carrier": "VZ",
+    "metro": "NE Nevada"
+  },
+  "900": {
+    "city": "Los Angeles",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "LA"
+  },
+  "901": {
+    "city": "Los Angeles",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "LA"
+  },
+  "902": {
+    "city": "Inglewood",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "LA"
+  },
+  "903": {
+    "city": "Inglewood",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "LA"
+  },
+  "904": {
+    "city": "Santa Monica",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "Westside LA"
+  },
+  "905": {
+    "city": "Torrance",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "South Bay"
+  },
+  "906": {
+    "city": "Whittier",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "SE LA County"
+  },
+  "907": {
+    "city": "Long Beach",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "Long Beach"
+  },
+  "908": {
+    "city": "Long Beach",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "Long Beach"
+  },
+  "910": {
+    "city": "Pasadena",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "San Gabriel Valley"
+  },
+  "911": {
+    "city": "Pasadena",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "San Gabriel Valley"
+  },
+  "912": {
+    "city": "Glendale",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "LA"
+  },
+  "913": {
+    "city": "Van Nuys",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "San Fernando Valley"
+  },
+  "914": {
+    "city": "Van Nuys",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "San Fernando Valley"
+  },
+  "915": {
+    "city": "Burbank",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "LA"
+  },
+  "916": {
+    "city": "North Hollywood",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "San Fernando Valley"
+  },
+  "917": {
+    "city": "Alhambra",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "San Gabriel Valley"
+  },
+  "918": {
+    "city": "Alhambra",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "San Gabriel Valley"
+  },
+  "919": {
+    "city": "San Diego",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "San Diego"
+  },
+  "920": {
+    "city": "San Diego",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "San Diego"
+  },
+  "921": {
+    "city": "San Diego",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "San Diego"
+  },
+  "922": {
+    "city": "Palm Springs",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "Coachella Valley"
+  },
+  "923": {
+    "city": "San Bernardino",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "Inland Empire"
+  },
+  "924": {
+    "city": "San Bernardino",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "Inland Empire"
+  },
+  "925": {
+    "city": "Riverside",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "Inland Empire"
+  },
+  "926": {
+    "city": "Santa Ana",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "Orange County"
+  },
+  "927": {
+    "city": "Santa Ana",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "Orange County"
+  },
+  "928": {
+    "city": "Anaheim",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "Orange County"
+  },
+  "930": {
+    "city": "Ventura",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "Ventura County"
+  },
+  "931": {
+    "city": "Santa Barbara",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "Santa Barbara"
+  },
+  "932": {
+    "city": "Bakersfield",
+    "state": "CA",
+    "carrier": "ATT",
+    "metro": "Kern County"
+  },
+  "933": {
+    "city": "Bakersfield",
+    "state": "CA",
+    "carrier": "ATT",
+    "metro": "Kern County"
+  },
+  "934": {
+    "city": "Santa Barbara",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "Santa Barbara"
+  },
+  "935": {
+    "city": "San Luis Obispo",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "Central Coast"
+  },
+  "936": {
+    "city": "Fresno",
+    "state": "CA",
+    "carrier": "ATT",
+    "metro": "Fresno"
+  },
+  "937": {
+    "city": "Fresno",
+    "state": "CA",
+    "carrier": "ATT",
+    "metro": "Fresno"
+  },
+  "939": {
+    "city": "Salinas",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "Monterey Bay"
+  },
+  "940": {
+    "city": "San Francisco",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "San Francisco"
+  },
+  "941": {
+    "city": "San Francisco",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "San Francisco"
+  },
+  "942": {
+    "city": "Sacramento",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "Sacramento"
+  },
+  "943": {
+    "city": "Palo Alto",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "Peninsula"
+  },
+  "944": {
+    "city": "San Mateo",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "Peninsula"
+  },
+  "945": {
+    "city": "Oakland",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "East Bay"
+  },
+  "946": {
+    "city": "Oakland",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "East Bay"
+  },
+  "947": {
+    "city": "Berkeley",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "East Bay"
+  },
+  "948": {
+    "city": "Richmond",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "East Bay"
+  },
+  "949": {
+    "city": "San Rafael",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "Marin"
+  },
+  "950": {
+    "city": "San Jose",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "South Bay"
+  },
+  "951": {
+    "city": "San Jose",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "South Bay"
+  },
+  "952": {
+    "city": "Stockton",
+    "state": "CA",
+    "carrier": "ATT",
+    "metro": "San Joaquin"
+  },
+  "953": {
+    "city": "Stockton",
+    "state": "CA",
+    "carrier": "ATT",
+    "metro": "San Joaquin"
+  },
+  "954": {
+    "city": "Santa Rosa",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "Sonoma County"
+  },
+  "955": {
+    "city": "Eureka",
+    "state": "CA",
+    "carrier": "VZ",
+    "metro": "North Coast"
+  },
+  "956": {
+    "city": "Sacramento",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "Sacramento"
+  },
+  "957": {
+    "city": "Sacramento",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "Sacramento"
+  },
+  "958": {
+    "city": "Sacramento",
+    "state": "CA",
+    "carrier": "TMO",
+    "metro": "Sacramento"
+  },
+  "959": {
+    "city": "Marysville",
+    "state": "CA",
+    "carrier": "ATT",
+    "metro": "Yuba-Sutter"
+  },
+  "960": {
+    "city": "Redding",
+    "state": "CA",
+    "carrier": "VZ",
+    "metro": "N. California"
+  },
+  "961": {
+    "city": "Reno",
+    "state": "NV",
+    "carrier": "TMO",
+    "metro": "Reno"
+  },
+  "967": {
+    "city": "Honolulu",
+    "state": "HI",
+    "carrier": "ATT",
+    "metro": "Honolulu"
+  },
+  "968": {
+    "city": "Honolulu",
+    "state": "HI",
+    "carrier": "ATT",
+    "metro": "Honolulu"
+  },
+  "970": {
+    "city": "Portland",
+    "state": "OR",
+    "carrier": "TMO",
+    "metro": "Portland"
+  },
+  "971": {
+    "city": "Portland",
+    "state": "OR",
+    "carrier": "TMO",
+    "metro": "Portland"
+  },
+  "972": {
+    "city": "Portland",
+    "state": "OR",
+    "carrier": "TMO",
+    "metro": "Portland"
+  },
+  "973": {
+    "city": "Salem",
+    "state": "OR",
+    "carrier": "TMO",
+    "metro": "Salem"
+  },
+  "974": {
+    "city": "Eugene",
+    "state": "OR",
+    "carrier": "TMO",
+    "metro": "Eugene"
+  },
+  "975": {
+    "city": "Medford",
+    "state": "OR",
+    "carrier": "VZ",
+    "metro": "S. Oregon"
+  },
+  "976": {
+    "city": "Klamath Falls",
+    "state": "OR",
+    "carrier": "VZ",
+    "metro": "S. Central OR"
+  },
+  "977": {
+    "city": "Bend",
+    "state": "OR",
+    "carrier": "VZ",
+    "metro": "Central Oregon"
+  },
+  "978": {
+    "city": "Pendleton",
+    "state": "OR",
+    "carrier": "VZ",
+    "metro": "E. Oregon"
+  },
+  "979": {
+    "city": "Boise",
+    "state": "ID",
+    "carrier": "TMO",
+    "metro": "Boise"
+  },
+  "980": {
+    "city": "Seattle",
+    "state": "WA",
+    "carrier": "TMO",
+    "metro": "Seattle"
+  },
+  "981": {
+    "city": "Seattle",
+    "state": "WA",
+    "carrier": "TMO",
+    "metro": "Seattle"
+  },
+  "982": {
+    "city": "Everett",
+    "state": "WA",
+    "carrier": "TMO",
+    "metro": "Snohomish"
+  },
+  "983": {
+    "city": "Tacoma",
+    "state": "WA",
+    "carrier": "TMO",
+    "metro": "Tacoma"
+  },
+  "984": {
+    "city": "Tacoma",
+    "state": "WA",
+    "carrier": "TMO",
+    "metro": "Tacoma"
+  },
+  "985": {
+    "city": "Olympia",
+    "state": "WA",
+    "carrier": "TMO",
+    "metro": "Olympia"
+  },
+  "986": {
+    "city": "Portland",
+    "state": "OR",
+    "carrier": "TMO",
+    "metro": "Vancouver WA"
+  },
+  "988": {
+    "city": "Wenatchee",
+    "state": "WA",
+    "carrier": "VZ",
+    "metro": "Central WA"
+  },
+  "989": {
+    "city": "Yakima",
+    "state": "WA",
+    "carrier": "VZ",
+    "metro": "Yakima"
+  },
+  "990": {
+    "city": "Spokane",
+    "state": "WA",
+    "carrier": "TMO",
+    "metro": "Spokane"
+  },
+  "991": {
+    "city": "Spokane",
+    "state": "WA",
+    "carrier": "TMO",
+    "metro": "Spokane"
+  },
+  "992": {
+    "city": "Spokane",
+    "state": "WA",
+    "carrier": "TMO",
+    "metro": "Spokane"
+  },
+  "993": {
+    "city": "Richland",
+    "state": "WA",
+    "carrier": "VZ",
+    "metro": "Tri-Cities"
+  },
+  "994": {
+    "city": "Clarkston",
+    "state": "WA",
+    "carrier": "VZ",
+    "metro": "Lewiston-Clarkston"
+  },
+  "995": {
+    "city": "Anchorage",
+    "state": "AK",
+    "carrier": "ATT",
+    "metro": "Anchorage"
+  },
+  "996": {
+    "city": "Anchorage",
+    "state": "AK",
+    "carrier": "ATT",
+    "metro": "Anchorage"
+  },
+  "997": {
+    "city": "Fairbanks",
+    "state": "AK",
+    "carrier": "ATT",
+    "metro": "Fairbanks"
+  },
+  "998": {
+    "city": "Juneau",
+    "state": "AK",
+    "carrier": "ATT",
+    "metro": "SE Alaska"
+  },
+  "999": {
+    "city": "Ketchikan",
+    "state": "AK",
+    "carrier": "ATT",
+    "metro": "SE Alaska"
+  },
+  "010": {
+    "city": "Springfield",
+    "state": "MA",
+    "carrier": "VZ",
+    "metro": "Springfield"
+  },
+  "011": {
+    "city": "Springfield",
+    "state": "MA",
+    "carrier": "VZ",
+    "metro": "Springfield"
+  },
+  "012": {
+    "city": "Pittsfield",
+    "state": "MA",
+    "carrier": "VZ",
+    "metro": "Berkshires"
+  },
+  "013": {
+    "city": "Greenfield",
+    "state": "MA",
+    "carrier": "VZ",
+    "metro": "W. Mass"
+  },
+  "014": {
+    "city": "Worcester",
+    "state": "MA",
+    "carrier": "VZ",
+    "metro": "Worcester"
+  },
+  "015": {
+    "city": "Worcester",
+    "state": "MA",
+    "carrier": "VZ",
+    "metro": "Worcester"
+  },
+  "016": {
+    "city": "Worcester",
+    "state": "MA",
+    "carrier": "VZ",
+    "metro": "Worcester"
+  },
+  "017": {
+    "city": "Framingham",
+    "state": "MA",
+    "carrier": "VZ",
+    "metro": "MetroWest"
+  },
+  "018": {
+    "city": "Woburn",
+    "state": "MA",
+    "carrier": "VZ",
+    "metro": "Boston"
+  },
+  "019": {
+    "city": "Lynn",
+    "state": "MA",
+    "carrier": "VZ",
+    "metro": "North Shore"
+  },
+  "020": {
+    "city": "Brockton",
+    "state": "MA",
+    "carrier": "VZ",
+    "metro": "Boston"
+  },
+  "021": {
+    "city": "Boston",
+    "state": "MA",
+    "carrier": "VZ",
+    "metro": "Boston"
+  },
+  "022": {
+    "city": "Boston",
+    "state": "MA",
+    "carrier": "VZ",
+    "metro": "Boston"
+  },
+  "023": {
+    "city": "Brockton",
+    "state": "MA",
+    "carrier": "VZ",
+    "metro": "South Shore"
+  },
+  "024": {
+    "city": "Norwood",
+    "state": "MA",
+    "carrier": "VZ",
+    "metro": "Boston"
+  },
+  "025": {
+    "city": "Buzzards Bay",
+    "state": "MA",
+    "carrier": "VZ",
+    "metro": "Cape Cod"
+  },
+  "026": {
+    "city": "Hyannis",
+    "state": "MA",
+    "carrier": "VZ",
+    "metro": "Cape Cod"
+  },
+  "027": {
+    "city": "Providence",
+    "state": "RI",
+    "carrier": "VZ",
+    "metro": "Providence"
+  },
+  "028": {
+    "city": "Providence",
+    "state": "RI",
+    "carrier": "VZ",
+    "metro": "Providence"
+  },
+  "029": {
+    "city": "Warwick",
+    "state": "RI",
+    "carrier": "VZ",
+    "metro": "Providence"
+  },
+  "030": {
+    "city": "Manchester",
+    "state": "NH",
+    "carrier": "VZ",
+    "metro": "S. New Hampshire"
+  },
+  "031": {
+    "city": "Manchester",
+    "state": "NH",
+    "carrier": "VZ",
+    "metro": "S. New Hampshire"
+  },
+  "032": {
+    "city": "Concord",
+    "state": "NH",
+    "carrier": "VZ",
+    "metro": "Central NH"
+  },
+  "033": {
+    "city": "Concord",
+    "state": "NH",
+    "carrier": "VZ",
+    "metro": "Central NH"
+  },
+  "034": {
+    "city": "Keene",
+    "state": "NH",
+    "carrier": "VZ",
+    "metro": "SW New Hampshire"
+  },
+  "037": {
+    "city": "Claremont",
+    "state": "NH",
+    "carrier": "VZ",
+    "metro": "Upper Valley"
+  },
+  "038": {
+    "city": "Nashua",
+    "state": "NH",
+    "carrier": "VZ",
+    "metro": "S. New Hampshire"
+  },
+  "039": {
+    "city": "Portsmouth",
+    "state": "NH",
+    "carrier": "VZ",
+    "metro": "Seacoast"
+  },
+  "040": {
+    "city": "Portland",
+    "state": "ME",
+    "carrier": "VZ",
+    "metro": "Portland"
+  },
+  "041": {
+    "city": "Portland",
+    "state": "ME",
+    "carrier": "VZ",
+    "metro": "Portland"
+  },
+  "042": {
+    "city": "Auburn",
+    "state": "ME",
+    "carrier": "VZ",
+    "metro": "Lewiston-Auburn"
+  },
+  "043": {
+    "city": "Augusta",
+    "state": "ME",
+    "carrier": "VZ",
+    "metro": "Central Maine"
+  },
+  "044": {
+    "city": "Bangor",
+    "state": "ME",
+    "carrier": "VZ",
+    "metro": "Bangor"
+  },
+  "050": {
+    "city": "White River Jct",
+    "state": "VT",
+    "carrier": "VZ",
+    "metro": "Upper Valley"
+  },
+  "054": {
+    "city": "Burlington",
+    "state": "VT",
+    "carrier": "VZ",
+    "metro": "Burlington"
+  },
+  "060": {
+    "city": "Hartford",
+    "state": "CT",
+    "carrier": "VZ",
+    "metro": "Hartford"
+  },
+  "061": {
+    "city": "Hartford",
+    "state": "CT",
+    "carrier": "VZ",
+    "metro": "Hartford"
+  },
+  "062": {
+    "city": "Willimantic",
+    "state": "CT",
+    "carrier": "VZ",
+    "metro": "Eastern CT"
+  },
+  "063": {
+    "city": "New London",
+    "state": "CT",
+    "carrier": "VZ",
+    "metro": "SE Connecticut"
+  },
+  "064": {
+    "city": "New Haven",
+    "state": "CT",
+    "carrier": "VZ",
+    "metro": "New Haven"
+  },
+  "065": {
+    "city": "New Haven",
+    "state": "CT",
+    "carrier": "VZ",
+    "metro": "New Haven"
+  },
+  "066": {
+    "city": "Bridgeport",
+    "state": "CT",
+    "carrier": "VZ",
+    "metro": "Bridgeport"
+  },
+  "067": {
+    "city": "Waterbury",
+    "state": "CT",
+    "carrier": "VZ",
+    "metro": "Waterbury"
+  },
+  "068": {
+    "city": "Stamford",
+    "state": "CT",
+    "carrier": "VZ",
+    "metro": "Fairfield County"
+  },
+  "069": {
+    "city": "Danbury",
+    "state": "CT",
+    "carrier": "VZ",
+    "metro": "Fairfield County"
+  },
+  "070": {
+    "city": "Newark",
+    "state": "NJ",
+    "carrier": "VZ",
+    "metro": "Newark"
+  },
+  "071": {
+    "city": "Jersey City",
+    "state": "NJ",
+    "carrier": "VZ",
+    "metro": "Jersey City"
+  },
+  "072": {
+    "city": "Elizabeth",
+    "state": "NJ",
+    "carrier": "VZ",
+    "metro": "Elizabeth"
+  },
+  "073": {
+    "city": "Jersey City",
+    "state": "NJ",
+    "carrier": "VZ",
+    "metro": "N. Jersey"
+  },
+  "074": {
+    "city": "Paterson",
+    "state": "NJ",
+    "carrier": "VZ",
+    "metro": "Paterson"
+  },
+  "075": {
+    "city": "Paterson",
+    "state": "NJ",
+    "carrier": "VZ",
+    "metro": "Paterson"
+  },
+  "076": {
+    "city": "Hackensack",
+    "state": "NJ",
+    "carrier": "VZ",
+    "metro": "Bergen County"
+  },
+  "077": {
+    "city": "Red Bank",
+    "state": "NJ",
+    "carrier": "VZ",
+    "metro": "Monmouth"
+  },
+  "078": {
+    "city": "Morristown",
+    "state": "NJ",
+    "carrier": "VZ",
+    "metro": "Morris County"
+  },
+  "079": {
+    "city": "Summit",
+    "state": "NJ",
+    "carrier": "VZ",
+    "metro": "Union County"
+  },
+  "080": {
+    "city": "Cherry Hill",
+    "state": "NJ",
+    "carrier": "VZ",
+    "metro": "S. Jersey"
+  },
+  "081": {
+    "city": "Camden",
+    "state": "NJ",
+    "carrier": "VZ",
+    "metro": "Camden"
+  },
+  "082": {
+    "city": "Atlantic City",
+    "state": "NJ",
+    "carrier": "VZ",
+    "metro": "AC"
+  },
+  "083": {
+    "city": "Vineland",
+    "state": "NJ",
+    "carrier": "VZ",
+    "metro": "S. Jersey"
+  },
+  "085": {
+    "city": "Trenton",
+    "state": "NJ",
+    "carrier": "VZ",
+    "metro": "Trenton"
+  },
+  "086": {
+    "city": "Trenton",
+    "state": "NJ",
+    "carrier": "VZ",
+    "metro": "Trenton"
+  },
+  "087": {
+    "city": "Toms River",
+    "state": "NJ",
+    "carrier": "VZ",
+    "metro": "Ocean County"
+  },
+  "088": {
+    "city": "New Brunswick",
+    "state": "NJ",
+    "carrier": "VZ",
+    "metro": "Middlesex"
+  },
+  "089": {
+    "city": "New Brunswick",
+    "state": "NJ",
+    "carrier": "VZ",
+    "metro": "Middlesex"
+  }
+}

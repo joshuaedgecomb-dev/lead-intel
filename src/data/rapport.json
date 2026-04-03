@@ -1,0 +1,21 @@
+{
+  "default": [
+    "I see you're out in {city}. How do you like it out there?",
+    "Looks like you're in the {metro} area, great spot."
+  ],
+  "byState": {
+    "FL": ["Florida living, can't beat that sunshine!"],
+    "TX": ["Everything's bigger in Texas, right?"],
+    "CA": ["Can't beat that California weather!"],
+    "CO": ["Beautiful country out there!"],
+    "UT": ["Beautiful country out there!"],
+    "MT": ["Beautiful country out there!"],
+    "WY": ["Beautiful country out there!"],
+    "ID": ["Beautiful country out there!"]
+  },
+  "byWeatherTemp": {
+    "hot": "Staying cool?",
+    "cold": "Staying warm?",
+    "mild": "Sounds nice!"
+  }
+}

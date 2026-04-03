@@ -1,0 +1,5 @@
+{
+  "VZ": { "name": "Verizon", "color": "#e00", "angle": "Same Verizon network, fraction of the cost. Identical coverage." },
+  "ATT": { "name": "AT&T", "color": "#00a8e0", "angle": "Better network reliability on Verizon plus lower price." },
+  "TMO": { "name": "T-Mobile", "color": "#e20074", "angle": "More reliable Verizon network at a competitive price." }
+}
