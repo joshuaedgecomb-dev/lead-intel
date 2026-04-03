@@ -119,7 +119,7 @@ export default function App() {
       </div>
 
       {/* Intel Cards — 4 column grid */}
-      {data && !data.partial && data.lat && (
+      {data && !data.partial && data.lat && data.lon && (
         <div className="intel-card" style={{ display: 'grid', gridTemplateColumns: '200px 1fr 1fr 1fr', gap: 12 }}>
           <MapCard lat={data.lat} lon={data.lon} />
           <WeatherCard
