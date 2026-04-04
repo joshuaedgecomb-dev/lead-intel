@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { lookupZip } from './utils/lookupZip.js';
 import { useWeather, weatherCache } from './hooks/useWeather.js';
-import zip5Data from './data/zip5.json';
 import MapCard from './components/MapCard.jsx';
 import WeatherCard from './components/WeatherCard.jsx';
 import PitchStrategy from './components/PitchStrategy.jsx';
@@ -9,7 +8,6 @@ import CompetitorIntel from './components/CompetitorIntel.jsx';
 import QuickRapport from './components/QuickRapport.jsx';
 import NetworkPositioning from './components/NetworkPositioning.jsx';
 import CrossSell from './components/CrossSell.jsx';
-import PreloadPanel from './components/PreloadPanel.jsx';
 
 export default function App() {
   const [zip, setZip] = useState('');
@@ -76,9 +74,6 @@ export default function App() {
         .preload-btn:hover { filter: brightness(1.15); }
         .preload-btn:active { transform: scale(0.97); }
       `}</style>
-
-      {/* Pre-load Panel */}
-      <PreloadPanel zip5Data={zip5Data} />
 
       {/* Header */}
       <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 16 }}>

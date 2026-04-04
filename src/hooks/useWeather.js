@@ -90,5 +90,5 @@ export function useWeather() {
   return { weather, fetchWeather, resetWeather };
 }
 
-// Module-level exports for PreloadPanel and App
-export { fetchOneWeather, weatherCache, sleep, getGridKey };
+// Module-level export for cache checking
+export { weatherCache };
