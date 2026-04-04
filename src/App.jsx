@@ -126,7 +126,7 @@ export default function App() {
             isCached={!!weather.cached}
             tz={data.tz}
           />
-          <CompetitorIntel carrier={data.carrier} metro={data.metro} />
+          <CompetitorIntel carrier={data.carrier} metro={data.metro} state={data.state} />
         </div>
       )}
 

@@ -1,0 +1,1048 @@
+{
+  "AL": [
+    {
+      "name": "BellSouth Telecommunications",
+      "pct": 61,
+      "isXf": false
+    },
+    {
+      "name": "Troy Cablevision",
+      "pct": 18,
+      "isXf": false
+    },
+    {
+      "name": "Google Fiber Alabama",
+      "pct": 12,
+      "isXf": false
+    },
+    {
+      "name": "Farmers Telecommunications Cooperative",
+      "pct": 9,
+      "isXf": false
+    }
+  ],
+  "AZ": [
+    {
+      "name": "CenturyLink",
+      "pct": 47,
+      "isXf": false
+    },
+    {
+      "name": "Cox",
+      "pct": 40,
+      "isXf": false
+    },
+    {
+      "name": "Valley Cooperative",
+      "pct": 8,
+      "isXf": false
+    },
+    {
+      "name": "Gila River Telecommunications Inc.",
+      "pct": 4,
+      "isXf": false
+    }
+  ],
+  "AR": [
+    {
+      "name": "WEHCO Video",
+      "pct": 33,
+      "isXf": false
+    },
+    {
+      "name": "SOUTHWESTERN BELL TELEPHONE COMPANY, L.P.",
+      "pct": 31,
+      "isXf": false
+    },
+    {
+      "name": "OzarksGo",
+      "pct": 22,
+      "isXf": false
+    },
+    {
+      "name": "Ritter Cable Corporation",
+      "pct": 13,
+      "isXf": false
+    }
+  ],
+  "CA": [
+    {
+      "name": "AT&T California",
+      "pct": 51,
+      "isXf": false
+    },
+    {
+      "name": "Frontier Corporation",
+      "pct": 39,
+      "isXf": false
+    },
+    {
+      "name": "Sonic Telecom",
+      "pct": 7,
+      "isXf": false
+    },
+    {
+      "name": "Ultimate Internet Access",
+      "pct": 4,
+      "isXf": false
+    }
+  ],
+  "CO": [
+    {
+      "name": "CenturyLink",
+      "pct": 78,
+      "isXf": false
+    },
+    {
+      "name": "Nunn",
+      "pct": 8,
+      "isXf": false
+    },
+    {
+      "name": "Comcast",
+      "pct": 7,
+      "isXf": true
+    },
+    {
+      "name": "DMEA Services",
+      "pct": 7,
+      "isXf": false
+    }
+  ],
+  "CT": [
+    {
+      "name": "CSC Holdings LLC",
+      "pct": 53,
+      "isXf": false
+    },
+    {
+      "name": "Frontier Corporation",
+      "pct": 27,
+      "isXf": false
+    },
+    {
+      "name": "NetSpeed LLC",
+      "pct": 16,
+      "isXf": false
+    },
+    {
+      "name": "Comcast",
+      "pct": 4,
+      "isXf": true
+    }
+  ],
+  "DE": [
+    {
+      "name": "Verizon Delaware LLC",
+      "pct": 96,
+      "isXf": false
+    },
+    {
+      "name": "Comcast",
+      "pct": 4,
+      "isXf": true
+    },
+    {
+      "name": "Bay Country",
+      "pct": 0,
+      "isXf": false
+    }
+  ],
+  "DC": [
+    {
+      "name": "Verizon Washington, DC Inc.",
+      "pct": 90,
+      "isXf": false
+    },
+    {
+      "name": "Comcast",
+      "pct": 7,
+      "isXf": true
+    },
+    {
+      "name": "Starpower d/b/a RCN",
+      "pct": 3,
+      "isXf": false
+    },
+    {
+      "name": "Starry",
+      "pct": 0,
+      "isXf": false
+    }
+  ],
+  "FL": [
+    {
+      "name": "Frontier Corporation",
+      "pct": 45,
+      "isXf": false
+    },
+    {
+      "name": "BellSouth Telecommunications",
+      "pct": 43,
+      "isXf": false
+    },
+    {
+      "name": "CenturyLink",
+      "pct": 9,
+      "isXf": false
+    },
+    {
+      "name": "Comcast",
+      "pct": 3,
+      "isXf": true
+    }
+  ],
+  "GA": [
+    {
+      "name": "BellSouth Telecommunications",
+      "pct": 70,
+      "isXf": false
+    },
+    {
+      "name": "Windstream Georgia",
+      "pct": 13,
+      "isXf": false
+    },
+    {
+      "name": "Seimitsu",
+      "pct": 9,
+      "isXf": false
+    },
+    {
+      "name": "Pineland Cooperative",
+      "pct": 8,
+      "isXf": false
+    }
+  ],
+  "HI": [
+    {
+      "name": "Hawaiian Telcom",
+      "pct": 98,
+      "isXf": false
+    },
+    {
+      "name": "Sandwich Isles",
+      "pct": 1,
+      "isXf": false
+    },
+    {
+      "name": "Charter",
+      "pct": 1,
+      "isXf": false
+    },
+    {
+      "name": "Hawaii Dialogix Telecom LLC",
+      "pct": 1,
+      "isXf": false
+    }
+  ],
+  "ID": [
+    {
+      "name": "CenturyLink",
+      "pct": 56,
+      "isXf": false
+    },
+    {
+      "name": "ATC",
+      "pct": 19,
+      "isXf": false
+    },
+    {
+      "name": "Project Mutual Cooperative Association",
+      "pct": 16,
+      "isXf": false
+    },
+    {
+      "name": "Millennium Networks",
+      "pct": 9,
+      "isXf": false
+    }
+  ],
+  "IL": [
+    {
+      "name": "Illinois Bell",
+      "pct": 59,
+      "isXf": false
+    },
+    {
+      "name": "Metro Fibernet",
+      "pct": 24,
+      "isXf": false
+    },
+    {
+      "name": "Wabash Independent Networks",
+      "pct": 9,
+      "isXf": false
+    },
+    {
+      "name": "Adams Co-Operative",
+      "pct": 9,
+      "isXf": false
+    }
+  ],
+  "IN": [
+    {
+      "name": "Indiana Bell",
+      "pct": 36,
+      "isXf": false
+    },
+    {
+      "name": "Metro Fibernet",
+      "pct": 24,
+      "isXf": false
+    },
+    {
+      "name": "CMN-RUS",
+      "pct": 21,
+      "isXf": false
+    },
+    {
+      "name": "TRANSWORLD NETWORK, CORP",
+      "pct": 18,
+      "isXf": false
+    }
+  ],
+  "IA": [
+    {
+      "name": "Metro Fibernet",
+      "pct": 35,
+      "isXf": false
+    },
+    {
+      "name": "Winnebago Cooperative Telecom Association",
+      "pct": 22,
+      "isXf": false
+    },
+    {
+      "name": "CenturyLink",
+      "pct": 22,
+      "isXf": false
+    },
+    {
+      "name": "Grand River Mutual Corp",
+      "pct": 21,
+      "isXf": false
+    }
+  ],
+  "KS": [
+    {
+      "name": "Rural Service Co dba Nex-Tech",
+      "pct": 35,
+      "isXf": false
+    },
+    {
+      "name": "Google Fiber Kansas",
+      "pct": 25,
+      "isXf": false
+    },
+    {
+      "name": "SOUTHWESTERN BELL TELEPHONE COMPANY, L.P.",
+      "pct": 23,
+      "isXf": false
+    },
+    {
+      "name": "Craw Kan Cooperative Inc",
+      "pct": 17,
+      "isXf": false
+    }
+  ],
+  "KY": [
+    {
+      "name": "BellSouth Telecommunications",
+      "pct": 38,
+      "isXf": false
+    },
+    {
+      "name": "Windstream Kentucky East",
+      "pct": 24,
+      "isXf": false
+    },
+    {
+      "name": "Metro Fibernet",
+      "pct": 20,
+      "isXf": false
+    },
+    {
+      "name": "Cincinnati Bell LLC",
+      "pct": 18,
+      "isXf": false
+    }
+  ],
+  "LA": [
+    {
+      "name": "BellSouth Telecommunications",
+      "pct": 58,
+      "isXf": false
+    },
+    {
+      "name": "East Ascension, L.L.C.",
+      "pct": 20,
+      "isXf": false
+    },
+    {
+      "name": "Lafayette City Parish Consolidated Government",
+      "pct": 11,
+      "isXf": false
+    },
+    {
+      "name": "Allen's TV Cable Service",
+      "pct": 11,
+      "isXf": false
+    }
+  ],
+  "ME": [
+    {
+      "name": "Pioneer Broadband",
+      "pct": 53,
+      "isXf": false
+    },
+    {
+      "name": "TIDEWATER TELECOM, INC.",
+      "pct": 17,
+      "isXf": false
+    },
+    {
+      "name": "LINCOLNVILLE COMMUNICATIONS, INC.",
+      "pct": 15,
+      "isXf": false
+    },
+    {
+      "name": "Biddeford Internet Corporation",
+      "pct": 15,
+      "isXf": false
+    }
+  ],
+  "MD": [
+    {
+      "name": "Verizon Maryland LLC",
+      "pct": 92,
+      "isXf": false
+    },
+    {
+      "name": "Comcast",
+      "pct": 4,
+      "isXf": true
+    },
+    {
+      "name": "Antietam Cable",
+      "pct": 2,
+      "isXf": false
+    },
+    {
+      "name": "ThinkBig Networks",
+      "pct": 1,
+      "isXf": false
+    }
+  ],
+  "MA": [
+    {
+      "name": "Verizon New England Inc.",
+      "pct": 92,
+      "isXf": false
+    },
+    {
+      "name": "Comcast",
+      "pct": 6,
+      "isXf": true
+    },
+    {
+      "name": "Westfield Gas & Electric",
+      "pct": 2,
+      "isXf": false
+    },
+    {
+      "name": "Concord Light Broadband",
+      "pct": 1,
+      "isXf": false
+    }
+  ],
+  "MI": [
+    {
+      "name": "Michigan Bell",
+      "pct": 49,
+      "isXf": false
+    },
+    {
+      "name": "Climax",
+      "pct": 19,
+      "isXf": false
+    },
+    {
+      "name": "Midwest Energy Cooperative dba Midwest Connections",
+      "pct": 17,
+      "isXf": false
+    },
+    {
+      "name": "Michigan Access",
+      "pct": 14,
+      "isXf": false
+    }
+  ],
+  "MN": [
+    {
+      "name": "Jaguar",
+      "pct": 52,
+      "isXf": false
+    },
+    {
+      "name": "CenturyLink",
+      "pct": 17,
+      "isXf": false
+    },
+    {
+      "name": "Metro Fibernet",
+      "pct": 17,
+      "isXf": false
+    },
+    {
+      "name": "Midcontinent",
+      "pct": 14,
+      "isXf": false
+    }
+  ],
+  "MS": [
+    {
+      "name": "BellSouth Telecommunications",
+      "pct": 58,
+      "isXf": false
+    },
+    {
+      "name": "Telepak Networks",
+      "pct": 26,
+      "isXf": false
+    },
+    {
+      "name": "North East Fiber LLC",
+      "pct": 9,
+      "isXf": false
+    },
+    {
+      "name": "Telapex",
+      "pct": 7,
+      "isXf": false
+    }
+  ],
+  "MO": [
+    {
+      "name": "SOUTHWESTERN BELL TELEPHONE COMPANY, L.P.",
+      "pct": 38,
+      "isXf": false
+    },
+    {
+      "name": "Google Fiber Missouri",
+      "pct": 29,
+      "isXf": false
+    },
+    {
+      "name": "Co-Mo Comm",
+      "pct": 19,
+      "isXf": false
+    },
+    {
+      "name": "United Fiber",
+      "pct": 15,
+      "isXf": false
+    }
+  ],
+  "NE": [
+    {
+      "name": "Windstream Nebraska",
+      "pct": 28,
+      "isXf": false
+    },
+    {
+      "name": "ALLO LLC",
+      "pct": 28,
+      "isXf": false
+    },
+    {
+      "name": "Northeast Nebraska",
+      "pct": 27,
+      "isXf": false
+    },
+    {
+      "name": "Hamilton",
+      "pct": 16,
+      "isXf": false
+    }
+  ],
+  "NV": [
+    {
+      "name": "CenturyLink",
+      "pct": 61,
+      "isXf": false
+    },
+    {
+      "name": "Nevada Bell",
+      "pct": 18,
+      "isXf": false
+    },
+    {
+      "name": "Cox",
+      "pct": 11,
+      "isXf": false
+    },
+    {
+      "name": "Churchill County dba CC",
+      "pct": 10,
+      "isXf": false
+    }
+  ],
+  "NH": [
+    {
+      "name": "Consolidated of Northern New England,LLC",
+      "pct": 65,
+      "isXf": false
+    },
+    {
+      "name": "TDS Telecommunications LLC",
+      "pct": 22,
+      "isXf": false
+    },
+    {
+      "name": "Granite State",
+      "pct": 8,
+      "isXf": false
+    },
+    {
+      "name": "Comcast",
+      "pct": 5,
+      "isXf": true
+    }
+  ],
+  "NJ": [
+    {
+      "name": "Verizon New Jersey Inc.",
+      "pct": 59,
+      "isXf": false
+    },
+    {
+      "name": "CSC Holdings LLC",
+      "pct": 39,
+      "isXf": false
+    },
+    {
+      "name": "Comcast",
+      "pct": 1,
+      "isXf": true
+    },
+    {
+      "name": "Planet Networks",
+      "pct": 1,
+      "isXf": false
+    }
+  ],
+  "NM": [
+    {
+      "name": "ENMR Cooperative",
+      "pct": 58,
+      "isXf": false
+    },
+    {
+      "name": "Valor Telecommunications of Texas",
+      "pct": 21,
+      "isXf": false
+    },
+    {
+      "name": "Tularosa Basin",
+      "pct": 11,
+      "isXf": false
+    },
+    {
+      "name": "Yucca Telecommunications Systems",
+      "pct": 10,
+      "isXf": false
+    }
+  ],
+  "NY": [
+    {
+      "name": "Verizon New York Inc.",
+      "pct": 54,
+      "isXf": false
+    },
+    {
+      "name": "CSC Holdings LLC",
+      "pct": 41,
+      "isXf": false
+    },
+    {
+      "name": "Charter",
+      "pct": 3,
+      "isXf": false
+    },
+    {
+      "name": "Empire Long Distance Corporation",
+      "pct": 2,
+      "isXf": false
+    }
+  ],
+  "NC": [
+    {
+      "name": "BellSouth Telecommunications",
+      "pct": 76,
+      "isXf": false
+    },
+    {
+      "name": "Google Fiber North Carolina",
+      "pct": 9,
+      "isXf": false
+    },
+    {
+      "name": "Windstream Concord",
+      "pct": 8,
+      "isXf": false
+    },
+    {
+      "name": "North State dba North State",
+      "pct": 7,
+      "isXf": false
+    }
+  ],
+  "ND": [
+    {
+      "name": "North Dakota",
+      "pct": 32,
+      "isXf": false
+    },
+    {
+      "name": "Midcontinent",
+      "pct": 27,
+      "isXf": false
+    },
+    {
+      "name": "West River Telecommunications Cooperative",
+      "pct": 21,
+      "isXf": false
+    },
+    {
+      "name": "SRT",
+      "pct": 20,
+      "isXf": false
+    }
+  ],
+  "OH": [
+    {
+      "name": "The Ohio Bell",
+      "pct": 36,
+      "isXf": false
+    },
+    {
+      "name": "Cincinnati Bell LLC",
+      "pct": 29,
+      "isXf": false
+    },
+    {
+      "name": "Massillon Cable TV",
+      "pct": 27,
+      "isXf": false
+    },
+    {
+      "name": "Windstream Ohio",
+      "pct": 8,
+      "isXf": false
+    }
+  ],
+  "OK": [
+    {
+      "name": "Oklahoma Fiber Network",
+      "pct": 35,
+      "isXf": false
+    },
+    {
+      "name": "SOUTHWESTERN BELL TELEPHONE COMPANY, L.P.",
+      "pct": 30,
+      "isXf": false
+    },
+    {
+      "name": "OzarksGo",
+      "pct": 18,
+      "isXf": false
+    },
+    {
+      "name": "Cox",
+      "pct": 17,
+      "isXf": false
+    }
+  ],
+  "OR": [
+    {
+      "name": "CenturyLink",
+      "pct": 45,
+      "isXf": false
+    },
+    {
+      "name": "Northwest Fiber",
+      "pct": 28,
+      "isXf": false
+    },
+    {
+      "name": "Douglas Services Inc, dba Douglas Fast Net",
+      "pct": 24,
+      "isXf": false
+    },
+    {
+      "name": "Comcast",
+      "pct": 3,
+      "isXf": true
+    }
+  ],
+  "PA": [
+    {
+      "name": "Verizon Pennsylvania LLC",
+      "pct": 85,
+      "isXf": false
+    },
+    {
+      "name": "Windstream Pennsylvania",
+      "pct": 7,
+      "isXf": false
+    },
+    {
+      "name": "Salsgiver",
+      "pct": 4,
+      "isXf": false
+    },
+    {
+      "name": "Comcast",
+      "pct": 3,
+      "isXf": true
+    }
+  ],
+  "RI": [
+    {
+      "name": "Verizon New England Inc.",
+      "pct": 99,
+      "isXf": false
+    },
+    {
+      "name": "Cox",
+      "pct": 1,
+      "isXf": false
+    },
+    {
+      "name": "Coldwater Board of Public",
+      "pct": 0,
+      "isXf": false
+    }
+  ],
+  "SC": [
+    {
+      "name": "BellSouth Telecommunications",
+      "pct": 44,
+      "isXf": false
+    },
+    {
+      "name": "Horry Cooperative",
+      "pct": 30,
+      "isXf": false
+    },
+    {
+      "name": "West Carolina",
+      "pct": 13,
+      "isXf": false
+    },
+    {
+      "name": "Farmers Cooperative",
+      "pct": 13,
+      "isXf": false
+    }
+  ],
+  "TN": [
+    {
+      "name": "BellSouth Telecommunications",
+      "pct": 57,
+      "isXf": false
+    },
+    {
+      "name": "EPB Fiber Optics",
+      "pct": 16,
+      "isXf": false
+    },
+    {
+      "name": "BRISTOL TENNESSEE ESSENTIAL SERVICES",
+      "pct": 15,
+      "isXf": false
+    },
+    {
+      "name": "Twin Lakes Cooperative Corporation",
+      "pct": 13,
+      "isXf": false
+    }
+  ],
+  "TX": [
+    {
+      "name": "SOUTHWESTERN BELL TELEPHONE COMPANY, L.P.",
+      "pct": 72,
+      "isXf": false
+    },
+    {
+      "name": "Frontier Corporation",
+      "pct": 15,
+      "isXf": false
+    },
+    {
+      "name": "NTS",
+      "pct": 9,
+      "isXf": false
+    },
+    {
+      "name": "Google Fiber Texas",
+      "pct": 5,
+      "isXf": false
+    }
+  ],
+  "UT": [
+    {
+      "name": "Veracity Networks",
+      "pct": 39,
+      "isXf": false
+    },
+    {
+      "name": "CenturyLink",
+      "pct": 27,
+      "isXf": false
+    },
+    {
+      "name": "Utah Telecommunication Open Infrastructure Agency",
+      "pct": 21,
+      "isXf": false
+    },
+    {
+      "name": "Google Fiber Utah",
+      "pct": 13,
+      "isXf": false
+    }
+  ],
+  "VT": [
+    {
+      "name": "Vermont Co.",
+      "pct": 41,
+      "isXf": false
+    },
+    {
+      "name": "EAST CENTRAL VERMONT TELECOMMUNICATIONS DISTRICT",
+      "pct": 36,
+      "isXf": false
+    },
+    {
+      "name": "Consolidated of Vermont CompanyLLC",
+      "pct": 12,
+      "isXf": false
+    },
+    {
+      "name": "Champlain Broadband LLC d/b/a Burlington Telecom",
+      "pct": 12,
+      "isXf": false
+    }
+  ],
+  "VA": [
+    {
+      "name": "Verizon Virginia LLC",
+      "pct": 72,
+      "isXf": false
+    },
+    {
+      "name": "Point Broadband Fiber Holding",
+      "pct": 16,
+      "isXf": false
+    },
+    {
+      "name": "Eastern Shore of Virginia Broadband Authority",
+      "pct": 6,
+      "isXf": false
+    },
+    {
+      "name": "Shentel",
+      "pct": 6,
+      "isXf": false
+    }
+  ],
+  "WA": [
+    {
+      "name": "CenturyLink",
+      "pct": 56,
+      "isXf": false
+    },
+    {
+      "name": "Northwest Fiber",
+      "pct": 23,
+      "isXf": false
+    },
+    {
+      "name": "Grant County PowerNet",
+      "pct": 13,
+      "isXf": false
+    },
+    {
+      "name": "Public Utility District #2 of Grant County, WA",
+      "pct": 8,
+      "isXf": false
+    }
+  ],
+  "WV": [
+    {
+      "name": "Shentel",
+      "pct": 33,
+      "isXf": false
+    },
+    {
+      "name": "Spruce Knob Seneca Rocks",
+      "pct": 32,
+      "isXf": false
+    },
+    {
+      "name": "Hardy Telecommunications Inc",
+      "pct": 18,
+      "isXf": false
+    },
+    {
+      "name": "Hardy Telecommunications,Inc CLEC",
+      "pct": 17,
+      "isXf": false
+    }
+  ],
+  "WI": [
+    {
+      "name": "Wisconsin Bell",
+      "pct": 49,
+      "isXf": false
+    },
+    {
+      "name": "TDS Telecommunications LLC",
+      "pct": 19,
+      "isXf": false
+    },
+    {
+      "name": "Norvado",
+      "pct": 16,
+      "isXf": false
+    },
+    {
+      "name": "TDS Metrocom",
+      "pct": 16,
+      "isXf": false
+    }
+  ],
+  "WY": [
+    {
+      "name": "TRI County Association",
+      "pct": 44,
+      "isXf": false
+    },
+    {
+      "name": "Visionary",
+      "pct": 32,
+      "isXf": false
+    },
+    {
+      "name": "RT",
+      "pct": 14,
+      "isXf": false
+    },
+    {
+      "name": "Millennium Networks",
+      "pct": 11,
+      "isXf": false
+    }
+  ]
+}

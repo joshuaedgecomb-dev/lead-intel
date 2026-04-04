@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "build-data": "node scripts/build-data.js",
     "build-comcast-zips": "node scripts/build-comcast-zips.js",
-    "build-connectivity": "node scripts/build-connectivity.js"
+    "build-connectivity": "node scripts/build-connectivity.js",
+    "build-competition": "node scripts/build-competition.js"
   },
   "dependencies": {
     "react": "^19.1.0",
