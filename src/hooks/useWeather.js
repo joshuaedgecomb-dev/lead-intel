@@ -48,7 +48,7 @@ export function useWeather() {
 
   const fetchWeather = useCallback(async (lat, lon, zip3) => {
     if (weatherCache[zip3]) {
-      setWeather({ status: 'ok', ...weatherCache[zip3] });
+      setWeather({ status: 'ok', cached: true, ...weatherCache[zip3] });
       return;
     }
     setWeather({ status: 'loading', text: '', temp: '', icon: '' });
@@ -83,7 +83,7 @@ export function useWeather() {
       if (r3 && r3.ok) {
         const h = await r3.json();
         const hPeriods = h?.properties?.periods || [];
-        hourly = hPeriods.slice(0, 12).map(hp => ({
+        hourly = hPeriods.slice(0, 6).map(hp => ({
           time: hp.startTime,
           temp: hp.temperature,
           unit: hp.temperatureUnit,
@@ -99,7 +99,7 @@ export function useWeather() {
         hourly,
       };
       weatherCache[zip3] = result;
-      setWeather({ status: 'ok', ...result });
+      setWeather({ status: 'ok', cached: false, ...result });
     } catch (e) {
       if (e.name !== 'AbortError') {
         setWeather({ status: 'error', text: 'Unavailable', temp: '--', icon: '' });

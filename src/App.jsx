@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { lookupZip } from './utils/lookupZip.js';
-import { useWeather, weatherCache } from './hooks/useWeather.js';
+import { useWeather } from './hooks/useWeather.js';
 import MapCard from './components/MapCard.jsx';
 import WeatherCard from './components/WeatherCard.jsx';
 import PitchStrategy from './components/PitchStrategy.jsx';
@@ -121,7 +121,8 @@ export default function App() {
             weather={weather}
             city={data.city}
             zip3={data.zip3}
-            isCached={!!weatherCache[data.zip3]}
+            isCached={!!weather.cached}
+            tz={data.tz}
           />
           <PitchStrategy tier={data.tier} />
           <CompetitorIntel carrier={data.carrier} metro={data.metro} />

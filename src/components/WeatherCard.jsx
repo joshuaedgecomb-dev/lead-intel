@@ -1,14 +1,31 @@
 import rapport from '../data/rapport.json';
 
-function formatHour(isoTime) {
+function formatHour(isoTime, tz) {
   const d = new Date(isoTime);
-  const h = d.getHours();
-  if (h === 0) return '12a';
-  if (h === 12) return '12p';
-  return h > 12 ? `${h - 12}p` : `${h}a`;
+  try {
+    const h = parseInt(d.toLocaleTimeString('en-US', { timeZone: tz, hour: 'numeric', hour12: false }));
+    if (h === 0) return '12a';
+    if (h === 12) return '12p';
+    return h > 12 ? `${h - 12}p` : `${h}a`;
+  } catch {
+    const h = d.getHours();
+    if (h === 0) return '12a';
+    if (h === 12) return '12p';
+    return h > 12 ? `${h - 12}p` : `${h}a`;
+  }
 }
 
-export default function WeatherCard({ weather, city, zip3, isCached }) {
+function getTempColor(temp, min, max) {
+  // Blue (cold) → Cyan → Green → Yellow → Orange → Red (hot)
+  const range = max - min || 1;
+  const t = (temp - min) / range; // 0 to 1
+  if (t < 0.25) return `rgb(${Math.round(80 + t * 4 * 40)}, ${Math.round(150 + t * 4 * 105)}, 255)`;
+  if (t < 0.5) return `rgb(${Math.round(120 + (t - 0.25) * 4 * 135)}, ${Math.round(220 + (t - 0.25) * 4 * 35)}, ${Math.round(255 - (t - 0.25) * 4 * 130)})`;
+  if (t < 0.75) return `rgb(255, ${Math.round(255 - (t - 0.5) * 4 * 80)}, ${Math.round(125 - (t - 0.5) * 4 * 125)})`;
+  return `rgb(255, ${Math.round(175 - (t - 0.75) * 4 * 105)}, ${Math.round((1 - t) * 4 * 30)})`;
+}
+
+export default function WeatherCard({ weather, city, zip3, isCached, tz }) {
   if (weather.status === 'idle' || weather.status === 'error') return null;
 
   let rapportLine = '';
@@ -18,6 +35,15 @@ export default function WeatherCard({ weather, city, zip3, isCached }) {
     else if (tempNum < 40) rapportLine = rapport.byWeatherTemp.cold;
     else rapportLine = rapport.byWeatherTemp.mild;
   }
+
+  // Compute sparkline data
+  const hourly = weather.hourly || [];
+  const temps = hourly.map(h => h.temp);
+  const minTemp = Math.min(...temps);
+  const maxTemp = Math.max(...temps);
+  const tempRange = maxTemp - minTemp || 1;
+  const chartH = 40;
+  const barW = 100 / hourly.length;
 
   return (
     <div style={{
@@ -53,42 +79,49 @@ export default function WeatherCard({ weather, city, zip3, isCached }) {
             Rapport: "How's the weather out there{city ? ` in ${city}` : ''}? {rapportLine}"
           </div>
 
-          {/* Hourly Forecast */}
-          {weather.hourly && weather.hourly.length > 0 && (
+          {/* Hourly Forecast with temperature bars */}
+          {hourly.length > 0 && (
             <div style={{ marginTop: 10 }}>
               <div style={{ fontSize: 9, fontWeight: 600, textTransform: 'uppercase', letterSpacing: 1, color: '#484f58', marginBottom: 6 }}>
-                Next 12 Hours
+                Upcoming
               </div>
-              <div style={{
-                display: 'flex', gap: 2, overflowX: 'auto',
-              }}>
-                {weather.hourly.map((h, i) => (
+
+              {/* Temperature bar chart */}
+              <div style={{ display: 'flex', alignItems: 'flex-end', gap: 2, height: chartH }}>
+                {hourly.map((h, i) => {
+                  const pct = ((h.temp - minTemp) / tempRange) * 0.75 + 0.25; // min 25% height
+                  const color = getTempColor(h.temp, minTemp, maxTemp);
+                  return (
+                    <div key={i} style={{
+                      flex: 1,
+                      height: `${pct * 100}%`,
+                      background: color,
+                      borderRadius: '3px 3px 0 0',
+                      opacity: 0.8,
+                      transition: 'height 0.3s ease',
+                    }} />
+                  );
+                })}
+              </div>
+
+              {/* Labels below bars */}
+              <div style={{ display: 'flex', gap: 2, marginTop: 3 }}>
+                {hourly.map((h, i) => (
                   <div key={i} style={{
-                    display: 'flex', flexDirection: 'column', alignItems: 'center',
-                    padding: '4px 5px', borderRadius: 4, minWidth: 36,
-                    background: i === 0 ? '#1c2128' : 'transparent',
+                    flex: 1, textAlign: 'center', minWidth: 0,
                   }}>
-                    <span style={{
-                      fontSize: 9, color: '#8b949e',
-                      fontFamily: "'IBM Plex Mono', monospace",
-                    }}>
-                      {formatHour(h.time)}
-                    </span>
-                    <span style={{
-                      fontSize: 12, fontWeight: 600,
-                      color: h.isDaytime ? '#e6edf3' : '#8b949e',
-                      marginTop: 2,
+                    <div style={{
+                      fontSize: 10, fontWeight: 600,
+                      color: getTempColor(h.temp, minTemp, maxTemp),
                     }}>
                       {h.temp}°
-                    </span>
-                    <span style={{
-                      fontSize: 8, color: '#484f58', marginTop: 1,
-                      textAlign: 'center', lineHeight: 1.1,
-                      maxWidth: 40, overflow: 'hidden',
-                      whiteSpace: 'nowrap', textOverflow: 'ellipsis',
+                    </div>
+                    <div style={{
+                      fontSize: 8, color: '#8b949e',
+                      fontFamily: "'IBM Plex Mono', monospace",
                     }}>
-                      {h.text}
-                    </span>
+                      {formatHour(h.time, tz)}
+                    </div>
                   </div>
                 ))}
               </div>
