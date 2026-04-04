@@ -40,10 +40,11 @@ export default function ConnectivityIntel({ zip5 }) {
   }
 
   if (xfDown && xfDown >= 1000) {
+    const gigLabel = (xfDown / 1000).toFixed(1) + ' Gig';
     insights.push({
       color: '#a855f7',
       label: 'GIG TERRITORY',
-      text: `Xfinity offers up to ${xfDown >= 1200 ? '1.2 Gig' : '1 Gig'} here — lead with speed, pitch Xfinity Pro ($15/mo) for gaming households.`,
+      text: `Xfinity offers up to ${gigLabel} here — lead with speed, pitch Xfinity Pro ($15/mo) for gaming households.`,
     });
   }
 
