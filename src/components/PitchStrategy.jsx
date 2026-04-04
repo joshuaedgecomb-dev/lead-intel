@@ -1,32 +1,30 @@
 import { useState } from 'react';
 import archetypes from '../data/archetypes.json';
 
-function RecCard({ rec, color, num }) {
+function PitchBlock({ label, color, title, pitch, includes }) {
   return (
     <div style={{
       padding: '10px 12px', background: 'rgba(0,0,0,0.15)', borderRadius: 6,
       borderLeft: `3px solid ${color}`,
     }}>
       <div style={{
-        fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 1,
+        fontSize: 9, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 1,
         color, marginBottom: 4,
       }}>
-        Rec {num}: {rec.title}
+        {label}
       </div>
       <div style={{
-        fontSize: 11, color: '#e6edf3', lineHeight: 1.4, marginBottom: 6,
-        fontFamily: "'IBM Plex Mono', monospace",
-        padding: '4px 8px', background: 'rgba(255,255,255,0.05)', borderRadius: 4,
+        fontSize: 12, color: '#e6edf3', fontWeight: 600, marginBottom: 4,
       }}>
-        {rec.products}
+        {title}
       </div>
       <div style={{
         fontSize: 11, color: '#7ee787', lineHeight: 1.4, fontStyle: 'italic', marginBottom: 4,
       }}>
-        {rec.hook}
+        {pitch}
       </div>
       <div style={{ fontSize: 10, color: '#484f58' }}>
-        {rec.addons}
+        {includes}
       </div>
     </div>
   );
@@ -39,7 +37,6 @@ function ArchButton({ archKey, isActive, onClick }) {
     <button
       type="button"
       onClick={(e) => { e.stopPropagation(); onClick(); }}
-      className="arch-btn"
       style={{
         background: isActive ? a.bg : '#21262d',
         border: isActive ? `2px solid ${a.color}` : `2px solid #30363d`,
@@ -61,7 +58,7 @@ function ArchButton({ archKey, isActive, onClick }) {
 }
 
 export default function PitchStrategy({ arch, arch2 }) {
-  const [active, setActive] = useState(null); // null = use arch (primary)
+  const [active, setActive] = useState(null);
   const activeKey = active || arch;
   const current = archetypes[activeKey];
   if (!current) return null;
@@ -75,28 +72,58 @@ export default function PitchStrategy({ arch, arch2 }) {
     }}>
       {/* Archetype selector */}
       <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
-        <ArchButton
-          archKey={arch}
-          isActive={activeKey === arch}
-          onClick={() => setActive(null)}
-        />
+        <ArchButton archKey={arch} isActive={activeKey === arch} onClick={() => setActive(null)} />
         {hasTwoOptions && (
-          <ArchButton
-            archKey={arch2}
-            isActive={activeKey === arch2}
-            onClick={() => setActive(arch2)}
-          />
+          <ArchButton archKey={arch2} isActive={activeKey === arch2} onClick={() => setActive(arch2)} />
         )}
       </div>
 
-      <div style={{ fontSize: 11, color: '#8b949e', lineHeight: 1.4, marginBottom: 12 }}>
+      <div style={{ fontSize: 11, color: '#8b949e', lineHeight: 1.4, marginBottom: 10 }}>
         {current.desc}
       </div>
 
-      {/* Two recommendations */}
+      {/* Primary offers: Internet + Mobile */}
       <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-        <RecCard rec={current.rec1} color={current.color} num={1} />
-        <RecCard rec={current.rec2} color={current.color} num={2} />
+        <PitchBlock
+          label="Nonsub — Internet Pitch"
+          color="#6138f5"
+          title={current.nonsub.title}
+          pitch={current.nonsub.pitch}
+          includes={current.nonsub.includes}
+        />
+        <PitchBlock
+          label="XM — Mobile Pitch"
+          color="#00b894"
+          title={current.xm.title}
+          pitch={current.xm.pitch}
+          includes={current.xm.includes}
+        />
+      </div>
+
+      {/* Cross-sells */}
+      <div style={{ marginTop: 10 }}>
+        <div style={{ fontSize: 9, fontWeight: 600, textTransform: 'uppercase', letterSpacing: 1, color: '#484f58', marginBottom: 6 }}>
+          Cross-sell by priority
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+          {current.crosssell.map((cs, i) => (
+            <div key={i} style={{
+              display: 'flex', alignItems: 'flex-start', gap: 8,
+              padding: '6px 10px', background: '#1a2332', borderRadius: 4,
+              fontSize: 11, lineHeight: 1.4,
+            }}>
+              <span style={{
+                color: current.color, fontWeight: 700, fontSize: 10,
+                minWidth: 14, textAlign: 'center', marginTop: 1,
+              }}>{i + 1}</span>
+              <div style={{ flex: 1 }}>
+                <span style={{ color: '#e6edf3', fontWeight: 600 }}>{cs.product}</span>
+                <span style={{ color: '#484f58' }}> · {cs.price}</span>
+                <div style={{ color: '#8b949e', fontSize: 10, marginTop: 2 }}>{cs.hook}</div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* Compliance */}

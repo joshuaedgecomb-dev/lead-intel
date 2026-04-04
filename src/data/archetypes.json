@@ -5,18 +5,21 @@
     "color": "#3b82f6",
     "bg": "#172554",
     "desc": "Mid-age homeowners with kids. Multi-device household, streaming + gaming heavy.",
-    "rec1": {
-      "title": "1G Internet + Multi-Line Mobile",
-      "products": "1 Gig @ $70/mo (5yr lock) · Unlimited $40/line for 3-4 lines · Free line 12 months",
-      "hook": "\"With the kids streaming and gaming while you're working, 1 Gig keeps everyone connected without buffering. And with 3 lines at $40 each, the whole family's covered.\"",
-      "addons": "Disney+/Hulu/Peacock included 36mo · iPhone 17e on us w/ trade-in for the kids"
+    "nonsub": {
+      "title": "Internet: 1G @ $70/mo (5yr lock)",
+      "pitch": "\"With [X] people streaming and gaming at the same time, I'd recommend our 1 Gig plan. That way everyone can be on without fighting over bandwidth — and you lock that price in for 5 years.\"",
+      "includes": "Disney+/Hulu/Peacock Premium 36mo · Gateway + unlimited data · 99.9% reliable"
     },
-    "rec2": {
-      "title": "Home Security + StreamSaver",
-      "products": "Home Security $55/mo (APPD) · StreamSaver $22/mo (Netflix+Disney++Hulu+Peacock)",
-      "hook": "\"You mentioned the kids — our Home Security lets you check cameras from your phone while you're at work. And instead of paying for Netflix, Disney+, and Hulu separately, bundle them for $22.\"",
-      "addons": "Smart Home cameras $5/mo each · XMC device protection $15/mo"
-    }
+    "xm": {
+      "title": "Mobile: Unlimited $40/line × 3-4 lines",
+      "pitch": "\"You mentioned you're paying [Provider] $___ for your [X] lines — with Xfinity Mobile, Unlimited is $40/line and your first line is free for 12 months. That's $480 in savings right there.\"",
+      "includes": "Free line 12mo · iPhone 17e on us w/ trade-in (Premium) · $25 activation waived thru 4/21"
+    },
+    "crosssell": [
+      { "product": "StreamSaver", "hook": "\"Instead of paying for Netflix, Disney+, and Hulu separately — bundle them for $22/mo and save 25%.\"", "price": "$15-$30/mo" },
+      { "product": "Home Security", "hook": "\"You mentioned the kids — keep an eye on things from your phone while you're at work.\"", "price": "$55/mo (APPD)" },
+      { "product": "XMC", "hook": "\"Unlimited screen repairs + loss/theft coverage for the whole family.\"", "price": "$15/mo per device" }
+    ]
   },
   "affluent_pro": {
     "label": "Affluent Professional",
@@ -24,18 +27,21 @@
     "color": "#a855f7",
     "bg": "#3b0764",
     "desc": "High-income, WFH-heavy, tech-savvy. Values premium features and convenience.",
-    "rec1": {
-      "title": "1G+ Internet + Premium Unlimited",
-      "products": "1 Gig @ $70/mo or 1.2G @ $100/mo (5yr lock) · Premium Unlimited $50/line · Free line 12 months",
-      "hook": "\"Working from home, you need rock-solid speed that doesn't drop during video calls. Premium Unlimited gives you 100GB data, 4K streaming, and Global Travel Pass included.\"",
-      "addons": "Up to $1,100 off Samsung · $400 off iPhone 17e · 30GB hotspot"
+    "nonsub": {
+      "title": "Internet: 1G @ $70/mo or 1.2G @ $100/mo (5yr lock)",
+      "pitch": "\"Working from home, you need speed that doesn't drop during video calls. Our 1 Gig plan handles everything — multiple devices, 4K streaming, large file uploads — locked at $70/mo for 5 years.\"",
+      "includes": "Disney+/Hulu/Peacock Premium 36mo · Xfinity Pro $15/mo for boosted streaming/gaming · 99.9% reliable"
     },
-    "rec2": {
-      "title": "Full StreamSaver + Home Security",
-      "products": "StreamSaver $30/mo (Netflix+Disney++Hulu+HBO Max+Peacock) · Home Security Ultimate $80/mo",
-      "hook": "\"At $30/mo for all five streaming apps, you save over 25% vs paying separately. And with the Ultimate security package, 10 sensors and 2 cameras cover the whole property.\"",
-      "addons": "Xfinity Pro $15/mo for boosted streaming/gaming · Voice Premier $30/mo"
-    }
+    "xm": {
+      "title": "Mobile: Premium Unlimited $50/line",
+      "pitch": "\"Premium Unlimited gives you 100GB prioritized data, 4K streaming on the go, 30GB hotspot, and Global Travel Pass included — no extra charge when you travel. First line free for 12 months.\"",
+      "includes": "Up to $1,100 off Samsung · iPhone 17e on us w/ trade-in · $25 activation waived"
+    },
+    "crosssell": [
+      { "product": "StreamSaver Full", "hook": "\"All five apps — Netflix, Disney+, Hulu, HBO Max, Peacock — for $30/mo instead of $75+ separately.\"", "price": "$30/mo" },
+      { "product": "Home Security Ultimate", "hook": "\"10 sensors, 2 cameras — covers the whole property with 24/7 monitoring.\"", "price": "$80/mo total" },
+      { "product": "Voice Premier", "hook": "\"Unlimited international calling to 90+ countries as a backup to your cell.\"", "price": "$30/mo (APPD)" }
+    ]
   },
   "young_urban": {
     "label": "Young Urban",
@@ -43,18 +49,21 @@
     "color": "#06b6d4",
     "bg": "#083344",
     "desc": "Young renters, smaller households, streaming-first, tech-comfortable. WFH common.",
-    "rec1": {
-      "title": "1G Internet + Premium Unlimited + StreamSaver",
-      "products": "1 Gig @ $70/mo (5yr lock) · Premium Unlimited $50/line · Free line 12 months · StreamSaver $15/mo",
-      "hook": "\"1 Gig with a 5-year price lock — no contract, just locked pricing. And your Xfinity Mobile line is free for 12 months. Bundle your streaming for $15/mo instead of paying $45+ separately.\"",
-      "addons": "Disney+/Hulu/Peacock included 36mo · iPhone 17e on us w/ trade-in"
+    "nonsub": {
+      "title": "Internet: 1G @ $70/mo (5yr lock)",
+      "pitch": "\"1 Gig with a 5-year price lock — that price never goes up, no contract, cancel anytime. With all the streaming and working from home you're doing, you won't have to worry about speed.\"",
+      "includes": "Disney+/Hulu/Peacock Premium 36mo · Risk-free 30 days · No contract, no ETF"
     },
-    "rec2": {
-      "title": "Smart Home + Device Deals",
-      "products": "Smart Home $10/mo (cameras, no drilling — great for renters) · XMC $15/mo",
-      "hook": "\"Since you're renting, our Smart Home is wireless — no drilling, take it when you move. $10/mo for 24/7 camera recording and AI detection. And XMC covers your phone for unlimited screen repairs.\"",
-      "addons": "Video Doorbell $5/mo (24mo) · 50% off Galaxy Tab"
-    }
+    "xm": {
+      "title": "Mobile: Premium Unlimited $50/line",
+      "pitch": "\"Your first Xfinity Mobile line is free for 12 months — that's $480. Premium Unlimited gets you 4K streaming, 30GB hotspot, and Global Travel Pass. Perfect for when you're out and about.\"",
+      "includes": "iPhone 17e on us w/ trade-in · 50% off Galaxy Tab · $25 activation waived"
+    },
+    "crosssell": [
+      { "product": "StreamSaver", "hook": "\"Bundle your streaming for $15/mo instead of paying $45+ separately. Disney+, Hulu, Peacock all in one.\"", "price": "$15-$30/mo" },
+      { "product": "Smart Home", "hook": "\"Wireless — no drilling, take it when you move. $10/mo for 24/7 cameras and AI detection.\"", "price": "$10/mo + equipment" },
+      { "product": "XMC", "hook": "\"Unlimited screen repairs, loss/theft, early upgrade — beats AppleCare+.\"", "price": "$15/mo" }
+    ]
   },
   "budget_family": {
     "label": "Budget Family",
@@ -62,18 +71,21 @@
     "color": "#22c55e",
     "bg": "#052e16",
     "desc": "Cost-conscious families, often renters. Lead with savings and free offers.",
-    "rec1": {
-      "title": "300M Internet + Free Mobile Line",
-      "products": "300 Mbps @ $45/mo (5yr lock) · Free Unlimited line 12 months ($480 value) · No contract, no ETF",
-      "hook": "\"I can lock your Internet at $45/mo for 5 full years — that price never goes up. And you get a free mobile line for 12 months, that's $480 in savings right there.\"",
-      "addons": "NOW Mobile $25/line if no credit check needed · Risk-free 30 days"
+    "nonsub": {
+      "title": "Internet: 300M @ $45/mo (5yr lock)",
+      "pitch": "\"I can lock your Internet at $45/mo for 5 full years — that price never goes up. 300 Mbps handles streaming, video calls, the kids' devices — everything a household needs. No contract, risk-free 30 days.\"",
+      "includes": "Gateway + unlimited data · No contract, no ETF · Risk-free 30 days"
     },
-    "rec2": {
-      "title": "NOW TV + Basic StreamSaver",
-      "products": "NOW TV $30/mo (125+ channels, no locals) · StreamSaver $15/mo (Peacock+Disney++Hulu)",
-      "hook": "\"NOW TV gives the family 125+ channels for $30 — reality, cooking, kids shows, sports. And for $15/mo you get Disney+, Hulu, and Peacock instead of paying $35+ separately.\"",
-      "addons": "NOW Internet $30/mo (100M, no credit check) if needed · Smart Home $10/mo"
-    }
+    "xm": {
+      "title": "Mobile: Unlimited $40/line + Free line 12mo",
+      "pitch": "\"Your first Xfinity Mobile line is free for 12 months — that's $480 you're saving right there. After that it's $40/line for Unlimited. Who's your current provider? I'll show you the savings.\"",
+      "includes": "NOW Mobile $25/line if no credit check needed · $25 activation waived · Mexico/Canada included"
+    },
+    "crosssell": [
+      { "product": "NOW TV", "hook": "\"125+ channels for $30/mo — reality, cooking, kids shows, sports. No locals but tons of content.\"", "price": "$30/mo" },
+      { "product": "StreamSaver Basic", "hook": "\"Disney+, Hulu, and Peacock for $15/mo instead of $35+ separately.\"", "price": "$15/mo" },
+      { "product": "Smart Home", "hook": "\"Wireless cameras, no drilling — great for renters. Just $10/mo.\"", "price": "$10/mo" }
+    ]
   },
   "mature_value": {
     "label": "Mature Value",
@@ -81,18 +93,21 @@
     "color": "#f59e0b",
     "bg": "#451a03",
     "desc": "Older homeowners, moderate income. Value simplicity, reliability, and keeping in touch.",
-    "rec1": {
-      "title": "500M Internet + Unlimited Mobile",
-      "products": "500 Mbps @ $60/mo (5yr lock) · Unlimited $40/line · Free line 12 months",
-      "hook": "\"500 Mbps handles everything you need — video calls with the family, streaming your shows, browsing — and the price is locked for 5 years. Plus your mobile line is free for a full year.\"",
-      "addons": "$25 activation waived thru 4/21 · 99.9% network reliability"
+    "nonsub": {
+      "title": "Internet: 500M @ $60/mo (5yr lock)",
+      "pitch": "\"500 Mbps handles everything you need — video calls with family, streaming your shows, browsing — and the price is locked at $60/mo for 5 full years. No surprises on your bill.\"",
+      "includes": "Gateway + unlimited data · Professional install available · 99.9% reliable"
     },
-    "rec2": {
-      "title": "Voice Premier + Home Security",
-      "products": "Voice Premier $30/mo (APPD) — unlimited international to 90+ countries · Home Security $55/mo (APPD)",
-      "hook": "\"Voice Premier gives you unlimited calls to over 90 countries — perfect for staying connected with family. And Home Security lets you keep an eye on things from your phone when you're away.\"",
-      "addons": "Xfinity TV for local news + sports · Smart Home cameras $5/mo"
-    }
+    "xm": {
+      "title": "Mobile: Unlimited $40/line + Free line 12mo",
+      "pitch": "\"Your Xfinity Mobile line is free for a full year. Unlimited calls, texts, 30GB data — and you're on WiFi at home most of the time anyway, so you'll barely touch it. That's $480 in savings.\"",
+      "includes": "$25 activation waived · Mexico/Canada included · WiFi PowerBoost at home"
+    },
+    "crosssell": [
+      { "product": "Voice Premier", "hook": "\"Unlimited calls to 90+ countries — perfect for staying connected with family. $30/mo with autopay.\"", "price": "$30/mo (APPD)" },
+      { "product": "Home Security", "hook": "\"Keep an eye on things from your phone when you're away. Professional monitoring 24/7.\"", "price": "$55/mo (APPD)" },
+      { "product": "Xfinity TV", "hook": "\"Local news, sports, live events — X1 box with voice remote. Record up to 300 hours.\"", "price": "Package pricing" }
+    ]
   },
   "multicultural": {
     "label": "Multicultural Family",
@@ -100,17 +115,20 @@
     "color": "#ec4899",
     "bg": "#500724",
     "desc": "Spanish-speaking and/or foreign-born families. Multi-generational, value connectivity.",
-    "rec1": {
-      "title": "500M Internet + Multi-Line Mobile + Voice Premier",
-      "products": "500 Mbps @ $60/mo (5yr lock) · Unlimited $40/line for 3-4 lines · Free line 12mo · Voice Premier $30/mo (90+ countries)",
-      "hook": "\"The whole family stays connected — fast Internet for everyone at home, mobile lines for $40 each, and Voice Premier for unlimited calls to family back home in over 90 countries.\"",
-      "addons": "Mexico/Canada included on all mobile plans · $25 activation waived"
+    "nonsub": {
+      "title": "Internet: 500M @ $60/mo (5yr lock)",
+      "pitch": "\"With the whole family connected, 500 Mbps keeps everyone online without slowing down. Video calls back home, the kids streaming, everyone on their phones — all covered. Price locked 5 years.\"",
+      "includes": "Gateway + unlimited data · No contract, no ETF · Risk-free 30 days"
     },
-    "rec2": {
-      "title": "NOW TV Latino + StreamSaver",
-      "products": "NOW TV Latino $30/mo (Spanish channels + soccer) · StreamSaver $15/mo (Disney++Hulu+Peacock)",
-      "hook": "\"NOW TV Latino has all the Spanish-language channels plus soccer coverage for $30/mo. Add StreamSaver for $15 and the whole family gets Disney+, Hulu, and Peacock too.\"",
-      "addons": "Xumo Stream Box included · Smart Home $10/mo for renters"
-    }
+    "xm": {
+      "title": "Mobile: Unlimited $40/line × 3-4 lines + Free line 12mo",
+      "pitch": "\"The whole family stays connected — Unlimited at $40/line, and your first line is free for 12 months. Mexico and Canada calling is included on every plan, no extra charge.\"",
+      "includes": "Mexico/Canada included · NOW Mobile $25/line if no credit check · $25 activation waived"
+    },
+    "crosssell": [
+      { "product": "Voice Premier", "hook": "\"Unlimited calls to family back home — over 90 countries included. $30/mo with autopay.\"", "price": "$30/mo (APPD)" },
+      { "product": "NOW TV Latino", "hook": "\"Spanish-language channels plus soccer coverage for $30/mo. All the content the family wants.\"", "price": "$30/mo" },
+      { "product": "StreamSaver", "hook": "\"Add Disney+, Hulu, and Peacock for $15/mo — the kids will love it.\"", "price": "$15/mo" }
+    ]
   }
 }
