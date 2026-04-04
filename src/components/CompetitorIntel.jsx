@@ -1,10 +1,9 @@
 import carriers from '../data/carriers.json';
 import competition from '../data/competition.json';
 
-const ISP_COLORS = ['#6138f5', '#e67e22', '#2ecc71', '#e74c3c', '#3498db', '#9b59b6', '#1abc9c', '#f39c12'];
+const ISP_COLORS = ['#e67e22', '#2ecc71', '#e74c3c', '#3498db', '#9b59b6', '#1abc9c'];
 const COMCAST_COLOR = '#6138f5';
 
-// National mobile market share (FCC 2024 Communications Marketplace Report)
 const MOBILE_SHARE = {
   VZ: { name: 'Verizon', pct: 34, color: '#e00' },
   TMO: { name: 'T-Mobile', pct: 35, color: '#e20074' },
@@ -12,11 +11,11 @@ const MOBILE_SHARE = {
   OTH: { name: 'Other', pct: 4, color: '#484f58' },
 };
 
-function DonutChart({ slices, centerLabel, centerSub, size = 80 }) {
+function DonutChart({ slices, centerLabel, centerSub, size = 90 }) {
   const r = size / 2;
   const cx = r;
   const cy = r;
-  const innerR = r * 0.55;
+  const innerR = r * 0.52;
 
   let startAngle = -90;
   const paths = [];
@@ -39,7 +38,7 @@ function DonutChart({ slices, centerLabel, centerSub, size = 80 }) {
     paths.push(
       <path key={i}
         d={`M ${x1} ${y1} A ${r} ${r} 0 ${largeArc} 1 ${x2} ${y2} L ${ix1} ${iy1} A ${innerR} ${innerR} 0 ${largeArc} 0 ${ix2} ${iy2} Z`}
-        fill={s.color} opacity={s.highlight ? 1 : 0.6} stroke="#161b22" strokeWidth="1"
+        fill={s.color} opacity={s.highlight ? 1 : 0.5} stroke="#161b22" strokeWidth="1.5"
       />
     );
     startAngle = endAngle;
@@ -48,51 +47,40 @@ function DonutChart({ slices, centerLabel, centerSub, size = 80 }) {
   return (
     <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`}>
       {paths}
-      <text x={cx} y={cy - 3} textAnchor="middle" fill="#e6edf3" fontSize="11" fontWeight="700">{centerLabel}</text>
-      <text x={cx} y={cy + 9} textAnchor="middle" fill="#8b949e" fontSize="6.5">{centerSub}</text>
+      <text x={cx} y={cy - 3} textAnchor="middle" fill="#e6edf3" fontSize="13" fontWeight="700">{centerLabel}</text>
+      <text x={cx} y={cy + 10} textAnchor="middle" fill="#8b949e" fontSize="8">{centerSub}</text>
     </svg>
   );
 }
 
-function Legend({ slices }) {
-  return (
-    <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: 2 }}>
-      {slices.map((s, i) => (
-        <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 5, fontSize: 10 }}>
-          <div style={{ width: 7, height: 7, borderRadius: '50%', flexShrink: 0, background: s.color, opacity: s.highlight ? 1 : 0.6 }} />
-          <span style={{ color: s.highlight ? '#e6edf3' : '#8b949e', fontWeight: s.highlight ? 700 : 400, flex: 1 }}>
-            {s.name}
-          </span>
-          <span style={{ color: s.highlight ? s.color : '#484f58', fontWeight: 600, fontFamily: "'IBM Plex Mono', monospace", fontSize: 9 }}>
-            {s.pct}%
-          </span>
-        </div>
-      ))}
-    </div>
-  );
+function formatSpeed(mbps) {
+  if (!mbps) return '';
+  if (mbps >= 1000) return `${(mbps / 1000).toFixed(mbps % 1000 === 0 ? 0 : 1)}G`;
+  return `${mbps}M`;
 }
 
 export default function CompetitorIntel({ carrier, metro, state }) {
   const config = carriers[carrier];
   if (!config) return null;
 
-  // Broadband ISP pie data
+  // Broadband ISP data with speeds
   const ispProviders = (competition[state] || []).map((p, i) => ({
     name: p.isXf ? 'Xfinity' : p.name,
     pct: p.pct,
-    color: p.isXf ? COMCAST_COLOR : ISP_COLORS[(i + 1) % ISP_COLORS.length],
+    down: p.down,
+    color: p.isXf ? COMCAST_COLOR : ISP_COLORS[i % ISP_COLORS.length],
     highlight: p.isXf,
   }));
   const xfPct = ispProviders.find(p => p.highlight)?.pct || 0;
 
-  // Mobile carrier pie data — highlight the dominant one for this area
+  // Mobile carrier data
   const mobileSlices = ['TMO', 'VZ', 'ATT', 'OTH'].map(k => ({
     name: MOBILE_SHARE[k].name,
     pct: MOBILE_SHARE[k].pct,
     color: MOBILE_SHARE[k].color,
     highlight: k === carrier,
   }));
-  const dominantMobilePct = MOBILE_SHARE[carrier]?.pct || 0;
+  const dominantPct = MOBILE_SHARE[carrier]?.pct || 0;
 
   return (
     <div style={{
@@ -100,63 +88,82 @@ export default function CompetitorIntel({ carrier, metro, state }) {
       border: '1px solid #21262d',
     }}>
       <div style={{ fontSize: 10, fontWeight: 600, textTransform: 'uppercase', letterSpacing: 1, color: '#8b949e', marginBottom: 10 }}>
-        Market Landscape
+        Market Landscape · {metro}
       </div>
 
-      {/* Two pie charts side by side */}
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginBottom: 10 }}>
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 14 }}>
         {/* Broadband ISPs */}
         {ispProviders.length > 0 && (
           <div>
-            <div style={{ fontSize: 9, fontWeight: 600, textTransform: 'uppercase', letterSpacing: 0.5, color: '#484f58', marginBottom: 6 }}>
-              Broadband ISPs
+            <div style={{ fontSize: 9, fontWeight: 600, textTransform: 'uppercase', letterSpacing: 0.5, color: '#484f58', marginBottom: 8 }}>
+              Broadband Providers
             </div>
-            <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
-              <DonutChart slices={ispProviders} centerLabel={`${xfPct}%`} centerSub="Xfinity" size={70} />
-              <Legend slices={ispProviders} />
+            <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 8 }}>
+              <DonutChart slices={ispProviders} centerLabel={`${xfPct}%`} centerSub="Xfinity" size={90} />
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
+              {ispProviders.map((p, i) => (
+                <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 5, fontSize: 10 }}>
+                  <div style={{ width: 7, height: 7, borderRadius: '50%', flexShrink: 0, background: p.color, opacity: p.highlight ? 1 : 0.5 }} />
+                  <span style={{ color: p.highlight ? '#e6edf3' : '#8b949e', fontWeight: p.highlight ? 700 : 400, flex: 1 }}>
+                    {p.name}
+                  </span>
+                  {p.down && (
+                    <span style={{
+                      color: p.highlight ? '#7ee787' : '#484f58',
+                      fontFamily: "'IBM Plex Mono', monospace", fontSize: 9,
+                    }}>
+                      {formatSpeed(p.down)}
+                    </span>
+                  )}
+                  <span style={{
+                    color: p.highlight ? COMCAST_COLOR : '#484f58',
+                    fontWeight: 600, fontFamily: "'IBM Plex Mono', monospace", fontSize: 9,
+                    minWidth: 24, textAlign: 'right',
+                  }}>
+                    {p.pct}%
+                  </span>
+                </div>
+              ))}
             </div>
           </div>
         )}
 
         {/* Mobile Carriers */}
         <div>
-          <div style={{ fontSize: 9, fontWeight: 600, textTransform: 'uppercase', letterSpacing: 0.5, color: '#484f58', marginBottom: 6 }}>
+          <div style={{ fontSize: 9, fontWeight: 600, textTransform: 'uppercase', letterSpacing: 0.5, color: '#484f58', marginBottom: 8 }}>
             Mobile Carriers
           </div>
-          <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
-            <DonutChart slices={mobileSlices} centerLabel={`${dominantMobilePct}%`} centerSub={config.name} size={70} />
-            <Legend slices={mobileSlices} />
+          <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 8 }}>
+            <DonutChart slices={mobileSlices} centerLabel={`${dominantPct}%`} centerSub={config.name} size={90} />
           </div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
+            {mobileSlices.map((s, i) => (
+              <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 5, fontSize: 10 }}>
+                <div style={{ width: 7, height: 7, borderRadius: '50%', flexShrink: 0, background: s.color, opacity: s.highlight ? 1 : 0.5 }} />
+                <span style={{ color: s.highlight ? '#e6edf3' : '#8b949e', fontWeight: s.highlight ? 700 : 400, flex: 1 }}>
+                  {s.name}
+                </span>
+                <span style={{
+                  color: s.highlight ? s.color : '#484f58',
+                  fontWeight: 600, fontFamily: "'IBM Plex Mono', monospace", fontSize: 9,
+                  minWidth: 24, textAlign: 'right',
+                }}>
+                  {s.pct}%
+                </span>
+              </div>
+            ))}
+          </div>
+          {config.compliance && (
+            <div style={{
+              marginTop: 6, padding: '4px 8px', background: '#2a1a1a',
+              borderRadius: 4, fontSize: 9, color: '#f85149', fontWeight: 600, lineHeight: 1.3,
+            }}>
+              ⚠ {config.compliance}
+            </div>
+          )}
         </div>
       </div>
-
-      {/* Sales angle */}
-      <div style={{
-        padding: '6px 10px', background: '#1c2128', borderRadius: 6,
-        fontSize: 11, color: '#79c0ff', lineHeight: 1.4,
-        borderLeft: `3px solid ${config.color}`,
-      }}>
-        <span style={{ fontWeight: 600, color: '#e6edf3' }}>Mobile angle:</span> {config.angle}
-      </div>
-      {config.compliance && (
-        <div style={{
-          marginTop: 6, padding: '5px 10px', background: '#2a1a1a',
-          borderRadius: 6, fontSize: 10, color: '#f85149', fontWeight: 600,
-          letterSpacing: 0.3, lineHeight: 1.4,
-          borderLeft: '3px solid #f85149',
-        }}>
-          ⚠ {config.compliance}
-        </div>
-      )}
-      {config.ifAsked && (
-        <div style={{
-          marginTop: 4, padding: '5px 10px', background: '#1a2332',
-          borderRadius: 6, fontSize: 10, color: '#58a6ff', lineHeight: 1.4,
-          fontStyle: 'italic',
-        }}>
-          {config.ifAsked}
-        </div>
-      )}
     </div>
   );
 }

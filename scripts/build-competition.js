@@ -75,7 +75,15 @@ async function main() {
       `&$group=providername&$order=${encodeURIComponent("blocks DESC")}&$limit=4`;
 
     try {
-      const res = await fetchWithTimeout(url);
+      // Single query: count blocks AND max speed per provider
+      const comboWhere = encodeURIComponent(
+        `blockcode like '${fips}%' AND consumer='1' AND maxaddown>=25 AND (techcode='10' OR techcode='40' OR techcode='50')`
+      );
+      const comboUrl = `${FCC_API}?$select=${encodeURIComponent("providername,count(blockcode) as blocks,max(maxaddown) as topdown")}` +
+        `&$where=${comboWhere}` +
+        `&$group=providername&$order=${encodeURIComponent("blocks DESC")}&$limit=4`;
+
+      const res = await fetchWithTimeout(comboUrl);
       const text = await res.text();
       if (!text.startsWith('[')) {
         console.log(`\n  ${state}: API error, skipping`);
@@ -88,6 +96,7 @@ async function main() {
         name: cleanName(r.providername),
         pct: Math.round((parseInt(r.blocks) / total) * 100),
         isXf: r.providername.toUpperCase().includes('COMCAST'),
+        down: parseInt(r.topdown) || null,
       }));
 
       competition[state] = providers;
@@ -96,7 +105,7 @@ async function main() {
       console.log(`\n  ${state}: failed — ${e.message}`);
     }
 
-    // Rate limit: 1 second between queries
+    // Rate limit between queries
     if (i < stateFips.length - 1) await new Promise(r => setTimeout(r, 1000));
   }
 

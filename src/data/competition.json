@@ -3,1046 +3,1236 @@
     {
       "name": "BellSouth Telecommunications",
       "pct": 61,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Troy Cablevision",
       "pct": 18,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Google Fiber Alabama",
       "pct": 12,
-      "isXf": false
+      "isXf": false,
+      "down": 2000
     },
     {
       "name": "Farmers Telecommunications Cooperative",
       "pct": 9,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     }
   ],
   "AZ": [
     {
       "name": "CenturyLink",
       "pct": 47,
-      "isXf": false
+      "isXf": false,
+      "down": 940
     },
     {
       "name": "Cox",
       "pct": 40,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Valley Cooperative",
       "pct": 8,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Gila River Telecommunications Inc.",
       "pct": 4,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     }
   ],
   "AR": [
     {
       "name": "WEHCO Video",
       "pct": 33,
-      "isXf": false
+      "isXf": false,
+      "down": 150
     },
     {
       "name": "SOUTHWESTERN BELL TELEPHONE COMPANY, L.P.",
       "pct": 31,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "OzarksGo",
       "pct": 22,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Ritter Cable Corporation",
       "pct": 13,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     }
   ],
   "CA": [
     {
       "name": "AT&T California",
       "pct": 51,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Frontier Corporation",
       "pct": 39,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Sonic Telecom",
       "pct": 7,
-      "isXf": false
+      "isXf": false,
+      "down": 10000
     },
     {
       "name": "Ultimate Internet Access",
       "pct": 4,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     }
   ],
   "CO": [
     {
       "name": "CenturyLink",
       "pct": 78,
-      "isXf": false
+      "isXf": false,
+      "down": 940
     },
     {
       "name": "Nunn",
       "pct": 8,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Comcast",
       "pct": 7,
-      "isXf": true
+      "isXf": true,
+      "down": 2000
     },
     {
       "name": "DMEA Services",
       "pct": 7,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     }
   ],
   "CT": [
     {
       "name": "CSC Holdings LLC",
       "pct": 53,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Frontier Corporation",
       "pct": 27,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "NetSpeed LLC",
       "pct": 16,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Comcast",
       "pct": 4,
-      "isXf": true
+      "isXf": true,
+      "down": 2000
     }
   ],
   "DE": [
     {
       "name": "Verizon Delaware LLC",
       "pct": 96,
-      "isXf": false
+      "isXf": false,
+      "down": 940
     },
     {
       "name": "Comcast",
       "pct": 4,
-      "isXf": true
+      "isXf": true,
+      "down": 1200
     },
     {
       "name": "Bay Country",
       "pct": 0,
-      "isXf": false
+      "isXf": false,
+      "down": 100
     }
   ],
   "DC": [
     {
       "name": "Verizon Washington, DC Inc.",
       "pct": 90,
-      "isXf": false
+      "isXf": false,
+      "down": 940
     },
     {
       "name": "Comcast",
       "pct": 7,
-      "isXf": true
+      "isXf": true,
+      "down": 2000
     },
     {
       "name": "Starpower d/b/a RCN",
       "pct": 3,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Starry",
       "pct": 0,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     }
   ],
   "FL": [
     {
       "name": "Frontier Corporation",
       "pct": 45,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "BellSouth Telecommunications",
       "pct": 43,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "CenturyLink",
       "pct": 9,
-      "isXf": false
+      "isXf": false,
+      "down": 940
     },
     {
       "name": "Comcast",
       "pct": 3,
-      "isXf": true
+      "isXf": true,
+      "down": 2000
     }
   ],
   "GA": [
     {
       "name": "BellSouth Telecommunications",
       "pct": 70,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Windstream Georgia",
       "pct": 13,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Seimitsu",
       "pct": 9,
-      "isXf": false
+      "isXf": false,
+      "down": 50
     },
     {
       "name": "Pineland Cooperative",
       "pct": 8,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     }
   ],
   "HI": [
     {
       "name": "Hawaiian Telcom",
       "pct": 98,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Sandwich Isles",
       "pct": 1,
-      "isXf": false
+      "isXf": false,
+      "down": 200
     },
     {
       "name": "Charter",
       "pct": 1,
-      "isXf": false
+      "isXf": false,
+      "down": 940
     },
     {
       "name": "Hawaii Dialogix Telecom LLC",
       "pct": 1,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     }
   ],
   "ID": [
     {
       "name": "CenturyLink",
       "pct": 56,
-      "isXf": false
+      "isXf": false,
+      "down": 940
     },
     {
       "name": "ATC",
       "pct": 19,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Project Mutual Cooperative Association",
       "pct": 16,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Millennium Networks",
       "pct": 9,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     }
   ],
   "IL": [
     {
       "name": "Illinois Bell",
       "pct": 59,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Metro Fibernet",
       "pct": 24,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Wabash Independent Networks",
       "pct": 9,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Adams Co-Operative",
       "pct": 9,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     }
   ],
   "IN": [
     {
       "name": "Indiana Bell",
       "pct": 36,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Metro Fibernet",
       "pct": 24,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "CMN-RUS",
       "pct": 21,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "TRANSWORLD NETWORK, CORP",
       "pct": 18,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     }
   ],
   "IA": [
     {
       "name": "Metro Fibernet",
       "pct": 35,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Winnebago Cooperative Telecom Association",
       "pct": 22,
-      "isXf": false
+      "isXf": false,
+      "down": 100
     },
     {
       "name": "CenturyLink",
       "pct": 22,
-      "isXf": false
+      "isXf": false,
+      "down": 940
     },
     {
       "name": "Grand River Mutual Corp",
       "pct": 21,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     }
   ],
   "KS": [
     {
       "name": "Rural Service Co dba Nex-Tech",
       "pct": 35,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Google Fiber Kansas",
       "pct": 25,
-      "isXf": false
+      "isXf": false,
+      "down": 2000
     },
     {
       "name": "SOUTHWESTERN BELL TELEPHONE COMPANY, L.P.",
       "pct": 23,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Craw Kan Cooperative Inc",
       "pct": 17,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     }
   ],
   "KY": [
     {
       "name": "BellSouth Telecommunications",
       "pct": 38,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Windstream Kentucky East",
       "pct": 24,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Metro Fibernet",
       "pct": 20,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Cincinnati Bell LLC",
       "pct": 18,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     }
   ],
   "LA": [
     {
       "name": "BellSouth Telecommunications",
       "pct": 58,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "East Ascension, L.L.C.",
       "pct": 20,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Lafayette City Parish Consolidated Government",
       "pct": 11,
-      "isXf": false
+      "isXf": false,
+      "down": 10000
     },
     {
       "name": "Allen's TV Cable Service",
       "pct": 11,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     }
   ],
   "ME": [
     {
       "name": "Pioneer Broadband",
       "pct": 53,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "TIDEWATER TELECOM, INC.",
       "pct": 17,
-      "isXf": false
+      "isXf": false,
+      "down": 100
     },
     {
       "name": "LINCOLNVILLE COMMUNICATIONS, INC.",
       "pct": 15,
-      "isXf": false
+      "isXf": false,
+      "down": 100
     },
     {
       "name": "Biddeford Internet Corporation",
       "pct": 15,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     }
   ],
   "MD": [
     {
       "name": "Verizon Maryland LLC",
       "pct": 92,
-      "isXf": false
+      "isXf": false,
+      "down": 940
     },
     {
       "name": "Comcast",
       "pct": 4,
-      "isXf": true
+      "isXf": true,
+      "down": 2000
     },
     {
       "name": "Antietam Cable",
       "pct": 2,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "ThinkBig Networks",
       "pct": 1,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     }
   ],
   "MA": [
     {
       "name": "Verizon New England Inc.",
       "pct": 92,
-      "isXf": false
+      "isXf": false,
+      "down": 940
     },
     {
       "name": "Comcast",
       "pct": 6,
-      "isXf": true
+      "isXf": true,
+      "down": 2000
     },
     {
       "name": "Westfield Gas & Electric",
       "pct": 2,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Concord Light Broadband",
       "pct": 1,
-      "isXf": false
+      "isXf": false,
+      "down": 300
     }
   ],
   "MI": [
     {
       "name": "Michigan Bell",
       "pct": 49,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Climax",
       "pct": 19,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Midwest Energy Cooperative dba Midwest Connections",
       "pct": 17,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Michigan Access",
       "pct": 14,
-      "isXf": false
+      "isXf": false,
+      "down": 400
     }
   ],
   "MN": [
     {
       "name": "Jaguar",
       "pct": 52,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "CenturyLink",
       "pct": 17,
-      "isXf": false
+      "isXf": false,
+      "down": 940
     },
     {
       "name": "Metro Fibernet",
       "pct": 17,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Midcontinent",
       "pct": 14,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     }
   ],
   "MS": [
     {
       "name": "BellSouth Telecommunications",
       "pct": 58,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Telepak Networks",
       "pct": 26,
-      "isXf": false
+      "isXf": false,
+      "down": 940
     },
     {
       "name": "North East Fiber LLC",
       "pct": 9,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Telapex",
       "pct": 7,
-      "isXf": false
+      "isXf": false,
+      "down": 100
     }
   ],
   "MO": [
     {
       "name": "SOUTHWESTERN BELL TELEPHONE COMPANY, L.P.",
       "pct": 38,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Google Fiber Missouri",
       "pct": 29,
-      "isXf": false
+      "isXf": false,
+      "down": 2000
     },
     {
       "name": "Co-Mo Comm",
       "pct": 19,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "United Fiber",
       "pct": 15,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     }
   ],
   "NE": [
     {
       "name": "Windstream Nebraska",
       "pct": 28,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "ALLO LLC",
       "pct": 28,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Northeast Nebraska",
       "pct": 27,
-      "isXf": false
+      "isXf": false,
+      "down": 100
     },
     {
       "name": "Hamilton",
       "pct": 16,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     }
   ],
   "NV": [
     {
       "name": "CenturyLink",
       "pct": 61,
-      "isXf": false
+      "isXf": false,
+      "down": 940
     },
     {
       "name": "Nevada Bell",
       "pct": 18,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Cox",
       "pct": 11,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Churchill County dba CC",
       "pct": 10,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     }
   ],
   "NH": [
     {
       "name": "Consolidated of Northern New England,LLC",
       "pct": 65,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "TDS Telecommunications LLC",
       "pct": 22,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Granite State",
       "pct": 8,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Comcast",
       "pct": 5,
-      "isXf": true
+      "isXf": true,
+      "down": 2000
     }
   ],
   "NJ": [
     {
       "name": "Verizon New Jersey Inc.",
       "pct": 59,
-      "isXf": false
+      "isXf": false,
+      "down": 940
     },
     {
       "name": "CSC Holdings LLC",
       "pct": 39,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Comcast",
       "pct": 1,
-      "isXf": true
+      "isXf": true,
+      "down": 2000
     },
     {
       "name": "Planet Networks",
       "pct": 1,
-      "isXf": false
+      "isXf": false,
+      "down": 10000
     }
   ],
   "NM": [
     {
       "name": "ENMR Cooperative",
       "pct": 58,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Valor Telecommunications of Texas",
       "pct": 21,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Tularosa Basin",
       "pct": 11,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Yucca Telecommunications Systems",
       "pct": 10,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     }
   ],
   "NY": [
     {
       "name": "Verizon New York Inc.",
       "pct": 54,
-      "isXf": false
+      "isXf": false,
+      "down": 940
     },
     {
       "name": "CSC Holdings LLC",
       "pct": 41,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Charter",
       "pct": 3,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Empire Long Distance Corporation",
       "pct": 2,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     }
   ],
   "NC": [
     {
       "name": "BellSouth Telecommunications",
       "pct": 76,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Google Fiber North Carolina",
       "pct": 9,
-      "isXf": false
+      "isXf": false,
+      "down": 2000
     },
     {
       "name": "Windstream Concord",
       "pct": 8,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "North State dba North State",
       "pct": 7,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     }
   ],
   "ND": [
     {
       "name": "North Dakota",
       "pct": 32,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Midcontinent",
       "pct": 27,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "West River Telecommunications Cooperative",
       "pct": 21,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "SRT",
       "pct": 20,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     }
   ],
   "OH": [
     {
       "name": "The Ohio Bell",
       "pct": 36,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Cincinnati Bell LLC",
       "pct": 29,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Massillon Cable TV",
       "pct": 27,
-      "isXf": false
+      "isXf": false,
+      "down": 100
     },
     {
       "name": "Windstream Ohio",
       "pct": 8,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     }
   ],
   "OK": [
     {
       "name": "Oklahoma Fiber Network",
       "pct": 35,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "SOUTHWESTERN BELL TELEPHONE COMPANY, L.P.",
       "pct": 30,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "OzarksGo",
       "pct": 18,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Cox",
       "pct": 17,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     }
   ],
   "OR": [
     {
       "name": "CenturyLink",
       "pct": 45,
-      "isXf": false
+      "isXf": false,
+      "down": 940
     },
     {
       "name": "Northwest Fiber",
       "pct": 28,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Douglas Services Inc, dba Douglas Fast Net",
       "pct": 24,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Comcast",
       "pct": 3,
-      "isXf": true
+      "isXf": true,
+      "down": 2000
     }
   ],
   "PA": [
     {
       "name": "Verizon Pennsylvania LLC",
       "pct": 85,
-      "isXf": false
+      "isXf": false,
+      "down": 940
     },
     {
       "name": "Windstream Pennsylvania",
       "pct": 7,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Salsgiver",
       "pct": 4,
-      "isXf": false
+      "isXf": false,
+      "down": 10000
     },
     {
       "name": "Comcast",
       "pct": 3,
-      "isXf": true
+      "isXf": true,
+      "down": 2000
     }
   ],
   "RI": [
     {
       "name": "Verizon New England Inc.",
       "pct": 99,
-      "isXf": false
+      "isXf": false,
+      "down": 940
     },
     {
       "name": "Cox",
       "pct": 1,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Coldwater Board of Public",
       "pct": 0,
-      "isXf": false
+      "isXf": false,
+      "down": 60
     }
   ],
   "SC": [
     {
       "name": "BellSouth Telecommunications",
       "pct": 44,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Horry Cooperative",
       "pct": 30,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "West Carolina",
       "pct": 13,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Farmers Cooperative",
       "pct": 13,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     }
   ],
   "TN": [
     {
       "name": "BellSouth Telecommunications",
       "pct": 57,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "EPB Fiber Optics",
       "pct": 16,
-      "isXf": false
+      "isXf": false,
+      "down": 10000
     },
     {
       "name": "BRISTOL TENNESSEE ESSENTIAL SERVICES",
       "pct": 15,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Twin Lakes Cooperative Corporation",
       "pct": 13,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     }
   ],
   "TX": [
     {
       "name": "SOUTHWESTERN BELL TELEPHONE COMPANY, L.P.",
       "pct": 72,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Frontier Corporation",
       "pct": 15,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "NTS",
       "pct": 9,
-      "isXf": false
+      "isXf": false,
+      "down": 10000
     },
     {
       "name": "Google Fiber Texas",
       "pct": 5,
-      "isXf": false
+      "isXf": false,
+      "down": 2000
     }
   ],
   "UT": [
     {
       "name": "Veracity Networks",
       "pct": 39,
-      "isXf": false
+      "isXf": false,
+      "down": 10000
     },
     {
       "name": "CenturyLink",
       "pct": 27,
-      "isXf": false
+      "isXf": false,
+      "down": 940
     },
     {
       "name": "Utah Telecommunication Open Infrastructure Agency",
       "pct": 21,
-      "isXf": false
+      "isXf": false,
+      "down": 10000
     },
     {
       "name": "Google Fiber Utah",
       "pct": 13,
-      "isXf": false
+      "isXf": false,
+      "down": 2000
     }
   ],
   "VT": [
     {
       "name": "Vermont Co.",
       "pct": 41,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "EAST CENTRAL VERMONT TELECOMMUNICATIONS DISTRICT",
       "pct": 36,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Consolidated of Vermont CompanyLLC",
       "pct": 12,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Champlain Broadband LLC d/b/a Burlington Telecom",
       "pct": 12,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     }
   ],
   "VA": [
     {
       "name": "Verizon Virginia LLC",
       "pct": 72,
-      "isXf": false
+      "isXf": false,
+      "down": 940
     },
     {
       "name": "Point Broadband Fiber Holding",
       "pct": 16,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Eastern Shore of Virginia Broadband Authority",
       "pct": 6,
-      "isXf": false
+      "isXf": false,
+      "down": 2000
     },
     {
       "name": "Shentel",
       "pct": 6,
-      "isXf": false
+      "isXf": false,
+      "down": 2000
     }
   ],
   "WA": [
     {
       "name": "CenturyLink",
       "pct": 56,
-      "isXf": false
+      "isXf": false,
+      "down": 940
     },
     {
       "name": "Northwest Fiber",
       "pct": 23,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Grant County PowerNet",
       "pct": 13,
-      "isXf": false
+      "isXf": false,
+      "down": 1024
     },
     {
       "name": "Public Utility District #2 of Grant County, WA",
       "pct": 8,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     }
   ],
   "WV": [
     {
       "name": "Shentel",
       "pct": 33,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Spruce Knob Seneca Rocks",
       "pct": 32,
-      "isXf": false
+      "isXf": false,
+      "down": 25
     },
     {
       "name": "Hardy Telecommunications Inc",
       "pct": 18,
-      "isXf": false
+      "isXf": false,
+      "down": 100
     },
     {
       "name": "Hardy Telecommunications,Inc CLEC",
       "pct": 17,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     }
   ],
   "WI": [
     {
       "name": "Wisconsin Bell",
       "pct": 49,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "TDS Telecommunications LLC",
       "pct": 19,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Norvado",
       "pct": 16,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "TDS Metrocom",
       "pct": 16,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     }
   ],
   "WY": [
     {
       "name": "TRI County Association",
       "pct": 44,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Visionary",
       "pct": 32,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "RT",
       "pct": 14,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     },
     {
       "name": "Millennium Networks",
       "pct": 11,
-      "isXf": false
+      "isXf": false,
+      "down": 1000
     }
   ]
 }
