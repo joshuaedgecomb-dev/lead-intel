@@ -9,6 +9,7 @@ import QuickRapport from './components/QuickRapport.jsx';
 import NetworkPositioning from './components/NetworkPositioning.jsx';
 import CrossSell from './components/CrossSell.jsx';
 import HouseholdIntel from './components/HouseholdIntel.jsx';
+import ConnectivityIntel from './components/ConnectivityIntel.jsx';
 
 export default function App() {
   const [zip, setZip] = useState('');
@@ -129,11 +130,14 @@ export default function App() {
         </div>
       )}
 
-      {/* Pitch Strategy + Household Intel */}
+      {/* Pitch Strategy + Household/Connectivity Intel */}
       {data && !data.partial && (
         <div className="intel-card" style={{ marginTop: 12, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
           <PitchStrategy arch={data.arch} arch2={data.arch2} />
-          <HouseholdIntel data={data} />
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+            <ConnectivityIntel zip5={data.zip5} />
+            <HouseholdIntel data={data} />
+          </div>
         </div>
       )}
 
