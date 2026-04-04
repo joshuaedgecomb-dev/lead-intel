@@ -89,7 +89,7 @@ export default function WeatherCard({ weather, city, zip3, isCached, tz }) {
               </div>
 
               {/* Temperature bar chart */}
-              <div style={{ display: 'flex', alignItems: 'flex-end', gap: 2, height: chartH }}>
+              <div style={{ display: 'flex', alignItems: 'flex-end', gap: 2, height: 40 }}>
                 {hourly.map((h, i) => {
                   const pct = ((h.temp - minTemp) / tempRange) * 0.75 + 0.25; // min 25% height
                   const color = getTempColor(h.temp);
