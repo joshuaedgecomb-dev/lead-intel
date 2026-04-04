@@ -47,8 +47,10 @@ export function useWeather() {
   const abortRef = useRef(null);
 
   const fetchWeather = useCallback(async (lat, lon, zip3) => {
-    if (weatherCache[zip3]) {
-      setWeather({ status: 'ok', cached: true, ...weatherCache[zip3] });
+    const cached = weatherCache[zip3];
+    const CACHE_TTL = 30 * 60 * 1000; // 30 minutes
+    if (cached && cached.ts && (Date.now() - cached.ts) < CACHE_TTL) {
+      setWeather({ status: 'ok', cached: true, ...cached });
       return;
     }
     setWeather({ status: 'loading', text: '', temp: '', icon: '' });
@@ -97,6 +99,7 @@ export function useWeather() {
         temp: `${current.temperature}\u00B0${current.temperatureUnit}`,
         icon: current.isDaytime ? '\u2600' : '\uD83C\uDF19',
         hourly,
+        ts: Date.now(),
       };
       weatherCache[zip3] = result;
       setWeather({ status: 'ok', cached: false, ...result });
