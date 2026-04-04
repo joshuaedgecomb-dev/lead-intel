@@ -1,5 +1,23 @@
 {
-  "VZ": { "name": "Verizon", "color": "#e00", "angle": "Same Verizon network, fraction of the cost. Identical coverage." },
-  "ATT": { "name": "AT&T", "color": "#00a8e0", "angle": "Better network reliability on Verizon plus lower price." },
-  "TMO": { "name": "T-Mobile", "color": "#e20074", "angle": "More reliable Verizon network at a competitive price." }
+  "VZ": {
+    "name": "Verizon",
+    "color": "#e00",
+    "angle": "Lead with savings and free line. Do NOT mention Verizon network unless the member brings it up first.",
+    "ifAsked": "If they mention Verizon: \"You'd be on the exact same network — but at a fraction of the cost.\"",
+    "compliance": "Do not proactively say 'Verizon towers' or 'Verizon network' — only confirm if the member asks."
+  },
+  "ATT": {
+    "name": "AT&T",
+    "color": "#00a8e0",
+    "angle": "Consistent wired speeds — never deprioritized like AT&T Air or AT&T 5G. WiFi hotspot access AT&T doesn't offer. Save up to $1,500.",
+    "ifAsked": null,
+    "compliance": null
+  },
+  "TMO": {
+    "name": "T-Mobile",
+    "color": "#e20074",
+    "angle": "Consistent wired speeds — never deprioritized like T-Mobile 5G. WiFi hotspot access T-Mobile doesn't offer. 99.9% reliable network.",
+    "ifAsked": null,
+    "compliance": null
+  }
 }

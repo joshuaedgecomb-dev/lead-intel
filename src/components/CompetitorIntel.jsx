@@ -31,13 +31,23 @@ export default function CompetitorIntel({ carrier, metro }) {
       }}>
         <span style={{ fontWeight: 600, color: '#e6edf3' }}>Angle:</span> {config.angle}
       </div>
-      {carrier === 'VZ' && (
+      {config.compliance && (
         <div style={{
-          marginTop: 8, padding: '6px 10px', background: '#1a2332',
-          borderRadius: 6, fontSize: 10, color: '#58a6ff', fontWeight: 600,
-          textTransform: 'uppercase', letterSpacing: 0.5, textAlign: 'center',
+          marginTop: 8, padding: '6px 10px', background: '#2a1a1a',
+          borderRadius: 6, fontSize: 10, color: '#f85149', fontWeight: 600,
+          letterSpacing: 0.3, lineHeight: 1.4,
+          borderLeft: '3px solid #f85149',
         }}>
-          SAME NETWORK OBJECTION KILLER
+          ⚠ {config.compliance}
+        </div>
+      )}
+      {config.ifAsked && (
+        <div style={{
+          marginTop: 6, padding: '6px 10px', background: '#1a2332',
+          borderRadius: 6, fontSize: 11, color: '#58a6ff', lineHeight: 1.4,
+          fontStyle: 'italic',
+        }}>
+          {config.ifAsked}
         </div>
       )}
     </div>

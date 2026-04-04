@@ -17,5 +17,9 @@
     "hot": "Staying cool?",
     "cold": "Staying warm?",
     "mild": "Sounds nice!"
+  },
+  "compliance": {
+    "broadbandLabels": "You can review pricing and features at xfinity.com/labels",
+    "when": "Must offer on ANY call where Internet or Mobile is pitched — before or during plan details"
   }
 }

@@ -1,5 +1,32 @@
 {
-  "1": { "label": "LEAD WITH SAVINGS", "color": "#22c55e", "bg": "#052e16", "rec": "Unlimited @ $40/line", "hook": "$0 first line for 12 months. Emphasize monthly savings vs current carrier." },
-  "2": { "label": "BALANCED PITCH", "color": "#3b82f6", "bg": "#172554", "rec": "Unlimited, mention Premium", "hook": "Same network, better price. Weave in StreamSaver bundle value." },
-  "3": { "label": "LEAD WITH PREMIUM", "color": "#a855f7", "bg": "#3b0764", "rec": "Premium Unlimited @ $50", "hook": "4K streaming, 100GB data, Global Travel Pass. Push device upgrades." }
+  "1": {
+    "label": "LEAD WITH SAVINGS",
+    "color": "#22c55e",
+    "bg": "#052e16",
+    "rec": "300M @ $45/5yr + Free XM line",
+    "hook": "Free Unlimited mobile line for 12 months ($480 value). 300 Mbps Internet locked at $45/mo for 5 years. No contract, no ETF. Risk-free 30 days.",
+    "internet": "$45/mo (300M) or $60/mo (500M) — 5yr price lock",
+    "mobile": "Free line 12mo + Unlimited @ $40/line",
+    "promo": "Waived $25 activation through 4/21"
+  },
+  "2": {
+    "label": "BALANCED PITCH",
+    "color": "#3b82f6",
+    "bg": "#172554",
+    "rec": "1G @ $70/5yr + StreamSaver $15",
+    "hook": "1 Gig Internet at $70/mo locked 5 years. Includes Disney+, Hulu & Peacock Premium for 36 months. Free XM line 12 months. StreamSaver bundles from $15/mo save 25%+ vs standalone.",
+    "internet": "$70/mo (1G) — 5yr lock, includes streaming",
+    "mobile": "Free line 12mo + Unlimited @ $40/line",
+    "promo": "iPhone 17e on us with trade-in (Premium)"
+  },
+  "3": {
+    "label": "LEAD WITH PREMIUM",
+    "color": "#a855f7",
+    "bg": "#3b0764",
+    "rec": "1G @ $70/5yr + Premium Unlimited $50",
+    "hook": "Premium Unlimited: 100GB data, 4K streaming, 30GB hotspot, Global Travel Pass included. 1 Gig Internet $70/mo for 5 years with Disney+/Hulu/Peacock. Up to $1,100 off Samsung or iPhone 17e on us with trade-in.",
+    "internet": "$70/mo (1G) or $100/mo (1.2G/2G) — 5yr lock",
+    "mobile": "Premium Unlimited $50/line, free line 12mo",
+    "promo": "Up to $1,100 off Samsung, iPhone 17e on us w/ trade-in"
+  }
 }

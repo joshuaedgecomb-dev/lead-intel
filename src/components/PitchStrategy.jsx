@@ -25,12 +25,36 @@ export default function PitchStrategy({ tier }) {
       <div style={{ fontSize: 12, color: '#c9d1d9', lineHeight: 1.5, marginBottom: 8 }}>
         {config.hook}
       </div>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
+        <div style={{
+          fontSize: 10, color: '#e6edf3', padding: '3px 8px',
+          background: 'rgba(255,255,255,0.06)', borderRadius: 4,
+          fontFamily: "'IBM Plex Mono', monospace",
+        }}>
+          WiFi: {config.internet}
+        </div>
+        <div style={{
+          fontSize: 10, color: '#e6edf3', padding: '3px 8px',
+          background: 'rgba(255,255,255,0.06)', borderRadius: 4,
+          fontFamily: "'IBM Plex Mono', monospace",
+        }}>
+          Mobile: {config.mobile}
+        </div>
+        {config.promo && (
+          <div style={{
+            fontSize: 10, color: '#ffa657', padding: '3px 8px',
+            background: 'rgba(255,165,87,0.08)', borderRadius: 4,
+            fontFamily: "'IBM Plex Mono', monospace",
+          }}>
+            Promo: {config.promo}
+          </div>
+        )}
+      </div>
       <div style={{
-        fontSize: 11, fontWeight: 600, color: '#e6edf3',
-        padding: '4px 8px', background: 'rgba(255,255,255,0.08)', borderRadius: 4,
-        fontFamily: "'IBM Plex Mono', monospace",
+        marginTop: 8, padding: '4px 8px', background: 'rgba(255,255,255,0.04)',
+        borderRadius: 4, fontSize: 9, color: '#8b949e', lineHeight: 1.3,
       }}>
-        Rec: {config.rec}
+        Compliance: Offer broadband labels (xfinity.com/labels) before plan details
       </div>
     </div>
   );
