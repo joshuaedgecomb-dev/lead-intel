@@ -78,13 +78,13 @@ export function useWeather() {
       const f = await r2.json();
       const periods = f?.properties?.periods;
       if (!periods || periods.length === 0) throw new Error('No period data');
-      const current = periods[0];
 
-      // Parse hourly forecast — next 12 hours
+      // Parse hourly forecast
       let hourly = [];
+      let hPeriods = [];
       if (r3 && r3.ok) {
         const h = await r3.json();
-        const hPeriods = h?.properties?.periods || [];
+        hPeriods = h?.properties?.periods || [];
         hourly = hPeriods.slice(0, 6).map(hp => ({
           time: hp.startTime,
           temp: hp.temperature,
@@ -94,10 +94,19 @@ export function useWeather() {
         }));
       }
 
+      // Use first hourly period for current temp (most accurate "right now")
+      // The regular forecast gives day/night lows/highs, not current temp
+      const nowHourly = hPeriods[0];
+      const fallback = periods[0];
+      const currentTemp = nowHourly ? nowHourly.temperature : fallback.temperature;
+      const currentUnit = nowHourly ? nowHourly.temperatureUnit : fallback.temperatureUnit;
+      const currentText = nowHourly ? (nowHourly.shortForecast || fallback.shortForecast || 'N/A') : (fallback.shortForecast || 'N/A');
+      const isDaytime = nowHourly ? nowHourly.isDaytime : fallback.isDaytime;
+
       const result = {
-        text: current.shortForecast || 'N/A',
-        temp: `${current.temperature}\u00B0${current.temperatureUnit}`,
-        icon: current.isDaytime ? '\u2600' : '\uD83C\uDF19',
+        text: currentText,
+        temp: `${currentTemp}\u00B0${currentUnit}`,
+        icon: isDaytime ? '\u2600' : '\uD83C\uDF19',
         hourly,
         ts: Date.now(),
       };
