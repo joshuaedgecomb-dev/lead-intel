@@ -1,7 +1,14 @@
 import rapport from '../data/rapport.json';
 
+function formatHour(isoTime) {
+  const d = new Date(isoTime);
+  const h = d.getHours();
+  if (h === 0) return '12a';
+  if (h === 12) return '12p';
+  return h > 12 ? `${h - 12}p` : `${h}a`;
+}
+
 export default function WeatherCard({ weather, city, zip3, isCached }) {
-  // Per spec: render nothing when offline, failed, or idle — no error states
   if (weather.status === 'idle' || weather.status === 'error') return null;
 
   let rapportLine = '';
@@ -46,30 +53,41 @@ export default function WeatherCard({ weather, city, zip3, isCached }) {
             Rapport: "How's the weather out there{city ? ` in ${city}` : ''}? {rapportLine}"
           </div>
 
-          {/* Forecast */}
-          {weather.forecast && weather.forecast.length > 1 && (
+          {/* Hourly Forecast */}
+          {weather.hourly && weather.hourly.length > 0 && (
             <div style={{ marginTop: 10 }}>
               <div style={{ fontSize: 9, fontWeight: 600, textTransform: 'uppercase', letterSpacing: 1, color: '#484f58', marginBottom: 6 }}>
-                Forecast
+                Next 12 Hours
               </div>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
-                {weather.forecast.slice(1).map((p, i) => (
+              <div style={{
+                display: 'flex', gap: 2, overflowX: 'auto',
+              }}>
+                {weather.hourly.map((h, i) => (
                   <div key={i} style={{
-                    display: 'flex', alignItems: 'center', gap: 6,
-                    fontSize: 11, lineHeight: 1.3,
+                    display: 'flex', flexDirection: 'column', alignItems: 'center',
+                    padding: '4px 5px', borderRadius: 4, minWidth: 36,
+                    background: i === 0 ? '#1c2128' : 'transparent',
                   }}>
                     <span style={{
-                      color: p.isDaytime ? '#ffa657' : '#8b949e',
-                      fontWeight: 600, minWidth: 80, flexShrink: 0,
-                      fontFamily: "'IBM Plex Mono', monospace", fontSize: 10,
+                      fontSize: 9, color: '#8b949e',
+                      fontFamily: "'IBM Plex Mono', monospace",
                     }}>
-                      {p.name}
+                      {formatHour(h.time)}
                     </span>
-                    <span style={{ color: '#e6edf3', fontWeight: 600, minWidth: 36 }}>
-                      {p.temp}
+                    <span style={{
+                      fontSize: 12, fontWeight: 600,
+                      color: h.isDaytime ? '#e6edf3' : '#8b949e',
+                      marginTop: 2,
+                    }}>
+                      {h.temp}°
                     </span>
-                    <span style={{ color: '#8b949e', fontSize: 10 }}>
-                      {p.text}
+                    <span style={{
+                      fontSize: 8, color: '#484f58', marginTop: 1,
+                      textAlign: 'center', lineHeight: 1.1,
+                      maxWidth: 40, overflow: 'hidden',
+                      whiteSpace: 'nowrap', textOverflow: 'ellipsis',
+                    }}>
+                      {h.text}
                     </span>
                   </div>
                 ))}

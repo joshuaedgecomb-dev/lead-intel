@@ -63,23 +63,40 @@ export function useWeather() {
       if (!r1.ok) throw new Error('NWS points failed');
       const p = await r1.json();
       const fUrl = p?.properties?.forecast;
+      const hUrl = p?.properties?.forecastHourly;
       if (!fUrl) throw new Error('No forecast URL');
-      const r2 = await fetch(fUrl, { signal: ctrl.signal, headers: { Accept: 'application/geo+json' } });
+
+      // Fetch regular forecast and hourly forecast in parallel
+      const [r2, r3] = await Promise.all([
+        fetch(fUrl, { signal: ctrl.signal, headers: { Accept: 'application/geo+json' } }),
+        hUrl ? fetch(hUrl, { signal: ctrl.signal, headers: { Accept: 'application/geo+json' } }).catch(() => null) : null,
+      ]);
+
       if (!r2.ok) throw new Error('NWS forecast failed');
       const f = await r2.json();
       const periods = f?.properties?.periods;
       if (!periods || periods.length === 0) throw new Error('No period data');
       const current = periods[0];
+
+      // Parse hourly forecast — next 12 hours
+      let hourly = [];
+      if (r3 && r3.ok) {
+        const h = await r3.json();
+        const hPeriods = h?.properties?.periods || [];
+        hourly = hPeriods.slice(0, 12).map(hp => ({
+          time: hp.startTime,
+          temp: hp.temperature,
+          unit: hp.temperatureUnit,
+          text: hp.shortForecast || '',
+          isDaytime: hp.isDaytime,
+        }));
+      }
+
       const result = {
         text: current.shortForecast || 'N/A',
         temp: `${current.temperature}\u00B0${current.temperatureUnit}`,
         icon: current.isDaytime ? '\u2600' : '\uD83C\uDF19',
-        forecast: periods.slice(0, 6).map(p => ({
-          name: p.name,
-          temp: `${p.temperature}\u00B0${p.temperatureUnit}`,
-          text: p.shortForecast || '',
-          isDaytime: p.isDaytime,
-        })),
+        hourly,
       };
       weatherCache[zip3] = result;
       setWeather({ status: 'ok', ...result });
