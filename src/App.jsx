@@ -7,6 +7,7 @@ import PitchStrategy from './components/PitchStrategy.jsx';
 import CompetitorIntel from './components/CompetitorIntel.jsx';
 import HouseholdIntel from './components/HouseholdIntel.jsx';
 import ConnectivityIntel from './components/ConnectivityIntel.jsx';
+import ZipSearch from './components/ZipSearch.jsx';
 import connectivity from './data/connectivity.json';
 
 export default function App() {
@@ -60,26 +61,19 @@ export default function App() {
         .intel-card { animation: fade-in 0.25s ease-out; }
         .zip-input {
           background: #161b22; border: 2px solid #30363d; color: #e6edf3;
-          font-family: 'IBM Plex Mono', monospace; font-size: 25px; font-weight: 600;
-          padding: 10px 14px; width: 140px; border-radius: 8px; outline: none;
-          letter-spacing: 3px; text-align: center; transition: border-color 0.2s;
+          font-family: 'IBM Plex Sans', sans-serif; font-size: 18px; font-weight: 500;
+          padding: 10px 14px; width: 280px; border-radius: 8px; outline: none;
+          transition: border-color 0.2s;
         }
         .zip-input:focus { border-color: #58a6ff; }
-        .zip-input::placeholder { color: #484f58; letter-spacing: 2px; font-size: 18px; }
+        .zip-input::placeholder { color: #484f58; font-size: 16px; }
       `}</style>
 
       {/* Header */}
       <div style={{ display: 'flex', alignItems: 'center', gap: 20, marginBottom: 20 }}>
         <div>
           <div style={{ fontSize: 13, fontWeight: 600, textTransform: 'uppercase', letterSpacing: 1.5, color: '#8b949e', marginBottom: 4 }}>Lead Intel</div>
-          <input
-            className="zip-input"
-            type="text"
-            placeholder="ZIP"
-            maxLength={5}
-            value={zip}
-            onChange={(e) => setZip(e.target.value.replace(/\D/g, ''))}
-          />
+          <ZipSearch onSelect={setZip} />
         </div>
         {data && !data.partial && (
           <div className="intel-card" style={{ flex: 1, display: 'flex', alignItems: 'center', gap: 20 }}>

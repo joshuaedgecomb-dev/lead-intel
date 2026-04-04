@@ -1,5 +1,6 @@
 import zip5Data from '../data/zip5.json';
 import zip3Carriers from '../data/zip3-carriers.json';
+import zip5Cities from '../data/zip5-cities.json';
 
 const CACHE_KEY = 'leadintel_zip_cache';
 const CACHE_TTL = 60 * 60 * 1000; // 1 hour
@@ -55,7 +56,7 @@ export function lookupZip(zip) {
   if (zip5Data[z5]) {
     const entry = zip5Data[z5];
     const result = {
-      city: z3Data.city || null,
+      city: zip5Cities[z5] || z3Data.city || null,
       state: z3Data.state || null,
       lat: entry.lat,
       lon: entry.lon,
