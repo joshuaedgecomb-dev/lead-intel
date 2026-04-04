@@ -1,33 +1,30 @@
-import { useState, useCallback, useRef, useMemo } from 'react';
-import zip3Carriers from '../data/zip3-carriers.json';
+import { useState, useCallback, useRef, useMemo, useEffect } from 'react';
+import comcastZips from '../data/comcast-zips.json';
 import { fetchOneWeather, weatherCache, sleep, getGridKey } from '../hooks/useWeather.js';
-
-const EAST_STATES = new Set(['ME','NH','VT','MA','RI','CT','NY','NJ','PA','DE','MD','DC','VA','WV','NC','SC','GA','FL','AL','TN','MS']);
 
 export default function PreloadPanel({ zip5Data }) {
   const [preload, setPreload] = useState({ active: false, done: 0, total: 0, loaded: 0, failed: 0, finished: false });
   const preloadAbort = useRef(false);
+  const started = useRef(false);
 
-  // Filter east coast ZIP3s using state field from zip3-carriers.json
-  const eastZip3Set = useMemo(() => {
+  // Build set of Comcast ZIP3 prefixes from the full ZIP5 list
+  const comcastZip3Set = useMemo(() => {
     const set = new Set();
-    for (const [z3, data] of Object.entries(zip3Carriers)) {
-      if (data.state && EAST_STATES.has(data.state)) {
-        set.add(z3);
-      }
+    for (const z5 of comcastZips) {
+      set.add(z5.substring(0, 3));
     }
     return set;
   }, []);
 
-  const cachedCount = Object.keys(weatherCache).filter(k => eastZip3Set.has(k)).length;
-  const eastTotal = eastZip3Set.size;
+  const cachedCount = Object.keys(weatherCache).filter(k => comcastZip3Set.has(k)).length;
+  const comcastTotal = comcastZip3Set.size;
 
   const startPreload = useCallback(async () => {
     preloadAbort.current = false;
 
     // Build deduplication map: gridKey -> [zip3 codes]
     const gridMap = {};
-    for (const z3 of eastZip3Set) {
+    for (const z3 of comcastZip3Set) {
       if (weatherCache[z3]) continue;
       // Find a representative ZIP5 for this ZIP3 to get coordinates
       const repZip = zip5Data ? Object.keys(zip5Data).find(z5 => z5.startsWith(z3)) : null;
@@ -40,7 +37,7 @@ export default function PreloadPanel({ zip5Data }) {
 
     const gridPoints = Object.values(gridMap);
     if (gridPoints.length === 0) {
-      setPreload({ active: false, done: 0, total: 0, loaded: eastTotal, failed: 0, finished: true });
+      setPreload({ active: false, done: 0, total: 0, loaded: comcastTotal, failed: 0, finished: true });
       return;
     }
 
@@ -72,11 +69,15 @@ export default function PreloadPanel({ zip5Data }) {
     }
 
     setPreload(prev => ({ ...prev, active: false, finished: true }));
-  }, [eastZip3Set, eastTotal, zip5Data]);
+  }, [comcastZip3Set, comcastTotal, zip5Data]);
 
-  const stopPreload = useCallback(() => {
-    preloadAbort.current = true;
-  }, []);
+  // Auto-start weather loading when the app opens
+  useEffect(() => {
+    if (!started.current && zip5Data) {
+      started.current = true;
+      startPreload();
+    }
+  }, [zip5Data, startPreload]);
 
   const preloadPct = preload.total > 0 ? Math.round((preload.done / preload.total) * 100) : 0;
 
@@ -89,7 +90,7 @@ export default function PreloadPanel({ zip5Data }) {
       <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
         <div style={{
           width: 8, height: 8, borderRadius: '50%',
-          background: cachedCount >= eastTotal ? '#7ee787' : cachedCount > 0 ? '#ffa657' : '#484f58',
+          background: cachedCount >= comcastTotal ? '#7ee787' : cachedCount > 0 ? '#ffa657' : '#484f58',
         }} />
         <div style={{ fontSize: 11, fontWeight: 600, textTransform: 'uppercase', letterSpacing: 1, color: '#8b949e' }}>
           Weather Cache
@@ -97,61 +98,33 @@ export default function PreloadPanel({ zip5Data }) {
       </div>
 
       <div style={{ fontFamily: "'IBM Plex Mono', monospace", fontSize: 13, color: '#e6edf3' }}>
-        <span style={{ color: cachedCount >= eastTotal ? '#7ee787' : '#ffa657', fontWeight: 700 }}>{cachedCount}</span>
+        <span style={{ color: cachedCount >= comcastTotal ? '#7ee787' : '#ffa657', fontWeight: 700 }}>{cachedCount}</span>
         <span style={{ color: '#484f58' }}> / </span>
-        <span>{eastTotal}</span>
-        <span style={{ color: '#8b949e', marginLeft: 4 }}>east coast zips cached</span>
+        <span>{comcastTotal}</span>
+        <span style={{ color: '#8b949e', marginLeft: 4 }}>service area zips cached</span>
       </div>
 
-      {!preload.active && !preload.finished && (
-        <button
-          className="preload-btn"
-          onClick={startPreload}
-          style={{ background: '#238636', color: '#fff' }}
-        >
-          Pre-load East Coast Weather
-        </button>
-      )}
-
       {preload.active && (
-        <>
-          <div style={{ flex: '1 1 200px', minWidth: 200 }}>
-            <div style={{ background: '#21262d', borderRadius: 4, height: 8, overflow: 'hidden' }}>
-              <div style={{
-                background: 'linear-gradient(90deg, #238636, #7ee787)',
-                height: '100%', width: `${preloadPct}%`,
-                transition: 'width 0.3s ease', borderRadius: 4,
-              }} />
-            </div>
-            <div style={{ fontSize: 10, color: '#8b949e', marginTop: 3 }}>
-              Grid point {preload.done}/{preload.total} ({preloadPct}%)
-              {preload.loaded > 0 && <span style={{ color: '#7ee787' }}> | {preload.loaded} zips loaded</span>}
-              {preload.failed > 0 && <span style={{ color: '#f85149' }}> | {preload.failed} failed</span>}
-            </div>
+        <div style={{ flex: '1 1 200px', minWidth: 200 }}>
+          <div style={{ background: '#21262d', borderRadius: 4, height: 8, overflow: 'hidden' }}>
+            <div style={{
+              background: 'linear-gradient(90deg, #238636, #7ee787)',
+              height: '100%', width: `${preloadPct}%`,
+              transition: 'width 0.3s ease', borderRadius: 4,
+            }} />
           </div>
-          <button
-            className="preload-btn"
-            onClick={stopPreload}
-            style={{ background: '#da3633', color: '#fff' }}
-          >
-            Stop
-          </button>
-        </>
+          <div style={{ fontSize: 10, color: '#8b949e', marginTop: 3 }}>
+            Grid point {preload.done}/{preload.total} ({preloadPct}%)
+            {preload.loaded > 0 && <span style={{ color: '#7ee787' }}> | {preload.loaded} zips loaded</span>}
+            {preload.failed > 0 && <span style={{ color: '#f85149' }}> | {preload.failed} failed</span>}
+          </div>
+        </div>
       )}
 
       {preload.finished && (
-        <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-          <span style={{ fontSize: 12, color: '#7ee787', fontWeight: 600 }}>
-            {cachedCount >= eastTotal ? 'All cached' : 'Partial cache'}
-          </span>
-          <button
-            className="preload-btn"
-            onClick={() => setPreload({ active: false, done: 0, total: 0, loaded: 0, failed: 0, finished: false })}
-            style={{ background: '#30363d', color: '#e6edf3' }}
-          >
-            Refresh
-          </button>
-        </div>
+        <span style={{ fontSize: 12, color: '#7ee787', fontWeight: 600 }}>
+          {cachedCount >= comcastTotal ? 'All cached' : 'Partial cache'}
+        </span>
       )}
 
       {(cachedCount > 0 && !preload.active) && (
