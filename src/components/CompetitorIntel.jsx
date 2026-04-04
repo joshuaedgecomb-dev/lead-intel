@@ -95,14 +95,18 @@ export default function CompetitorIntel({ carrier, metro, state, xfSpeed }) {
         {/* Broadband ISPs */}
         {ispProviders.length > 0 && (
           <div>
-            <div style={{ fontSize: 9, fontWeight: 600, textTransform: 'uppercase', letterSpacing: 0.5, color: '#484f58', marginBottom: 4 }}>
+            <div style={{ fontSize: 9, fontWeight: 600, textTransform: 'uppercase', letterSpacing: 0.5, color: '#484f58', marginBottom: 6 }}>
               Internet Providers
-            </div>
-            <div style={{ fontSize: 8, color: '#30363d', marginBottom: 6 }}>
-              Coverage footprint · max advertised speed
             </div>
             <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 8 }}>
               <DonutChart slices={ispProviders} centerLabel={`${xfPct}%`} centerSub="Xfinity" size={90} />
+            </div>
+            {/* Column headers */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: 5, fontSize: 8, color: '#30363d', marginBottom: 3, textTransform: 'uppercase', letterSpacing: 0.5 }}>
+              <div style={{ width: 7 }} />
+              <span style={{ flex: 1 }}>Provider</span>
+              <span style={{ fontFamily: "'IBM Plex Mono', monospace" }}>Speed</span>
+              <span style={{ minWidth: 24, textAlign: 'right', fontFamily: "'IBM Plex Mono', monospace" }}>Share</span>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
               {ispProviders.map((p, i) => (
@@ -111,14 +115,12 @@ export default function CompetitorIntel({ carrier, metro, state, xfSpeed }) {
                   <span style={{ color: p.highlight ? '#e6edf3' : '#8b949e', fontWeight: p.highlight ? 700 : 400, flex: 1 }}>
                     {p.name}
                   </span>
-                  {p.down && (
-                    <span style={{
-                      color: p.highlight ? '#7ee787' : '#484f58',
-                      fontFamily: "'IBM Plex Mono', monospace", fontSize: 9,
-                    }}>
-                      {formatSpeed(p.down)}
-                    </span>
-                  )}
+                  <span style={{
+                    color: p.highlight ? '#7ee787' : '#484f58',
+                    fontFamily: "'IBM Plex Mono', monospace", fontSize: 9,
+                  }}>
+                    {p.down ? formatSpeed(p.down) : '—'}
+                  </span>
                   <span style={{
                     color: p.highlight ? COMCAST_COLOR : '#484f58',
                     fontWeight: 600, fontFamily: "'IBM Plex Mono', monospace", fontSize: 9,
