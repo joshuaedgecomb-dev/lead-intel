@@ -50,10 +50,10 @@ export default function HouseholdIntel({ data }) {
       <div style={{
         display: 'inline-flex', alignItems: 'baseline', gap: 3,
         padding: '2px 8px', background: '#1c2128', borderRadius: 4,
-        fontSize: 11,
+        fontSize: 13,
       }}>
         <span style={{ color: '#e6edf3', fontWeight: 600 }}>{value}{unit}</span>
-        <span style={{ color: '#484f58', fontSize: 9 }}>{label}</span>
+        <span style={{ color: '#484f58', fontSize: 10 }}>{label}</span>
       </div>
     ) : null
   );
@@ -63,7 +63,7 @@ export default function HouseholdIntel({ data }) {
       background: '#161b22', borderRadius: 10, padding: 14,
       border: '1px solid #21262d',
     }}>
-      <div style={{ fontSize: 10, fontWeight: 600, textTransform: 'uppercase', letterSpacing: 1, color: '#8b949e', marginBottom: 8 }}>
+      <div style={{ fontSize: 12, fontWeight: 600, textTransform: 'uppercase', letterSpacing: 1, color: '#8b949e', marginBottom: 8 }}>
         Household Intel
       </div>
 
@@ -83,7 +83,7 @@ export default function HouseholdIntel({ data }) {
         <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
           {hints.map((h, i) => (
             <div key={i} style={{
-              fontSize: 11, color: '#c9d1d9', lineHeight: 1.4,
+              fontSize: 13, color: '#c9d1d9', lineHeight: 1.4,
               padding: '4px 8px', background: '#1a2332', borderRadius: 4,
             }}>
               <span style={{ marginRight: 4 }}>{h.icon}</span>

@@ -60,18 +60,18 @@ export default function App() {
         .intel-card { animation: fade-in 0.25s ease-out; }
         .zip-input {
           background: #161b22; border: 2px solid #30363d; color: #e6edf3;
-          font-family: 'IBM Plex Mono', monospace; font-size: 22px; font-weight: 600;
+          font-family: 'IBM Plex Mono', monospace; font-size: 25px; font-weight: 600;
           padding: 10px 14px; width: 140px; border-radius: 8px; outline: none;
           letter-spacing: 3px; text-align: center; transition: border-color 0.2s;
         }
         .zip-input:focus { border-color: #58a6ff; }
-        .zip-input::placeholder { color: #484f58; letter-spacing: 2px; font-size: 16px; }
+        .zip-input::placeholder { color: #484f58; letter-spacing: 2px; font-size: 18px; }
       `}</style>
 
       {/* Header */}
       <div style={{ display: 'flex', alignItems: 'center', gap: 20, marginBottom: 20 }}>
         <div>
-          <div style={{ fontSize: 11, fontWeight: 600, textTransform: 'uppercase', letterSpacing: 1.5, color: '#8b949e', marginBottom: 4 }}>Lead Intel</div>
+          <div style={{ fontSize: 13, fontWeight: 600, textTransform: 'uppercase', letterSpacing: 1.5, color: '#8b949e', marginBottom: 4 }}>Lead Intel</div>
           <input
             className="zip-input"
             type="text"
@@ -84,15 +84,15 @@ export default function App() {
         {data && !data.partial && (
           <div className="intel-card" style={{ flex: 1, display: 'flex', alignItems: 'center', gap: 20 }}>
             <div>
-              <div style={{ fontSize: 26, fontWeight: 700, lineHeight: 1.1, color: '#fff' }}>
+              <div style={{ fontSize: 30, fontWeight: 700, lineHeight: 1.1, color: '#fff' }}>
                 {data.city}{data.state ? `, ${data.state}` : ''}
               </div>
-              <div style={{ fontSize: 14, color: '#8b949e', marginTop: 3 }}>
+              <div style={{ fontSize: 16, color: '#8b949e', marginTop: 3 }}>
                 {data.metro} Metro{data.approx ? ' (approx)' : ''}
               </div>
             </div>
             <div style={{
-              fontFamily: "'IBM Plex Mono', monospace", fontSize: 30, fontWeight: 600,
+              fontFamily: "'IBM Plex Mono', monospace", fontSize: 35, fontWeight: 600,
               color: '#58a6ff', letterSpacing: 1,
             }}>
               {localTime}
@@ -100,7 +100,7 @@ export default function App() {
           </div>
         )}
         {!data && zip.length >= 5 && (
-          <div style={{ color: '#f85149', fontSize: 14, fontWeight: 500 }}>
+          <div style={{ color: '#f85149', fontSize: 16, fontWeight: 500 }}>
             Zip not found in lookup table
           </div>
         )}

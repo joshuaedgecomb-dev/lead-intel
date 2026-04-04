@@ -47,8 +47,8 @@ function DonutChart({ slices, centerLabel, centerSub, size = 90 }) {
   return (
     <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`}>
       {paths}
-      <text x={cx} y={cy - 4} textAnchor="middle" fill="#e6edf3" fontSize="16" fontWeight="700">{centerLabel}</text>
-      <text x={cx} y={cy + 11} textAnchor="middle" fill="#8b949e" fontSize="9">{centerSub}</text>
+      <text x={cx} y={cy - 4} textAnchor="middle" fill="#e6edf3" fontSize="18" fontWeight="700">{centerLabel}</text>
+      <text x={cx} y={cy + 11} textAnchor="middle" fill="#8b949e" fontSize="10">{centerSub}</text>
     </svg>
   );
 }
@@ -87,7 +87,7 @@ export default function CompetitorIntel({ carrier, metro, state, xfSpeed }) {
       background: '#161b22', borderRadius: 10, padding: 18,
       border: '1px solid #21262d',
     }}>
-      <div style={{ fontSize: 12, fontWeight: 600, textTransform: 'uppercase', letterSpacing: 1, color: '#8b949e', marginBottom: 14 }}>
+      <div style={{ fontSize: 14, fontWeight: 600, textTransform: 'uppercase', letterSpacing: 1, color: '#8b949e', marginBottom: 14 }}>
         Competition · {state}
       </div>
 
@@ -95,14 +95,14 @@ export default function CompetitorIntel({ carrier, metro, state, xfSpeed }) {
         {/* Broadband ISPs */}
         {ispProviders.length > 0 && (
           <div>
-            <div style={{ fontSize: 11, fontWeight: 600, textTransform: 'uppercase', letterSpacing: 0.5, color: '#484f58', marginBottom: 8 }}>
+            <div style={{ fontSize: 13, fontWeight: 600, textTransform: 'uppercase', letterSpacing: 0.5, color: '#484f58', marginBottom: 8 }}>
               Internet Providers
             </div>
             <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 12 }}>
               <DonutChart slices={ispProviders} centerLabel={`${xfPct}%`} centerSub="Xfinity" size={110} />
             </div>
             {/* Column headers */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 9, color: '#30363d', marginBottom: 4, textTransform: 'uppercase', letterSpacing: 0.5, padding: '0 2px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 10, color: '#30363d', marginBottom: 4, textTransform: 'uppercase', letterSpacing: 0.5, padding: '0 2px' }}>
               <div style={{ width: 9 }} />
               <span style={{ flex: 1 }}>Provider</span>
               <span style={{ fontFamily: "'IBM Plex Mono', monospace" }}>Speed</span>
@@ -110,20 +110,20 @@ export default function CompetitorIntel({ carrier, metro, state, xfSpeed }) {
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
               {ispProviders.map((p, i) => (
-                <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 12, padding: '2px' }}>
+                <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 14, padding: '2px' }}>
                   <div style={{ width: 9, height: 9, borderRadius: '50%', flexShrink: 0, background: p.color, opacity: p.highlight ? 1 : 0.5 }} />
                   <span style={{ color: p.highlight ? '#e6edf3' : '#8b949e', fontWeight: p.highlight ? 700 : 400, flex: 1 }}>
                     {p.name}
                   </span>
                   <span style={{
                     color: p.highlight ? '#7ee787' : '#484f58',
-                    fontFamily: "'IBM Plex Mono', monospace", fontSize: 11,
+                    fontFamily: "'IBM Plex Mono', monospace", fontSize: 13,
                   }}>
                     {p.down ? formatSpeed(p.down) : '—'}
                   </span>
                   <span style={{
                     color: p.highlight ? COMCAST_COLOR : '#484f58',
-                    fontWeight: 600, fontFamily: "'IBM Plex Mono', monospace", fontSize: 11,
+                    fontWeight: 600, fontFamily: "'IBM Plex Mono', monospace", fontSize: 13,
                     minWidth: 30, textAlign: 'right',
                   }}>
                     {p.pct}%
@@ -136,7 +136,7 @@ export default function CompetitorIntel({ carrier, metro, state, xfSpeed }) {
 
         {/* Mobile Carriers */}
         <div>
-          <div style={{ fontSize: 11, fontWeight: 600, textTransform: 'uppercase', letterSpacing: 0.5, color: '#484f58', marginBottom: 8 }}>
+          <div style={{ fontSize: 13, fontWeight: 600, textTransform: 'uppercase', letterSpacing: 0.5, color: '#484f58', marginBottom: 8 }}>
             Mobile Carriers
           </div>
           <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 12 }}>
@@ -144,14 +144,14 @@ export default function CompetitorIntel({ carrier, metro, state, xfSpeed }) {
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
             {mobileSlices.map((s, i) => (
-              <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 12, padding: '2px' }}>
+              <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 14, padding: '2px' }}>
                 <div style={{ width: 9, height: 9, borderRadius: '50%', flexShrink: 0, background: s.color, opacity: s.highlight ? 1 : 0.5 }} />
                 <span style={{ color: s.highlight ? '#e6edf3' : '#8b949e', fontWeight: s.highlight ? 700 : 400, flex: 1 }}>
                   {s.name}
                 </span>
                 <span style={{
                   color: s.highlight ? s.color : '#484f58',
-                  fontWeight: 600, fontFamily: "'IBM Plex Mono', monospace", fontSize: 11,
+                  fontWeight: 600, fontFamily: "'IBM Plex Mono', monospace", fontSize: 13,
                   minWidth: 30, textAlign: 'right',
                 }}>
                   {s.pct}%
@@ -162,7 +162,7 @@ export default function CompetitorIntel({ carrier, metro, state, xfSpeed }) {
           {config.compliance && (
             <div style={{
               marginTop: 8, padding: '6px 10px', background: '#2a1a1a',
-              borderRadius: 4, fontSize: 11, color: '#f85149', fontWeight: 600, lineHeight: 1.4,
+              borderRadius: 4, fontSize: 13, color: '#f85149', fontWeight: 600, lineHeight: 1.4,
             }}>
               ⚠ {config.compliance}
             </div>

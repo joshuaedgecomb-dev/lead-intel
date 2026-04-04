@@ -143,32 +143,32 @@ export default function WeatherCard({ weather, city, zip3, isCached, tz }) {
       background: '#161b22', borderRadius: 10, padding: 14,
       border: '1px solid #21262d',
     }}>
-      <div style={{ fontSize: 10, fontWeight: 600, textTransform: 'uppercase', letterSpacing: 1, color: '#8b949e', marginBottom: 8 }}>
+      <div style={{ fontSize: 12, fontWeight: 600, textTransform: 'uppercase', letterSpacing: 1, color: '#8b949e', marginBottom: 8 }}>
         Weather
         {isCached && (
-          <span style={{ marginLeft: 6, fontSize: 9, color: '#7ee787', fontWeight: 500, textTransform: 'none', letterSpacing: 0 }}>
+          <span style={{ marginLeft: 6, fontSize: 10, color: '#7ee787', fontWeight: 500, textTransform: 'none', letterSpacing: 0 }}>
             (cached)
           </span>
         )}
       </div>
       {weather.status === 'loading' && (
-        <div style={{ color: '#8b949e', fontSize: 13 }}>Loading...</div>
+        <div style={{ color: '#8b949e', fontSize: 15 }}>Loading...</div>
       )}
       {weather.status === 'ok' && (
         <>
           <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
             {getWeatherIcon(weather.text, !weather.icon.includes('\uD83C\uDF19'), 36)}
-            <div style={{ fontSize: 32, fontWeight: 700, color: '#fff', lineHeight: 1 }}>
+            <div style={{ fontSize: 37, fontWeight: 700, color: '#fff', lineHeight: 1 }}>
               {weather.temp}
             </div>
-            <div style={{ fontSize: 13, color: '#8b949e' }}>
+            <div style={{ fontSize: 15, color: '#8b949e' }}>
               {weather.text}
             </div>
           </div>
 
           <div style={{
             marginTop: 10, padding: '6px 10px', background: '#1c2128', borderRadius: 6,
-            fontSize: 11, color: '#7ee787', fontStyle: 'italic', lineHeight: 1.4,
+            fontSize: 13, color: '#7ee787', fontStyle: 'italic', lineHeight: 1.4,
           }}>
             Rapport: "How's the weather out there{city ? ` in ${city}` : ''}? {rapportLine}"
           </div>
@@ -176,7 +176,7 @@ export default function WeatherCard({ weather, city, zip3, isCached, tz }) {
           {/* Hourly Forecast */}
           {hourly.length > 0 && (
             <div style={{ marginTop: 10 }}>
-              <div style={{ fontSize: 9, fontWeight: 600, textTransform: 'uppercase', letterSpacing: 1, color: '#484f58', marginBottom: 6 }}>
+              <div style={{ fontSize: 10, fontWeight: 600, textTransform: 'uppercase', letterSpacing: 1, color: '#484f58', marginBottom: 6 }}>
                 Upcoming
               </div>
 
@@ -210,11 +210,11 @@ export default function WeatherCard({ weather, city, zip3, isCached, tz }) {
               <div style={{ display: 'flex', gap: 2, marginTop: 3 }}>
                 {hourly.map((h, i) => (
                   <div key={i} style={{ flex: 1, textAlign: 'center', minWidth: 0 }}>
-                    <div style={{ fontSize: 10, fontWeight: 600, color: getTempColor(h.temp) }}>
+                    <div style={{ fontSize: 12, fontWeight: 600, color: getTempColor(h.temp) }}>
                       {h.temp}°
                     </div>
                     <div style={{
-                      fontSize: 8, color: '#8b949e',
+                      fontSize: 9, color: '#8b949e',
                       fontFamily: "'IBM Plex Mono', monospace",
                     }}>
                       {formatHour(h.time, tz)}
