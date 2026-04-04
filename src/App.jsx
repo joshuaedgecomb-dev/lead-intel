@@ -5,9 +5,6 @@ import MapCard from './components/MapCard.jsx';
 import WeatherCard from './components/WeatherCard.jsx';
 import PitchStrategy from './components/PitchStrategy.jsx';
 import CompetitorIntel from './components/CompetitorIntel.jsx';
-import QuickRapport from './components/QuickRapport.jsx';
-import NetworkPositioning from './components/NetworkPositioning.jsx';
-import CrossSell from './components/CrossSell.jsx';
 import HouseholdIntel from './components/HouseholdIntel.jsx';
 import ConnectivityIntel from './components/ConnectivityIntel.jsx';
 import connectivity from './data/connectivity.json';
@@ -19,7 +16,6 @@ export default function App() {
   const timerRef = useRef(null);
   const { weather, fetchWeather, resetWeather } = useWeather();
 
-  // ZIP lookup effect
   useEffect(() => {
     if (zip.length >= 5) {
       const d = lookupZip(zip);
@@ -33,7 +29,6 @@ export default function App() {
     }
   }, [zip, fetchWeather, resetWeather]);
 
-  // Live clock
   useEffect(() => {
     if (!data?.tz) { setLocalTime(''); return; }
     const tick = () => {
@@ -53,7 +48,9 @@ export default function App() {
       background: '#0d1117',
       color: '#e6edf3',
       minHeight: '100vh',
-      padding: '16px',
+      padding: '20px 24px',
+      maxWidth: 1400,
+      margin: '0 auto',
     }}>
       <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
       <style>{`
@@ -69,17 +66,10 @@ export default function App() {
         }
         .zip-input:focus { border-color: #58a6ff; }
         .zip-input::placeholder { color: #484f58; letter-spacing: 2px; font-size: 16px; }
-        .preload-btn {
-          border: none; padding: 8px 16px; border-radius: 6px; font-size: 12px;
-          font-weight: 600; cursor: pointer; font-family: 'IBM Plex Sans', sans-serif;
-          transition: all 0.2s; letter-spacing: 0.3px;
-        }
-        .preload-btn:hover { filter: brightness(1.15); }
-        .preload-btn:active { transform: scale(0.97); }
       `}</style>
 
       {/* Header */}
-      <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 16 }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 20, marginBottom: 20 }}>
         <div>
           <div style={{ fontSize: 11, fontWeight: 600, textTransform: 'uppercase', letterSpacing: 1.5, color: '#8b949e', marginBottom: 4 }}>Lead Intel</div>
           <input
@@ -94,15 +84,15 @@ export default function App() {
         {data && !data.partial && (
           <div className="intel-card" style={{ flex: 1, display: 'flex', alignItems: 'center', gap: 20 }}>
             <div>
-              <div style={{ fontSize: 24, fontWeight: 700, lineHeight: 1.1, color: '#fff' }}>
+              <div style={{ fontSize: 26, fontWeight: 700, lineHeight: 1.1, color: '#fff' }}>
                 {data.city}{data.state ? `, ${data.state}` : ''}
               </div>
-              <div style={{ fontSize: 13, color: '#8b949e', marginTop: 2 }}>
+              <div style={{ fontSize: 14, color: '#8b949e', marginTop: 3 }}>
                 {data.metro} Metro{data.approx ? ' (approx)' : ''}
               </div>
             </div>
             <div style={{
-              fontFamily: "'IBM Plex Mono', monospace", fontSize: 28, fontWeight: 600,
+              fontFamily: "'IBM Plex Mono', monospace", fontSize: 30, fontWeight: 600,
               color: '#58a6ff', letterSpacing: 1,
             }}>
               {localTime}
@@ -116,9 +106,9 @@ export default function App() {
         )}
       </div>
 
-      {/* Intel Cards — 3 column grid */}
+      {/* Row 1: Map + Weather + Connectivity */}
       {data && !data.partial && data.lat && data.lon && (
-        <div className="intel-card" style={{ display: 'grid', gridTemplateColumns: '200px 1fr 1fr', gap: 12 }}>
+        <div className="intel-card" style={{ display: 'grid', gridTemplateColumns: '220px 1fr 1fr', gap: 16, marginBottom: 16 }}>
           <MapCard lat={data.lat} lon={data.lon} />
           <WeatherCard
             weather={weather}
@@ -127,27 +117,22 @@ export default function App() {
             isCached={!!weather.cached}
             tz={data.tz}
           />
+          <ConnectivityIntel zip5={data.zip5} />
+        </div>
+      )}
+
+      {/* Row 2: Competition + Household Intel */}
+      {data && !data.partial && (
+        <div className="intel-card" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16, marginBottom: 16 }}>
           <CompetitorIntel carrier={data.carrier} metro={data.metro} state={data.state} xfSpeed={connectivity[data.zip5]?.xfDown} />
+          <HouseholdIntel data={data} />
         </div>
       )}
 
-      {/* Pitch Strategy + Household/Connectivity Intel */}
+      {/* Row 3: Pitch Strategy — full width */}
       {data && !data.partial && (
-        <div className="intel-card" style={{ marginTop: 12, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
+        <div className="intel-card">
           <PitchStrategy arch={data.arch} arch2={data.arch2} />
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
-            <ConnectivityIntel zip5={data.zip5} />
-            <HouseholdIntel data={data} />
-          </div>
-        </div>
-      )}
-
-      {/* Quick Reference — 3 column grid */}
-      {data && !data.partial && (
-        <div className="intel-card" style={{ marginTop: 12, display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 12 }}>
-          <QuickRapport city={data.city} state={data.state} metro={data.metro} />
-          <NetworkPositioning carrier={data.carrier} />
-          <CrossSell tier={data.tier} />
         </div>
       )}
     </div>
