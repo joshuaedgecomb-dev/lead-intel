@@ -1,17 +1,15 @@
-import rapport from '../data/rapport.json';
-
 function formatHour(isoTime, tz) {
   const d = new Date(isoTime);
   try {
     const h = parseInt(d.toLocaleTimeString('en-US', { timeZone: tz, hour: 'numeric', hour12: false }));
-    if (h === 0) return '12a';
-    if (h === 12) return '12p';
-    return h > 12 ? `${h - 12}p` : `${h}a`;
+    if (h === 0) return '12AM';
+    if (h === 12) return '12PM';
+    return h > 12 ? `${h - 12}PM` : `${h}AM`;
   } catch {
     const h = d.getHours();
-    if (h === 0) return '12a';
-    if (h === 12) return '12p';
-    return h > 12 ? `${h - 12}p` : `${h}a`;
+    if (h === 0) return '12AM';
+    if (h === 12) return '12PM';
+    return h > 12 ? `${h - 12}PM` : `${h}AM`;
   }
 }
 
@@ -124,14 +122,6 @@ function getWeatherIcon(text, isDaytime, size = 20) {
 export default function WeatherCard({ weather, city, zip3, isCached, tz }) {
   if (weather.status === 'idle' || weather.status === 'error') return null;
 
-  let rapportLine = '';
-  if (weather.status === 'ok') {
-    const tempNum = parseInt(weather.temp);
-    if (tempNum > 85) rapportLine = rapport.byWeatherTemp.hot;
-    else if (tempNum < 40) rapportLine = rapport.byWeatherTemp.cold;
-    else rapportLine = rapport.byWeatherTemp.mild;
-  }
-
   const hourly = weather.hourly || [];
   const temps = hourly.map(h => h.temp);
   const minTemp = Math.min(...temps);
@@ -157,20 +147,18 @@ export default function WeatherCard({ weather, city, zip3, isCached, tz }) {
       {weather.status === 'ok' && (
         <>
           <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-            {getWeatherIcon(weather.text, !weather.icon.includes('\uD83C\uDF19'), 36)}
-            <div style={{ fontSize: 37, fontWeight: 700, color: '#fff', lineHeight: 1 }}>
-              {weather.temp}
+            {getWeatherIcon(weather.text, !weather.icon.includes('\uD83C\uDF19'), 72)}
+            <div style={{ lineHeight: 1.2 }}>
+              <div style={{ fontSize: 37, fontWeight: 700, color: '#fff' }}>
+                {weather.temp}
+              </div>
+              <div style={{ fontSize: 14, color: '#8b949e' }}>
+                {Math.round((parseInt(weather.temp) - 32) * 5 / 9)}°C
+              </div>
             </div>
             <div style={{ fontSize: 15, color: '#8b949e' }}>
               {weather.text}
             </div>
-          </div>
-
-          <div style={{
-            marginTop: 10, padding: '6px 10px', background: '#1c2128', borderRadius: 6,
-            fontSize: 13, color: '#7ee787', fontStyle: 'italic', lineHeight: 1.4,
-          }}>
-            Rapport: "How's the weather out there{city ? ` in ${city}` : ''}? {rapportLine}"
           </div>
 
           {/* Hourly Forecast */}
@@ -184,7 +172,7 @@ export default function WeatherCard({ weather, city, zip3, isCached, tz }) {
               <div style={{ display: 'flex', gap: 2 }}>
                 {hourly.map((h, i) => (
                   <div key={`icon-${i}`} style={{ flex: 1, display: 'flex', justifyContent: 'center' }}>
-                    {getWeatherIcon(h.text, h.isDaytime, 18)}
+                    {getWeatherIcon(h.text, h.isDaytime, 36)}
                   </div>
                 ))}
               </div>
@@ -211,7 +199,7 @@ export default function WeatherCard({ weather, city, zip3, isCached, tz }) {
                 {hourly.map((h, i) => (
                   <div key={i} style={{ flex: 1, textAlign: 'center', minWidth: 0 }}>
                     <div style={{ fontSize: 12, fontWeight: 600, color: getTempColor(h.temp) }}>
-                      {h.temp}°
+                      {h.temp}°F/{Math.round((h.temp - 32) * 5 / 9)}°C
                     </div>
                     <div style={{
                       fontSize: 9, color: '#8b949e',
