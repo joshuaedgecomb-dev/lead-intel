@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import archetypes from '../data/archetypes.json';
 
 function RecCard({ rec, color, num }) {
@@ -31,63 +32,72 @@ function RecCard({ rec, color, num }) {
   );
 }
 
+function ArchButton({ archKey, isActive, onClick }) {
+  const a = archetypes[archKey];
+  if (!a) return null;
+  return (
+    <button
+      type="button"
+      onClick={(e) => { e.stopPropagation(); onClick(); }}
+      className="arch-btn"
+      style={{
+        background: isActive ? a.bg : '#21262d',
+        border: isActive ? `2px solid ${a.color}` : `2px solid #30363d`,
+        borderRadius: 8, padding: '6px 12px',
+        display: 'flex', alignItems: 'center', gap: 6,
+        cursor: 'pointer', transition: 'all 0.15s ease',
+        outline: 'none',
+      }}
+    >
+      <span style={{ fontSize: isActive ? 16 : 14 }}>{a.icon}</span>
+      <span style={{
+        fontSize: isActive ? 14 : 12, fontWeight: isActive ? 700 : 600,
+        color: isActive ? a.color : '#8b949e',
+      }}>
+        {a.label}
+      </span>
+    </button>
+  );
+}
+
 export default function PitchStrategy({ arch, arch2 }) {
-  const primary = archetypes[arch];
-  const secondary = archetypes[arch2];
-  if (!primary) return null;
+  const [active, setActive] = useState(null); // null = use arch (primary)
+  const activeKey = active || arch;
+  const current = archetypes[activeKey];
+  if (!current) return null;
+
+  const hasTwoOptions = arch2 && arch2 !== arch;
 
   return (
     <div style={{
       background: '#161b22', borderRadius: 10, padding: 14,
       border: '1px solid #21262d',
     }}>
-      {/* Archetype header */}
+      {/* Archetype selector */}
       <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
-        <div style={{
-          background: primary.bg, border: `2px solid ${primary.color}`,
-          borderRadius: 8, padding: '6px 12px',
-          display: 'flex', alignItems: 'center', gap: 6,
-        }}>
-          <span style={{ fontSize: 16 }}>{primary.icon}</span>
-          <span style={{ fontSize: 14, fontWeight: 700, color: primary.color }}>
-            {primary.label}
-          </span>
-        </div>
-        {secondary && secondary !== primary && (
-          <div style={{
-            background: secondary.bg, border: `1px solid ${secondary.color}`,
-            borderRadius: 8, padding: '4px 10px',
-            display: 'flex', alignItems: 'center', gap: 4, opacity: 0.7,
-          }}>
-            <span style={{ fontSize: 12 }}>{secondary.icon}</span>
-            <span style={{ fontSize: 11, fontWeight: 600, color: secondary.color }}>
-              {secondary.label}
-            </span>
-          </div>
+        <ArchButton
+          archKey={arch}
+          isActive={activeKey === arch}
+          onClick={() => setActive(null)}
+        />
+        {hasTwoOptions && (
+          <ArchButton
+            archKey={arch2}
+            isActive={activeKey === arch2}
+            onClick={() => setActive(arch2)}
+          />
         )}
       </div>
 
       <div style={{ fontSize: 11, color: '#8b949e', lineHeight: 1.4, marginBottom: 12 }}>
-        {primary.desc}
+        {current.desc}
       </div>
 
       {/* Two recommendations */}
       <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-        <RecCard rec={primary.rec1} color={primary.color} num={1} />
-        <RecCard rec={primary.rec2} color={primary.color} num={2} />
+        <RecCard rec={current.rec1} color={current.color} num={1} />
+        <RecCard rec={current.rec2} color={current.color} num={2} />
       </div>
-
-      {/* Secondary archetype hint */}
-      {secondary && arch2 !== arch && (
-        <div style={{
-          marginTop: 10, padding: '6px 10px', background: secondary.bg,
-          borderRadius: 6, border: `1px solid ${secondary.color}`,
-          fontSize: 10, color: secondary.color, lineHeight: 1.4,
-        }}>
-          <span style={{ fontWeight: 600 }}>{secondary.icon} Also consider {secondary.label}:</span>{' '}
-          <span style={{ color: '#8b949e' }}>{secondary.rec1.title}</span>
-        </div>
-      )}
 
       {/* Compliance */}
       <div style={{
