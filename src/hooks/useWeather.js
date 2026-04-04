@@ -67,12 +67,19 @@ export function useWeather() {
       const r2 = await fetch(fUrl, { signal: ctrl.signal, headers: { Accept: 'application/geo+json' } });
       if (!r2.ok) throw new Error('NWS forecast failed');
       const f = await r2.json();
-      const period = f?.properties?.periods?.[0];
-      if (!period) throw new Error('No period data');
+      const periods = f?.properties?.periods;
+      if (!periods || periods.length === 0) throw new Error('No period data');
+      const current = periods[0];
       const result = {
-        text: period.shortForecast || 'N/A',
-        temp: `${period.temperature}\u00B0${period.temperatureUnit}`,
-        icon: period.isDaytime ? '\u2600' : '\uD83C\uDF19',
+        text: current.shortForecast || 'N/A',
+        temp: `${current.temperature}\u00B0${current.temperatureUnit}`,
+        icon: current.isDaytime ? '\u2600' : '\uD83C\uDF19',
+        forecast: periods.slice(0, 6).map(p => ({
+          name: p.name,
+          temp: `${p.temperature}\u00B0${p.temperatureUnit}`,
+          text: p.shortForecast || '',
+          isDaytime: p.isDaytime,
+        })),
       };
       weatherCache[zip3] = result;
       setWeather({ status: 'ok', ...result });
