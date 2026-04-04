@@ -15,14 +15,18 @@ function formatHour(isoTime, tz) {
   }
 }
 
-function getTempColor(temp, min, max) {
-  // Blue (cold) → Cyan → Green → Yellow → Orange → Red (hot)
-  const range = max - min || 1;
-  const t = (temp - min) / range; // 0 to 1
-  if (t < 0.25) return `rgb(${Math.round(80 + t * 4 * 40)}, ${Math.round(150 + t * 4 * 105)}, 255)`;
-  if (t < 0.5) return `rgb(${Math.round(120 + (t - 0.25) * 4 * 135)}, ${Math.round(220 + (t - 0.25) * 4 * 35)}, ${Math.round(255 - (t - 0.25) * 4 * 130)})`;
-  if (t < 0.75) return `rgb(255, ${Math.round(255 - (t - 0.5) * 4 * 80)}, ${Math.round(125 - (t - 0.5) * 4 * 125)})`;
-  return `rgb(255, ${Math.round(175 - (t - 0.75) * 4 * 105)}, ${Math.round((1 - t) * 4 * 30)})`;
+function getTempColor(temp) {
+  // Absolute comfort-based thresholds
+  // <32 = bitter cold (deep blue), 32-50 = cold (blue),
+  // 50-60 = chilly (cyan), 60-70 = nice (green),
+  // 70-85 = warm (yellow→orange), 85+ = hot (red)
+  if (temp <= 32) return '#6ea6ff';  // icy blue
+  if (temp <= 50) return '#58a6ff';  // cold blue
+  if (temp <= 60) return '#56d4dd';  // cool cyan
+  if (temp <= 70) return '#7ee787';  // comfortable green
+  if (temp <= 80) return '#f0c040';  // warm yellow
+  if (temp <= 90) return '#e87040';  // hot orange
+  return '#e05050';                   // scorching red
 }
 
 export default function WeatherCard({ weather, city, zip3, isCached, tz }) {
@@ -42,8 +46,6 @@ export default function WeatherCard({ weather, city, zip3, isCached, tz }) {
   const minTemp = Math.min(...temps);
   const maxTemp = Math.max(...temps);
   const tempRange = maxTemp - minTemp || 1;
-  const chartH = 40;
-  const barW = 100 / hourly.length;
 
   return (
     <div style={{
@@ -90,7 +92,7 @@ export default function WeatherCard({ weather, city, zip3, isCached, tz }) {
               <div style={{ display: 'flex', alignItems: 'flex-end', gap: 2, height: chartH }}>
                 {hourly.map((h, i) => {
                   const pct = ((h.temp - minTemp) / tempRange) * 0.75 + 0.25; // min 25% height
-                  const color = getTempColor(h.temp, minTemp, maxTemp);
+                  const color = getTempColor(h.temp);
                   return (
                     <div key={i} style={{
                       flex: 1,
@@ -112,7 +114,7 @@ export default function WeatherCard({ weather, city, zip3, isCached, tz }) {
                   }}>
                     <div style={{
                       fontSize: 10, fontWeight: 600,
-                      color: getTempColor(h.temp, minTemp, maxTemp),
+                      color: getTempColor(h.temp),
                     }}>
                       {h.temp}°
                     </div>
