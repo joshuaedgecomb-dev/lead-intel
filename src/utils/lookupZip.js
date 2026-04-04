@@ -34,6 +34,8 @@ export function lookupZip(zip) {
       pctSpanish: entry.pctSpanish,
       pctForeignBorn: entry.pctForeignBorn,
       pctKids: entry.pctKids,
+      arch: entry.arch || null,
+      arch2: entry.arch2 || null,
     };
   }
 

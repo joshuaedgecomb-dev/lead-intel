@@ -11,10 +11,79 @@ const DATA_DIR = join(__dirname, '..', 'src', 'data');
 const TIER_THRESHOLDS = { low: 45000, high: 85000 };
 
 function getTier(income) {
-  if (income === null || income <= 0) return 2; // default to balanced for missing data
+  if (income === null || income <= 0) return 2;
   if (income < TIER_THRESHOLDS.low) return 1;
   if (income > TIER_THRESHOLDS.high) return 3;
   return 2;
+}
+
+// Archetype classification from combined Census fields
+function getArchetype(acs) {
+  const income = acs.income || 60000;
+  const age = acs.medAge || 40;
+  const renter = acs.pctRenter || 30;
+  const kids = acs.pctKids || 20;
+  const wfh = acs.pctWfh || 10;
+  const spanish = acs.pctSpanish || 0;
+  const foreignBorn = acs.pctForeignBorn || 0;
+  const hhSize = acs.hhSize || 2.5;
+
+  // Score each archetype 0-100 based on how well the data fits
+  const scores = {};
+
+  // Suburban Family: mid-age owners with kids, mid-to-high income
+  scores.suburban_family = 0;
+  if (age >= 30 && age <= 55) scores.suburban_family += 25;
+  if (renter < 40) scores.suburban_family += 25;
+  if (kids >= 20) scores.suburban_family += 25;
+  if (income >= 55000 && income <= 130000) scores.suburban_family += 15;
+  if (hhSize >= 2.5) scores.suburban_family += 10;
+
+  // Affluent Professional: high income, WFH, fewer kids or older kids
+  scores.affluent_pro = 0;
+  if (income >= 100000) scores.affluent_pro += 30;
+  else if (income >= 85000) scores.affluent_pro += 15;
+  if (wfh >= 15) scores.affluent_pro += 25;
+  if (age >= 35 && age <= 55) scores.affluent_pro += 15;
+  if (renter < 40) scores.affluent_pro += 15;
+  if (income >= 150000) scores.affluent_pro += 15;
+
+  // Young Urban: young, renter, smaller households
+  scores.young_urban = 0;
+  if (age < 35) scores.young_urban += 30;
+  if (renter >= 50) scores.young_urban += 25;
+  if (hhSize < 2.2) scores.young_urban += 20;
+  if (kids < 15) scores.young_urban += 15;
+  if (wfh >= 15) scores.young_urban += 10;
+
+  // Budget Family: lower income, kids, renters
+  scores.budget_family = 0;
+  if (income < 45000) scores.budget_family += 30;
+  else if (income < 55000) scores.budget_family += 15;
+  if (kids >= 20) scores.budget_family += 25;
+  if (renter >= 45) scores.budget_family += 20;
+  if (hhSize >= 2.5) scores.budget_family += 15;
+
+  // Mature Value: older, owner, moderate income
+  scores.mature_value = 0;
+  if (age >= 50) scores.mature_value += 30;
+  else if (age >= 45) scores.mature_value += 15;
+  if (renter < 35) scores.mature_value += 20;
+  if (income >= 40000 && income < 85000) scores.mature_value += 20;
+  if (kids < 20) scores.mature_value += 15;
+  if (foreignBorn >= 10) scores.mature_value += 10;
+
+  // Multicultural Family: Spanish-speaking or high foreign-born, families
+  scores.multicultural = 0;
+  if (spanish >= 15) scores.multicultural += 35;
+  else if (spanish >= 8) scores.multicultural += 15;
+  if (foreignBorn >= 20) scores.multicultural += 20;
+  if (kids >= 20) scores.multicultural += 20;
+  if (hhSize >= 2.5) scores.multicultural += 15;
+
+  // Pick top two
+  const sorted = Object.entries(scores).sort((a, b) => b[1] - a[1]);
+  return { primary: sorted[0][0], secondary: sorted[1][0] };
 }
 
 async function downloadFile(url) {
@@ -160,6 +229,7 @@ async function main() {
 
     const tier = getTier(acs.income);
     if (!acs.income) noIncome++;
+    const arch = getArchetype(acs);
 
     zip5[zcta] = {
       lat: parseFloat(geo.lat.toFixed(4)),
@@ -176,6 +246,8 @@ async function main() {
       pctSpanish: acs.pctSpanish || null,
       pctForeignBorn: acs.pctForeignBorn || null,
       pctKids: acs.pctKids || null,
+      arch: arch.primary,
+      arch2: arch.secondary,
     };
     matched++;
   }

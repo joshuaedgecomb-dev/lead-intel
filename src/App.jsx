@@ -114,9 +114,9 @@ export default function App() {
         )}
       </div>
 
-      {/* Intel Cards — 4 column grid */}
+      {/* Intel Cards — 3 column grid */}
       {data && !data.partial && data.lat && data.lon && (
-        <div className="intel-card" style={{ display: 'grid', gridTemplateColumns: '200px 1fr 1fr 1fr', gap: 12 }}>
+        <div className="intel-card" style={{ display: 'grid', gridTemplateColumns: '200px 1fr 1fr', gap: 12 }}>
           <MapCard lat={data.lat} lon={data.lon} />
           <WeatherCard
             weather={weather}
@@ -125,14 +125,14 @@ export default function App() {
             isCached={!!weather.cached}
             tz={data.tz}
           />
-          <PitchStrategy tier={data.tier} />
           <CompetitorIntel carrier={data.carrier} metro={data.metro} />
         </div>
       )}
 
-      {/* Household Intel */}
+      {/* Pitch Strategy + Household Intel */}
       {data && !data.partial && (
-        <div className="intel-card" style={{ marginTop: 12 }}>
+        <div className="intel-card" style={{ marginTop: 12, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
+          <PitchStrategy arch={data.arch} arch2={data.arch2} />
           <HouseholdIntel data={data} />
         </div>
       )}
