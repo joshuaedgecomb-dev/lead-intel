@@ -10,6 +10,7 @@ import NetworkPositioning from './components/NetworkPositioning.jsx';
 import CrossSell from './components/CrossSell.jsx';
 import HouseholdIntel from './components/HouseholdIntel.jsx';
 import ConnectivityIntel from './components/ConnectivityIntel.jsx';
+import connectivity from './data/connectivity.json';
 
 export default function App() {
   const [zip, setZip] = useState('');
@@ -126,7 +127,7 @@ export default function App() {
             isCached={!!weather.cached}
             tz={data.tz}
           />
-          <CompetitorIntel carrier={data.carrier} metro={data.metro} state={data.state} />
+          <CompetitorIntel carrier={data.carrier} metro={data.metro} state={data.state} xfSpeed={connectivity[data.zip5]?.xfDown} />
         </div>
       )}
 

@@ -59,15 +59,15 @@ function formatSpeed(mbps) {
   return `${mbps}M`;
 }
 
-export default function CompetitorIntel({ carrier, metro, state }) {
+export default function CompetitorIntel({ carrier, metro, state, xfSpeed }) {
   const config = carriers[carrier];
   if (!config) return null;
 
-  // Broadband ISP data with speeds
+  // Broadband ISP data — use ZIP-specific speed for Comcast
   const ispProviders = (competition[state] || []).map((p, i) => ({
     name: p.isXf ? 'Xfinity' : p.name,
     pct: p.pct,
-    down: p.down,
+    down: p.isXf && xfSpeed ? xfSpeed : p.down,
     color: p.isXf ? COMCAST_COLOR : ISP_COLORS[i % ISP_COLORS.length],
     highlight: p.isXf,
   }));
@@ -88,15 +88,18 @@ export default function CompetitorIntel({ carrier, metro, state }) {
       border: '1px solid #21262d',
     }}>
       <div style={{ fontSize: 10, fontWeight: 600, textTransform: 'uppercase', letterSpacing: 1, color: '#8b949e', marginBottom: 10 }}>
-        Market Landscape · {metro}
+        Competition · {state}
       </div>
 
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 14 }}>
         {/* Broadband ISPs */}
         {ispProviders.length > 0 && (
           <div>
-            <div style={{ fontSize: 9, fontWeight: 600, textTransform: 'uppercase', letterSpacing: 0.5, color: '#484f58', marginBottom: 8 }}>
-              Broadband Providers
+            <div style={{ fontSize: 9, fontWeight: 600, textTransform: 'uppercase', letterSpacing: 0.5, color: '#484f58', marginBottom: 4 }}>
+              Internet Providers
+            </div>
+            <div style={{ fontSize: 8, color: '#30363d', marginBottom: 6 }}>
+              Coverage footprint · max advertised speed
             </div>
             <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 8 }}>
               <DonutChart slices={ispProviders} centerLabel={`${xfPct}%`} centerSub="Xfinity" size={90} />
@@ -131,8 +134,11 @@ export default function CompetitorIntel({ carrier, metro, state }) {
 
         {/* Mobile Carriers */}
         <div>
-          <div style={{ fontSize: 9, fontWeight: 600, textTransform: 'uppercase', letterSpacing: 0.5, color: '#484f58', marginBottom: 8 }}>
+          <div style={{ fontSize: 9, fontWeight: 600, textTransform: 'uppercase', letterSpacing: 0.5, color: '#484f58', marginBottom: 4 }}>
             Mobile Carriers
+          </div>
+          <div style={{ fontSize: 8, color: '#30363d', marginBottom: 6 }}>
+            National market share · dominant in area
           </div>
           <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 8 }}>
             <DonutChart slices={mobileSlices} centerLabel={`${dominantPct}%`} centerSub={config.name} size={90} />
