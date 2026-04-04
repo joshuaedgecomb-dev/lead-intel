@@ -27,6 +27,13 @@ export function lookupZip(zip) {
       zip3: z3,
       zip5: z5,
       approx: false,
+      hhSize: entry.hhSize,
+      medAge: entry.medAge,
+      pctRenter: entry.pctRenter,
+      pctWfh: entry.pctWfh,
+      pctSpanish: entry.pctSpanish,
+      pctForeignBorn: entry.pctForeignBorn,
+      pctKids: entry.pctKids,
     };
   }
 

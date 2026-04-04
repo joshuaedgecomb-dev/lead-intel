@@ -8,6 +8,7 @@ import CompetitorIntel from './components/CompetitorIntel.jsx';
 import QuickRapport from './components/QuickRapport.jsx';
 import NetworkPositioning from './components/NetworkPositioning.jsx';
 import CrossSell from './components/CrossSell.jsx';
+import HouseholdIntel from './components/HouseholdIntel.jsx';
 
 export default function App() {
   const [zip, setZip] = useState('');
@@ -126,6 +127,13 @@ export default function App() {
           />
           <PitchStrategy tier={data.tier} />
           <CompetitorIntel carrier={data.carrier} metro={data.metro} />
+        </div>
+      )}
+
+      {/* Household Intel */}
+      {data && !data.partial && (
+        <div className="intel-card" style={{ marginTop: 12 }}>
+          <HouseholdIntel data={data} />
         </div>
       )}
 
