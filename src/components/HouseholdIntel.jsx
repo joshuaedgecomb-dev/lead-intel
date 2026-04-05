@@ -3,95 +3,128 @@ export default function HouseholdIntel({ data }) {
 
   const { hhSize, medAge, pctRenter, pctWfh, pctSpanish, pctForeignBorn, pctKids } = data;
 
-  // Generate discovery hints based on the data
-  const hints = [];
+  // Build cards — each stat becomes a self-contained talking-point card
+  const cards = [];
 
-  // Household size → mobile lines
-  if (hhSize) {
-    if (hhSize >= 3) hints.push({ icon: '👥', text: `Avg ${hhSize} people — pitch ${Math.round(hhSize)}+ mobile lines, higher speed tier` });
-    else if (hhSize < 2) hints.push({ icon: '👤', text: `Small households (${hhSize} avg) — 1-2 lines, 300-500M may suffice` });
+  if (hhSize != null) {
+    cards.push({
+      icon: '👥', value: hhSize, label: 'People per Home',
+      tip: hhSize >= 3
+        ? `Pitch ${Math.round(hhSize)}+ mobile lines, higher speed tier`
+        : hhSize < 2
+          ? '1-2 lines, 300-500M likely enough'
+          : 'Standard household — match lines to family size',
+      accent: '#58a6ff',
+    });
   }
 
-  // Kids → streaming, gaming, devices, security
-  if (pctKids != null && pctKids >= 25) {
-    hints.push({ icon: '🧒', text: `${pctKids}% households with kids — gaming, streaming, device deals for teens, Smart Home` });
-  }
-
-  // Renters vs owners → Home Security vs Smart Home
-  if (pctRenter != null) {
-    if (pctRenter >= 60) hints.push({ icon: '🏢', text: `${pctRenter}% renters — lead with Smart Home ($10/mo), not full Security` });
-    else if (pctRenter < 40) hints.push({ icon: '🏠', text: `${100 - pctRenter}% homeowners — Home Security opportunity ($55/mo)` });
-  }
-
-  // WFH → speed positioning
-  if (pctWfh != null && pctWfh >= 15) {
-    hints.push({ icon: '💻', text: `${pctWfh}% work from home — emphasize speed reliability, pitch 500M+ minimum` });
-  }
-
-  // Spanish-speaking → NOW TV Latino
-  if (pctSpanish != null && pctSpanish >= 10) {
-    hints.push({ icon: '🗣️', text: `${pctSpanish}% Spanish-speaking — NOW TV Latino opportunity` });
-  }
-
-  // Foreign-born → Voice Premier international
-  if (pctForeignBorn != null && pctForeignBorn >= 15) {
-    hints.push({ icon: '🌎', text: `${pctForeignBorn}% foreign-born — Voice Premier international calling (90+ countries)` });
-  }
-
-  // Median age → product mix
   if (medAge != null) {
-    if (medAge < 30) hints.push({ icon: '📱', text: `Young area (median ${medAge}) — lead with streaming, Premium Unlimited, device deals` });
-    else if (medAge >= 55) hints.push({ icon: '📞', text: `Older area (median ${medAge}) — emphasize simplicity, Voice Premier, value` });
+    const ageLabel = medAge < 30 ? 'Young area' : medAge >= 55 ? 'Older area' : 'Prime earning years';
+    const ageTip = medAge < 30
+      ? 'Lead with streaming, Unlimited, device deals'
+      : medAge >= 55
+        ? 'Emphasize simplicity, Voice Premier, value'
+        : 'Full bundle opportunity — Internet + Mobile + TV';
+    cards.push({ icon: '🎂', value: medAge, label: `Median Age — ${ageLabel}`, tip: ageTip, accent: '#d2a8ff' });
   }
 
-  // Stat bar helper
-  const StatPill = ({ label, value, unit = '' }) => (
-    value != null ? (
-      <div style={{
-        display: 'inline-flex', alignItems: 'baseline', gap: 3,
-        padding: '2px 8px', background: '#1c2128', borderRadius: 4,
-        fontSize: 13,
-      }}>
-        <span style={{ color: '#e6edf3', fontWeight: 600 }}>{value}{unit}</span>
-        <span style={{ color: '#484f58', fontSize: 10 }}>{label}</span>
-      </div>
-    ) : null
-  );
+  if (pctRenter != null) {
+    const ownerPct = 100 - pctRenter;
+    cards.push({
+      icon: pctRenter >= 60 ? '🏢' : '🏠',
+      value: `${pctRenter}%`, label: `Renters / ${ownerPct}% Owners`,
+      tip: pctRenter >= 60
+        ? 'Lead with Smart Home ($10/mo), skip full Security'
+        : pctRenter < 40
+          ? `${ownerPct}% homeowners — Home Security opportunity ($55/mo)`
+          : 'Mixed — qualify ownership before pitching Security',
+      accent: '#a371f7',
+    });
+  }
+
+  if (pctWfh != null) {
+    cards.push({
+      icon: '💻', value: `${pctWfh}%`, label: 'Work from Home',
+      tip: pctWfh >= 15
+        ? 'Stress speed reliability, pitch 500M+ minimum'
+        : 'Low remote work — standard speed tiers fine',
+      accent: '#3fb950',
+    });
+  }
+
+  if (pctKids != null) {
+    cards.push({
+      icon: '🧒', value: `${pctKids}%`, label: 'Households with Kids',
+      tip: pctKids >= 25
+        ? 'Gaming, streaming, device deals for teens, Smart Home'
+        : 'Fewer kids — focus on adult use cases',
+      accent: '#f0883e',
+    });
+  }
+
+  if (pctSpanish != null && pctSpanish >= 5) {
+    cards.push({
+      icon: '🗣️', value: `${pctSpanish}%`, label: 'Spanish-Speaking',
+      tip: pctSpanish >= 10
+        ? 'NOW TV Latino opportunity — mention bilingual support'
+        : 'Some Spanish speakers — note Latino packages if relevant',
+      accent: '#f778ba',
+    });
+  }
+
+  if (pctForeignBorn != null && pctForeignBorn >= 5) {
+    cards.push({
+      icon: '🌎', value: `${pctForeignBorn}%`, label: 'Foreign-Born',
+      tip: pctForeignBorn >= 15
+        ? 'Voice Premier international calling (90+ countries)'
+        : 'Some international ties — mention Voice international add-on',
+      accent: '#79c0ff',
+    });
+  }
+
+  if (cards.length === 0) return null;
+
+  // Use 3 columns — fills evenly for 3, 6, or wraps nicely for other counts
+  const cols = cards.length <= 4 ? 2 : 3;
 
   return (
     <div style={{
-      background: '#161b22', borderRadius: 10, padding: 14,
+      background: '#161b22', borderRadius: 10, padding: 16,
       border: '1px solid #21262d',
     }}>
-      <div style={{ fontSize: 12, fontWeight: 600, textTransform: 'uppercase', letterSpacing: 1, color: '#8b949e', marginBottom: 8 }}>
+      <div style={{ fontSize: 12, fontWeight: 600, textTransform: 'uppercase', letterSpacing: 1, color: '#8b949e', marginBottom: 12 }}>
         Household Intel
       </div>
 
-      {/* Stats row */}
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 4, marginBottom: 10 }}>
-        <StatPill label="avg hh" value={hhSize} />
-        <StatPill label="med age" value={medAge} />
-        <StatPill label="renters" value={pctRenter} unit="%" />
-        <StatPill label="WFH" value={pctWfh} unit="%" />
-        <StatPill label="kids" value={pctKids} unit="%" />
-        {pctSpanish >= 5 && <StatPill label="Spanish" value={pctSpanish} unit="%" />}
-        {pctForeignBorn >= 5 && <StatPill label="foreign-born" value={pctForeignBorn} unit="%" />}
-      </div>
-
-      {/* Discovery hints */}
-      {hints.length > 0 && (
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
-          {hints.map((h, i) => (
-            <div key={i} style={{
-              fontSize: 13, color: '#c9d1d9', lineHeight: 1.4,
-              padding: '4px 8px', background: '#1a2332', borderRadius: 4,
-            }}>
-              <span style={{ marginRight: 4 }}>{h.icon}</span>
-              {h.text}
+      <div style={{
+        display: 'grid',
+        gridTemplateColumns: `repeat(${cols}, 1fr)`,
+        gap: 8,
+      }}>
+        {cards.map((c, i) => (
+          <div key={i} style={{
+            background: '#1c2128', borderRadius: 8, padding: '12px 14px',
+            borderLeft: `3px solid ${c.accent}`,
+            display: 'flex', flexDirection: 'column', gap: 4,
+          }}>
+            {/* Top row: icon + big number */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+              <span style={{ fontSize: 20 }}>{c.icon}</span>
+              <span style={{ fontSize: 22, fontWeight: 700, color: '#e6edf3', lineHeight: 1 }}>
+                {c.value}
+              </span>
             </div>
-          ))}
-        </div>
-      )}
+            {/* Label */}
+            <div style={{ fontSize: 11, fontWeight: 600, color: '#8b949e', textTransform: 'uppercase', letterSpacing: 0.5, lineHeight: 1.2 }}>
+              {c.label}
+            </div>
+            {/* Talking point */}
+            <div style={{ fontSize: 12, color: '#c9d1d9', lineHeight: 1.35, marginTop: 2 }}>
+              {c.tip}
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
