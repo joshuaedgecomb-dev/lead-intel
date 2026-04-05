@@ -34,7 +34,7 @@ export default function ZipSearch({ onSelect }) {
     return entries;
   }, []);
 
-  // Filter matches based on query
+  // Filter matches based on query, grouping by city
   const results = useMemo(() => {
     const q = query.trim();
     if (q.length < 2) return [];
@@ -42,22 +42,31 @@ export default function ZipSearch({ onSelect }) {
     const isAllDigits = /^\d+$/.test(q);
 
     if (isAllDigits) {
-      const out = [];
+      // ZIP search — group by city so "770" shows "Houston, TX (187 ZIPs)" not 8 rows
+      const cityMap = new Map(); // "city|state" → { entry, zips[] }
       for (const e of index) {
-        if (e.zip.startsWith(q)) {
-          out.push(e);
-          if (out.length >= MAX_RESULTS) break;
+        if (!e.zip.startsWith(q)) continue;
+        const key = `${e.cityLow}|${e.stateLow}`;
+        if (!cityMap.has(key)) {
+          cityMap.set(key, { entry: e, zips: [e.zip] });
+        } else {
+          cityMap.get(key).zips.push(e.zip);
         }
+        if (cityMap.size >= MAX_RESULTS && cityMap.has(key)) continue;
+        if (cityMap.size > 50) break;
       }
-      return out;
+      return [...cityMap.values()]
+        .sort((a, b) => b.zips.length - a.zips.length || a.entry.city.localeCompare(b.entry.city))
+        .slice(0, MAX_RESULTS)
+        .map(g => ({ ...g.entry, zipCount: g.zips.length }));
     }
 
-    // Split into letter tokens and digit tokens
+    // City/text search — group all matching ZIPs under each unique city
     const tokens = q.toLowerCase().split(/[\s,]+/).filter(Boolean);
     const digitTokens = tokens.filter(t => /^\d+$/.test(t));
     const letterTokens = tokens.filter(t => !/^\d+$/.test(t));
 
-    const scored = [];
+    const cityMap = new Map();
     for (const e of index) {
       let ok = true;
 
@@ -77,23 +86,28 @@ export default function ZipSearch({ onSelect }) {
       }
       if (!ok) continue;
 
-      // Score: city starts with first token > alias starts with > contains
-      let bonus = 0;
-      if (letterTokens.length > 0) {
-        if (e.cityLow.startsWith(letterTokens[0])) bonus = 2;
-        else if (e.aliasLow.startsWith(letterTokens[0])) bonus = 1;
+      const key = `${e.cityLow}|${e.stateLow}`;
+      if (!cityMap.has(key)) {
+        // Score: city starts with first token > alias starts with > contains
+        let bonus = 0;
+        if (letterTokens.length > 0) {
+          if (e.cityLow.startsWith(letterTokens[0])) bonus = 2;
+          else if (e.aliasLow.startsWith(letterTokens[0])) bonus = 1;
+        }
+        cityMap.set(key, { entry: e, zips: [e.zip], score: bonus });
+      } else {
+        cityMap.get(key).zips.push(e.zip);
       }
-      scored.push({ ...e, score: bonus });
-      if (scored.length >= 50) break;
     }
 
-    scored.sort((a, b) =>
-      b.score - a.score ||
-      a.city.localeCompare(b.city) ||
-      a.zip.localeCompare(b.zip)
-    );
-
-    return scored.slice(0, MAX_RESULTS);
+    return [...cityMap.values()]
+      .sort((a, b) =>
+        b.score - a.score ||
+        b.zips.length - a.zips.length ||
+        a.entry.city.localeCompare(b.entry.city)
+      )
+      .slice(0, MAX_RESULTS)
+      .map(g => ({ ...g.entry, zipCount: g.zips.length }));
   }, [query, index]);
 
   // Close on click outside
@@ -206,7 +220,7 @@ export default function ZipSearch({ onSelect }) {
         >
           {results.map((r, i) => (
             <div
-              key={r.zip}
+              key={`${r.city}-${r.state}-${r.zip}`}
               onMouseDown={() => handleSelect(r)}
               onMouseEnter={() => setActiveIdx(i)}
               style={{
@@ -230,7 +244,7 @@ export default function ZipSearch({ onSelect }) {
                 fontSize: 13,
                 marginLeft: 16,
               }}>
-                {r.zip}
+                {r.zipCount > 1 ? `${r.zipCount} ZIPs` : r.zip}
               </span>
             </div>
           ))}
