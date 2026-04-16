@@ -10,9 +10,17 @@ import ConnectivityIntel from './components/ConnectivityIntel.jsx';
 import ZipSearch from './components/ZipSearch.jsx';
 import connectivity from './data/connectivity.json';
 
+function getInitialZipFromUrl() {
+  if (typeof window === 'undefined') return '';
+  const params = new URLSearchParams(window.location.search);
+  const z = (params.get('zip') || '').replace(/\D/g, '');
+  return z.length === 5 ? z : '';
+}
+
 export default function App() {
   const [zip, setZip] = useState('');
   const [data, setData] = useState(null);
+  const initialZip = getInitialZipFromUrl();
   const [localTime, setLocalTime] = useState('');
   const timerRef = useRef(null);
   const { weather, fetchWeather, resetWeather } = useWeather();
@@ -73,7 +81,7 @@ export default function App() {
       <div style={{ display: 'flex', alignItems: 'center', gap: 20, marginBottom: 20 }}>
         <div>
           <div style={{ fontSize: 13, fontWeight: 600, textTransform: 'uppercase', letterSpacing: 1.5, color: '#8b949e', marginBottom: 4 }}>Lead Intel</div>
-          <ZipSearch onSelect={setZip} />
+          <ZipSearch onSelect={setZip} initialZip={initialZip} />
         </div>
         {data && !data.partial && (
           <div className="intel-card" style={{ flex: 1, display: 'flex', alignItems: 'center', gap: 20 }}>

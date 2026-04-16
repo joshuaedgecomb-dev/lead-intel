@@ -6,12 +6,24 @@ import zip5Aliases from '../data/zip5-aliases.json';
 
 const MAX_RESULTS = 8;
 
-export default function ZipSearch({ onSelect }) {
+export default function ZipSearch({ onSelect, initialZip = '' }) {
   const [query, setQuery] = useState('');
   const [isOpen, setIsOpen] = useState(false);
   const [activeIdx, setActiveIdx] = useState(0);
   const wrapRef = useRef(null);
   const listRef = useRef(null);
+
+  // Prefill from initialZip prop (e.g. ?zip=12345 in URL)
+  useEffect(() => {
+    const digits = String(initialZip).replace(/\D/g, '');
+    if (digits.length !== 5 || !zip5Data[digits]) return;
+    const z3 = digits.substring(0, 3);
+    const z3d = zip3Carriers[z3] || {};
+    const city = zip5Cities[digits] || z3d.city || digits;
+    const state = z3d.state || '';
+    setQuery(`${city}, ${state} ${digits}`);
+    onSelect(digits);
+  }, [initialZip, onSelect]);
 
   // Build search index once — each ZIP5 with municipality-level city + USPS alias
   const index = useMemo(() => {
